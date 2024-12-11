@@ -1,0 +1,55 @@
+career-code/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   ├── navbar/
+│   │   ├── footer/
+│   │   └── forms/
+│   ├── pages/
+│   │   ├── public/
+│   │   │   └── HomePage.jsx
+│   │   ├── jobs/
+│   │   │   ├── AllJobs.jsx
+│   │   │   ├── JobDetails.jsx
+│   │   │   ├── AddJob.jsx
+│   │   │   └── UpdateJob.jsx
+│   │   ├── applications/
+│   │   │   ├── ApplyForJob.jsx
+│   │   │   └── MyApplications.jsx
+│   │   ├── employers/
+│   │   │   ├── MyJobPosts.jsx
+│   │   │   └── ReviewApplications.jsx
+│   │   ├── auth/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── PasswordRecovery.jsx
+│   │   └── notFound/
+│   │       └── NotFound.jsx
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   └── JobContext.jsx
+│   ├── hooks/
+│   │   └── useAuth.js
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── authService.js
+│   │   └── jobService.js
+│   ├── utils/
+│   │   ├── validations.js
+│   │   ├── constants.js
+│   │   ├── helpers.js
+│   │   └── errorMessages.js
+│   ├── styles/
+│   │   ├── globals.css
+│   │   ├── tailwind.config.js
+│   │   └── themes.js
+│   ├── App.jsx
+│   ├── index.js
+│   └── routes/
+│       └── Routes.jsx
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
+└── tailwind.config.js
