@@ -9,11 +9,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white w-full z-20 top-0 start-0 border-b border-gray-200 mt-4 md:px-10">
+    <nav className="bg-[#f2f6fd] w-full z-20 top-0 start-0 border-b border-gray-200 pt-2 md:px-10">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link to={'/'} className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/template/jobhub-logo.svg" className="h-8" alt="Flowbite Logo" />
-        </a>
+        </Link>
         <div className="flex items-center sm:gap-6 lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
           <Link className='hidden md:flex underline font-medium'>Register</Link>
           <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign In</button>
@@ -31,7 +31,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`items-center justify-between ${isMenuOpen ? 'flex' : 'hidden'} w-full lg:flex lg:w-auto lg:order-1`} id="navbar-sticky">
-          <ul className="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white">
+          <ul className="flex flex-col p-4 lg:p-0 mt-4 font-medium  rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 ">
             <NavLink
               to="/"
               className={({ isActive }) =>
