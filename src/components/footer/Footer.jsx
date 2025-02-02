@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="w-11/12 mx-auto py-8">
+        <footer className="w-11/12 max-w-screen-2xl mx-auto py-8">
             {/* Footer Container */}
             <div className="flex flex-col md:flex-row justify-between gap-6">
                 {/* Left Section - Logo & Social */}

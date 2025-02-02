@@ -1,7 +1,9 @@
+import Hiring from "../../components/home/Hiring/Hiring";
+
 const HomePage = () => {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className="my-20">
+            <Hiring />
         </div>
     );
 };
