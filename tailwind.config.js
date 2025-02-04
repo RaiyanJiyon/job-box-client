@@ -9,7 +9,10 @@ export default {
     extend: {
       maxWidth: {
         'screen-2xl': '1920px',
-      }
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #3C65F4, #3C64F3, #3C65F4)',
+      },
     },
   },
   plugins: [daisyui],
