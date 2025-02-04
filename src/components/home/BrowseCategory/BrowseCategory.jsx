@@ -41,13 +41,11 @@ const BrowseCategory = () => {
 
     return (
         <div className='w-4/5 max-w-screen-2xl mx-auto'>
-            <div className='mb-20'>
+            <div className='mb-14'>
                 <SectionTitle title="Browse by category" description={`Find the job that’s perfect for you. about ${jobs.length}+ new jobs everyday`} />
-
             </div>
 
             <Swiper
-
                 spaceBetween={20}
                 navigation={{
                     prevEl: ".swiper-button-prev",
@@ -76,6 +74,10 @@ const BrowseCategory = () => {
                         slidesPerView: 4,
                         spaceBetween: 40,
                     },
+                    1500: {
+                        slidesPerView: 5,
+                        spaceBetween: 40,
+                    },
                 }}
             >
                 {categories.map((category, idx) => {
@@ -85,54 +87,24 @@ const BrowseCategory = () => {
                     return (
                         <SwiperSlide key={idx}>
                             <div className=''>
-                                <Link to={'/'} className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100">
-                                    <div className='mb-2'>
-                                        <img src={imageUrl} alt={`${category} logo`} />
+                                <Link to={'/'} className="block max-w-sm p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-gray-100">
+                                    <div className='flex xl:flex-col gap-2 xl:gap-0'>
+                                        <div className='mb-2'>
+                                            <img src={imageUrl} alt={`${category} logo`} />
+                                        </div>
+
+                                        <div>
+                                            <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900">{category}</h5>
+
+                                            <p className="font-normal text-gray-700">{categoryJobs.length} Jobs Available</p>
+                                        </div>
                                     </div>
-                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{category}</h5>
-                                    <p className="font-normal text-gray-700">{categoryJobs.length} Jobs Available</p>
                                 </Link>
                             </div>
                         </SwiperSlide>
                     );
                 })}
             </Swiper>
-
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
-
-            <style jsx>{`
-                .swiper-button-prev,
-                .swiper-button-next {
-                    color: #9ba4bf; /* Change the color of the buttons */
-                    background: #e6ecff; /* Add a semi-transparent background */
-                    border-radius: 50%; /* Make the buttons round */
-                    width: 60px; /* Set the width */
-                    height: 60px; /* Set the height */
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .swiper-button-prev:hover,
-                .swiper-button-next:hover {
-                    background: rgba(255, 255, 255, 0.8); /* Change the background on hover */
-                }
-
-                /* Hide buttons on smaller devices */
-                @media (max-width: 768px) {
-                    .swiper-button-prev,
-                    .swiper-button-next {
-                        display: none;
-                    }
-                }
-
-                /* Adjust button positioning */
-                .swiper-button-prev {
-                    left: -20px;
-                }
-
-            
-            `}</style>
         </div>
     );
 };
