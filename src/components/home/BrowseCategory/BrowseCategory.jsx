@@ -87,7 +87,7 @@ const BrowseCategory = () => {
                     return (
                         <SwiperSlide key={idx}>
                             <div className=''>
-                                <Link to={'/'} className="block max-w-sm p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-gray-100">
+                                <Link to={'/'} className="block p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-gray-100">
                                     <div className='flex xl:flex-col gap-2 xl:gap-0'>
                                         <div className='mb-2'>
                                             <img src={imageUrl} alt={`${category} logo`} />

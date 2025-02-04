@@ -1,0 +1,122 @@
+[
+    {
+      "companyLogo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+      "companyName": "LinkedIn",
+      "rating": 5,
+      "ratingCount": 54,
+      "location": "New York, US",
+      "openJobs": 58
+    },
+    {
+      "companyLogo": "https://i.ibb.co.com/whS1vc78/Google-Icons-09-1024.webp",
+      "companyName": "Google",
+      "rating": 4.9,
+      "ratingCount": 120,
+      "location": "Mountain View, US",
+      "openJobs": 230
+    },
+    {
+      "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+      "companyName": "Amazon",
+      "rating": 4.7,
+      "ratingCount": 300,
+      "location": "Seattle, US",
+      "openJobs": 450
+    },
+    {
+      "companyLogo": "https://i.ibb.co.com/JY9w576/Microsoft-Logo-512px.png",
+      "companyName": "Microsoft",
+      "rating": 4.8,
+      "ratingCount": 200,
+      "location": "Redmond, US",
+      "openJobs": 320
+    },
+    {
+      "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+      "companyName": "Apple",
+      "rating": 4.9,
+      "ratingCount": 250,
+      "location": "Cupertino, US",
+      "openJobs": 180
+    },
+    {
+      "companyLogo": "https://i.ibb.co.com/r28JcMHv/Facebook-Logo.webp",
+      "companyName": "Facebook",
+      "rating": 4.6,
+      "ratingCount": 180,
+      "location": "Menlo Park, US",
+      "openJobs": 150
+    },
+    {
+      "companyLogo": "https://i.ibb.co.com/4wc9KTzP/Tesla-Motors-svg.png",
+      "companyName": "Tesla",
+      "rating": 4.5,
+      "ratingCount": 150,
+      "location": "Austin, US",
+      "openJobs": 120
+    },
+    {
+      "companyLogo": "https://images.ctfassets.net/y2ske730sjqp/6bhPChRFLRxc17sR8jgKbe/6fa1c6e6f37acdc97ff635cf16ba6fb3/Logos-Readability-Netflix-logo.png",
+      "companyName": "Netflix",
+      "rating": 4.7,
+      "ratingCount": 100,
+      "location": "Los Gatos, US",
+      "openJobs": 80
+    },
+    {
+      "companyLogo": "https://i.ibb.co.com/mCyJn3YF/Uber-Logo-wine.png",
+      "companyName": "Uber",
+      "rating": 4.4,
+      "ratingCount": 130,
+      "location": "San Francisco, US",
+      "openJobs": 90
+    },
+    {
+      "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1200px-Airbnb_Logo_Bélo.svg.png",
+      "companyName": "Airbnb",
+      "rating": 4.8,
+      "ratingCount": 90,
+      "location": "San Francisco, US",
+      "openJobs": 60
+    },
+    {
+      "companyLogo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+      "companyName": "Salesforce",
+      "rating": 4.9,
+      "ratingCount": 110,
+      "location": "San Francisco, US",
+      "openJobs": 140
+    },
+    {
+      "companyLogo": "https://i.ibb.co.com/C5BPNmn1/Adobe-Corporate-logo-svg.png",
+      "companyName": "Adobe",
+      "rating": 4.7,
+      "ratingCount": 85,
+      "location": "San Jose, US",
+      "openJobs": 70
+    },
+    {
+      "companyLogo": "https://cdn.worldvectorlogo.com/logos/intel-logo.svg",
+      "companyName": "Intel",
+      "rating": 4.6,
+      "ratingCount": 160,
+      "location": "Santa Clara, US",
+      "openJobs": 110
+    },
+    {
+      "companyLogo": "https://i.ibb.co.com/whLmdcKG/oracle-logo-png-seeklogo-103838.png",
+      "companyName": "Oracle",
+      "rating": 4.5,
+      "ratingCount": 140,
+      "location": "Redwood City, US",
+      "openJobs": 100
+    },
+    {
+      "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png",
+      "companyName": "PayPal",
+      "rating": 4.7,
+      "ratingCount": 125,
+      "location": "San Jose, US",
+      "openJobs": 85
+    }
+  ]

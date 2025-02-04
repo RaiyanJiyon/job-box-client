@@ -3,6 +3,7 @@ import Hiring from "../../components/home/Hiring/Hiring";
 import JobsByLocation from "../../components/home/JobsByLocation/JobsByLocation";
 import NewsAndBlog from "../../components/home/NewsAndBlog/NewsAndBlog";
 import NewsletterSubscription from "../../components/home/NewsletterSubscription/NewsletterSubscription";
+import TopRecruiters from "../../components/home/TopRecruiters/TopRecruiters";
 
 const HomePage = () => {
     return (
@@ -12,6 +13,9 @@ const HomePage = () => {
             </div>
             <div className="my-20">
                 <Hiring />
+            </div>
+            <div className="my-20">
+                <TopRecruiters />
             </div>
             <div className="my-20">
                 <JobsByLocation />

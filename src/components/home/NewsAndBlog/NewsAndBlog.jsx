@@ -24,9 +24,9 @@ const NewsAndBlog = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-4/5 max-w-screen-2xl mx-auto mt-14'>
                 {
                     news.map((news, idx) => (
-                        <div key={idx} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm px-3 pt-3">
+                        <div key={idx} className="bg-white border border-gray-200 rounded-lg shadow-sm px-3 pt-3">
                             <Link className=''>
-                                <img className="rounded-lg" src={`${news.image}`} alt={`${news.title} image`} />
+                                <img className="w-full rounded-lg" src={`${news.image}`} alt={`${news.title} image`} />
                             </Link>
                             <button type="button" class="my-5 px-3 py-1 text-xs font-medium text-center text-blue-400 hover:text-black bg-[#e0e6f7] rounded-md hover:bg-[#e0e6f1]">{news.category}</button>
                             <div className="">
