@@ -19,7 +19,7 @@ const NewsAndBlog = () => {
     }, []);
 
     return (
-        <div>
+        <section>
             <SectionTitle title="News and Blog" description="Get the latest news, updates and tips" />
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-4/5 max-w-screen-2xl mx-auto mt-14'>
                 {
@@ -63,7 +63,7 @@ const NewsAndBlog = () => {
                 }
 
             </div>
-        </div>
+        </section>
     );
 };
 

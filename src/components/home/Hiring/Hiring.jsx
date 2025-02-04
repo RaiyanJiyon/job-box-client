@@ -2,7 +2,7 @@ import { CiCircleCheck } from "react-icons/ci";
 
 const Hiring = () => {
     return (
-        <div className="w-[80%] max-w-screen-2xl mx-auto p-5 lg:p-2  border border-gray-200 shadow-md rounded-lg bg-white">
+        <section className="w-[80%] max-w-screen-2xl mx-auto p-5 lg:p-2  border border-gray-200 shadow-md rounded-lg bg-white">
             {/* Container */}
             <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
                 {/* Left Illustration */}
@@ -38,7 +38,7 @@ const Hiring = () => {
                     alt="Job Illustration"
                 />
             </div>
-        </div>
+        </section>
     );
 };
 

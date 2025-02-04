@@ -4,7 +4,7 @@ import { MdMarkEmailUnread } from 'react-icons/md';
 
 const NewsletterSubscription = () => {
     return (
-        <div className="w-4/5 max-w-screen-2xl mx-auto pb-20 bg-custom-gradient rounded-2xl">
+        <section className="w-4/5 max-w-screen-2xl mx-auto pb-20 bg-custom-gradient rounded-2xl">
             <h2 className='text-4xl text-center text-white font-bold pt-12 pb-10'>New Things Will Always <br /> Update Regularly</h2>
 
             <div className="flex items-center w-11/12 md:w-3/5 mx-auto px-2 md:px-4 py-3 bg-white rounded-xl">
@@ -21,7 +21,7 @@ const NewsletterSubscription = () => {
                     Subscribe
                 </button>
             </div>
-        </div>
+        </section>
     );
 };
 
