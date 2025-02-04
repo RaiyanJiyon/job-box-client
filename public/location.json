@@ -1,0 +1,44 @@
+[
+    {
+        "locationImage": "https://i.ibb.co.com/SD5G4vXP/paris.jpg",
+        "category": "Hot",
+        "locationName": "Paris, France",
+        "totalVacancy": 1200,
+        "totalCompanies": 350
+    },
+    {
+        "locationImage": "https://i.ibb.co.com/0jtz9Ccx/London.jpg",
+        "category": "Trending",
+        "locationName": "London, England",
+        "totalVacancy": 2500,
+        "totalCompanies": 700
+    },
+    {
+        "locationImage": "https://i.ibb.co.com/TMV5rVfF/New-York-Bay.webp",
+        "category": "Hot",
+        "locationName": "New York, USA",
+        "totalVacancy": 1800,
+        "totalCompanies": 450
+    },
+    {
+        "locationImage": "https://i.ibb.co.com/jP877wF7/Amsterdam-Holland.jpg",
+        "category": "Trending",
+        "locationName": "Amsterdam, Holland",
+        "totalVacancy": 1500,
+        "totalCompanies": 400
+    },
+    {
+        "locationImage": "https://i.ibb.co.com/x8m0RSFv/Copenhagen-Denmark.webp",
+        "category": "Hot",
+        "locationName": "Copenhagen, Denmark",
+        "totalVacancy": 900,
+        "totalCompanies": 250
+    },
+    {
+        "locationImage": "https://i.ibb.co.com/4v3qgFT/berlin-skyline.jpg",
+        "category": "Trending",
+        "locationName": "Berlin, Germany",
+        "totalVacancy": 15,
+        "totalCompanies": 250
+    }
+]
