@@ -1,0 +1,38 @@
+[
+    {
+        "image": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/img-news1.png",
+        "category": "News",
+        "title": "Global Climate Summit: Leaders Commit to Carbon Neutrality by 2050",
+        "description": "World leaders gathered at the Global Climate Summit to discuss strategies for achieving carbon neutrality and combating climate change.",
+        "author": {
+            "photoUrl": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/user1.png",
+            "name": "John Doe"
+        },
+        "postedDate": "2023-10-15",
+        "timeToRead": "5 min"
+    },
+    {
+        "image": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/img-news2.png",
+        "category": "Events",
+        "title": "Tech Innovators Conference 2023: Shaping the Future of AI",
+        "description": "The annual Tech Innovators Conference showcased groundbreaking advancements in artificial intelligence and its potential impact on industries worldwide.",
+        "author": {
+            "photoUrl": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/user2.png",
+            "name": "Jane Smith"
+        },
+        "postedDate": "2023-10-14",
+        "timeToRead": "7 min"
+    },
+    {
+        "image": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/img-news3.png",
+        "category": "News",
+        "title": "Economic Growth Surges Amidst Global Challenges",
+        "description": "Despite global uncertainties, economies are experiencing unexpected growth due to innovative policies and technological advancements.",
+        "author": {
+            "photoUrl": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/user3.png",
+            "name": "Michael Brown"
+        },
+        "postedDate": "2023-10-13",
+        "timeToRead": "6 min"
+    }
+]
