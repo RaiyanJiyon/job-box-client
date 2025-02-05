@@ -1,5 +1,6 @@
 import BrowseCategory from "../../components/home/BrowseCategory/BrowseCategory";
 import Hiring from "../../components/home/Hiring/Hiring";
+import JobCardsList from "../../components/home/JobCardsList/JobCardsList";
 import JobsByLocation from "../../components/home/JobsByLocation/JobsByLocation";
 import JobSearchBanner from "../../components/home/JobSearchBanner/JobSearchBanner";
 import NewsAndBlog from "../../components/home/NewsAndBlog/NewsAndBlog";
@@ -15,6 +16,9 @@ const HomePage = () => {
             </div>
             <div className="my-20">
                 <Hiring />
+            </div>
+            <div className="my-20">
+                <JobCardsList />
             </div>
             <div className="my-40">
                 <JobSearchBanner />

@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 const statisticsData = [
     {
-        end: 250,
+        end: 25,
         suffix: 'K+',
         title: 'Completed Cases',
         description: 'Providing comprehensive solutions tailored to your business needs.',

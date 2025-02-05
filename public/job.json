@@ -2,6 +2,7 @@
     {
         "category": "Marketing",
         "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
         "location": "New York, US",
         "position": "Digital Marketing Specialist",
         "type": "Fulltime",
@@ -23,7 +24,7 @@
     },
     {
         "category": "Sales",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
         "company": "Amazon",
         "location": "Seattle, WA",
         "position": "Sales Executive",
@@ -483,7 +484,7 @@
     },
     {
         "category": "Customer Help",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
         "company": "Amazon",
         "location": "Seattle, WA",
         "position": "Customer Service Representative",
@@ -943,7 +944,7 @@
     },
     {
         "category": "Finance",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
         "company": "Amazon",
         "location": "Seattle, WA",
         "position": "Treasury Analyst",
@@ -1403,7 +1404,7 @@
     },
     {
         "category": "Software",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
         "company": "Amazon",
         "location": "Seattle, WA",
         "position": "Cloud Engineer",
@@ -1863,7 +1864,7 @@
     },
     {
         "category": "Human Resource",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
         "company": "Amazon",
         "location": "Seattle, WA",
         "position": "Talent Acquisition Specialist",
@@ -2323,7 +2324,7 @@
     },
     {
         "category": "Content Writer",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
         "company": "Amazon",
         "location": "Seattle, WA",
         "position": "Technical Writer",
@@ -2553,7 +2554,7 @@
     },
     {
         "category": "Human Resource",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
         "company": "Amazon",
         "location": "Seattle, WA",
         "position": "Talent Acquisition Specialist",
