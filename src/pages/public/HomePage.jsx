@@ -6,6 +6,7 @@ import JobsByLocation from "../../components/home/JobsByLocation/JobsByLocation"
 import JobSearchBanner from "../../components/home/JobSearchBanner/JobSearchBanner";
 import NewsAndBlog from "../../components/home/NewsAndBlog/NewsAndBlog";
 import NewsletterSubscription from "../../components/home/NewsletterSubscription/NewsletterSubscription";
+import ProfileCreation from "../../components/home/ProfileCreation/ProfileCreation";
 import StatisticsSection from "../../components/home/StatisticsSection/StatisticsSection";
 import TopRecruiters from "../../components/home/TopRecruiters/TopRecruiters";
 
@@ -14,6 +15,9 @@ const HomePage = () => {
         <div>
             <div className="">
                 <Hero />
+            </div>
+            <div className="my-10">
+                <StatisticsSection />
             </div>
             <div className="my-20">
                 <BrowseCategory />
@@ -27,11 +31,11 @@ const HomePage = () => {
             <div className="my-40">
                 <JobSearchBanner />
             </div>
-            <div className="my-40">
-                <StatisticsSection />
-            </div>
             <div className="my-20">
                 <TopRecruiters />
+            </div>
+            <div className="my-20">
+                <ProfileCreation />
             </div>
             <div className="my-20">
                 <JobsByLocation />

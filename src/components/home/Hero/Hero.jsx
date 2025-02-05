@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <section className="bg-white py-12">
-            <div className="max-w-screen-xl px-6 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <section className="bg-white py-12 min-h-screen">
+            <div className="max-w-screen-xl px-6 md:px-12 2xl:px-6 mx-auto mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 {/* Left Side: Text Content */}
                 <div className="lg:col-span-7 text-center lg:text-left">
                     <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight text-gray-900">
@@ -31,14 +31,14 @@ const Hero = () => {
                         <motion.img
                             animate={{ x: [0, -35, 0] }}
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                            className=" rounded-full"
+                            className="w-36 rounded-full"
                             src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner2.png"
                             alt=""
                         />
                         <motion.img
                             animate={{ y: [-10, 10, -10] }}
                             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                            className=""
+                            className="w-30"
                             src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner4.png"
                             alt=""
                         />
@@ -48,7 +48,7 @@ const Hero = () => {
                     <motion.img
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                        className="w-72 my-10 rounded-full border border-gray-200 shadow-lg"
+                        className="w-60 my-10 rounded-full border border-gray-200 shadow-lg"
                         src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner1.png"
                         alt="mockup"
                     />
@@ -58,7 +58,7 @@ const Hero = () => {
                         <motion.img
                             animate={{ y: [-5, 15, -5] }}
                             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-                            className=" rounded-full"
+                            className="w-36 rounded-full"
                             src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner3.png"
                             alt=""
                         />
