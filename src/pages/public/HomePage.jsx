@@ -1,4 +1,5 @@
 import BrowseCategory from "../../components/home/BrowseCategory/BrowseCategory";
+import Hero from "../../components/home/Hero/Hero";
 import Hiring from "../../components/home/Hiring/Hiring";
 import JobCardsList from "../../components/home/JobCardsList/JobCardsList";
 import JobsByLocation from "../../components/home/JobsByLocation/JobsByLocation";
@@ -11,6 +12,9 @@ import TopRecruiters from "../../components/home/TopRecruiters/TopRecruiters";
 const HomePage = () => {
     return (
         <div>
+            <div className="">
+                <Hero />
+            </div>
             <div className="my-20">
                 <BrowseCategory />
             </div>
