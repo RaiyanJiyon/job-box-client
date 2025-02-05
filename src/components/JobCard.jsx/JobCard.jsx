@@ -1,51 +1,52 @@
 import React from 'react';
-import { HiLightningBolt } from 'react-icons/hi';
+import { HiOutlineBriefcase } from 'react-icons/hi';
 import { LuClock8 } from 'react-icons/lu';
-import { PiSuitcaseSimpleLight } from 'react-icons/pi';
+import { PiMapPinLight } from 'react-icons/pi';
 
 const JobCard = ({ job }) => {
     return (
-        <div className="block p-6 bg-[#f8faff] border border-gray-200 rounded-xl shadow-sm hover:bg-gray-100">
-                <span className='flex justify-end'>
-                <HiLightningBolt className='text-green-600 text-xl' />
-                </span>
-            <div className='flex items-center mb-4'>
-                <div className='flex-shrink-0 w-16 h-16'>
-                    <img className='w-full h-full' src={job.logo} alt={`${job.position} logo`} />
-                </div>
-                <div className='ml-4'>
-                    <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900">{job.company}</h5>
-                    <p className="font-normal text-gray-700">{job.location}</p>
-                </div>
+        <div className="p-6 bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition-all w-full">
+            {/* Job Title */}
+            <h3 className="text-lg font-bold text-gray-900">
+                {job.position}
+            </h3>
+            <p className="text-sm text-gray-600">Remote</p>
+
+            {/* Job Info */}
+            <div className="flex items-center text-gray-500 text-sm mt-2">
+                <LuClock8 className="mr-1" />
+                <span>{job.posted_time}</span>
             </div>
 
-            <h5 className="mb-1 text-lg font-bold tracking-tight text-gray-900">{job.position}</h5>
-
-            <div className='flex items-center gap-4 mt-3 mb-4'>
-                <p className="flex items-center gap-1 font-normal text-gray-700 ">
-                    <PiSuitcaseSimpleLight />
-                    {job.type}
-                </p>
-                <p className="flex items-center gap-1 font-normal text-gray-700">
-                    <LuClock8 />
-                    {job.posted_time}
-                </p>
-            </div>
-
-            <p className="sm:h-20 font-normal text-gray-700">{job.description}</p>
-
-            <div className='flex flex-wrap sm:h-20 mt-4 sm:mt-0'>
+            {/* Skills Tags */}
+            <div className="flex flex-wrap gap-2 mt-4">
                 {job.skills.map((skill, index) => (
-                    <button type="button" className="mr-2 my-2 px-3 py-1 text-xs font-medium text-gray-700 hover:text-black bg-[#e0e6f7] rounded-md hover:bg-blue-200">{skill}</button>
+                    <span key={index} className="px-3 py-1 text-xs font-medium text-gray-600 bg-[#d8f1ff] rounded-md">
+                        {skill}
+                    </span>
                 ))}
             </div>
 
-            <div className='flex justify-between items-center mt-4'>
-                <p className="font-bold text-xl text-blue-700">{job.salary}</p>
-                <a href={job.apply_link} className="text-blue-500 bg-[#e0e6f7] px-4 py-2 rounded-md hover:bg-blue-600 hover:text-white">Apply Now</a>
+            {/* Divider */}
+            <hr className="my-4" />
+
+            {/* Company Info */}
+            <div className="flex items-center">
+                <img className="w-10 h-10 rounded-full" src={job.logo} alt={`${job.company} logo`} />
+                <div className="ml-3">
+                    <p className="text-md font-bold text-gray-900">{job.company}</p>
+                    <p className="text-xs text-gray-500 flex items-center">
+                        <PiMapPinLight className="mr-1" /> {job.location}
+                    </p>
+                </div>
+            </div>
+
+            {/* Salary & Apply Button */}
+            <div className="flex justify-between items-center mt-4">
+                <p className="text-lg font-bold text-blue-700">{job.salary}</p>
             </div>
         </div>
     );
-};
+}
 
 export default JobCard;
