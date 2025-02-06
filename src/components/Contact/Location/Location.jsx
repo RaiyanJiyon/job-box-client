@@ -2,7 +2,7 @@ import React from 'react';
 
 const Location = () => {
     return (
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-[#f2f6fd] px-10 py-10 w-11/12 max-w-screen-2xl mx-auto my-16'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 bg-[#f2f6fd] px-10 py-10 w-11/12 max-w-screen-2xl mx-auto'>
             <div>
                 <img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/contact/logo.svg" alt="" />
                 <div className='space-y-1 mt-2'>

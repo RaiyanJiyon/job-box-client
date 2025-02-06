@@ -10,8 +10,6 @@ const Register = () => {
     const { user, signInUserWithGoogle, signUpUserWithEmail } = useAuth();
     const navigate = useNavigate();
 
-    
-
     const {
         register,
         handleSubmit,

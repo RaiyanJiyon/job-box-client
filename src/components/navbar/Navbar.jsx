@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import SuccessToaster from '../common/Toaster/SuccessToaster';
 import ErrorToaster from '../common/Toaster/ErrorToaster';
@@ -8,6 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { user, signOutUser } = useAuth();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -33,6 +34,7 @@ const Navbar = () => {
     signOutUser()
     .then(result => {
       SuccessToaster(`${user.displayName} is sign out.`)
+      navigate('/login');
     })
     .catch(error => {
       ErrorToaster(error.message);

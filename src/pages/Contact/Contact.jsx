@@ -25,7 +25,9 @@ const Contact = () => {
                 </div>
             </div>
 
+            <div className='py-16'>
             <Location />
+            </div>
         </div>
     );
 };
