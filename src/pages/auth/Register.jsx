@@ -4,9 +4,14 @@ import useAuth from '../../hooks/useAuth';
 import { useForm } from "react-hook-form";
 import SuccessToaster from '../../components/common/Toaster/SuccessToaster';
 import ErrorToaster from '../../components/common/Toaster/ErrorToaster';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const { user, signInUserWithGoogle, signUpUserWithEmail } = useAuth();
+    const navigate = useNavigate();
+
+    
+
     const {
         register,
         handleSubmit,
@@ -24,6 +29,7 @@ const Register = () => {
             .then(result => {
                 SuccessToaster('Congratulations, your account has been successfully created.')
                 reset();
+                navigate('/');
             })
             .catch(error => {
                 ErrorToaster('Email has already been taken.')
