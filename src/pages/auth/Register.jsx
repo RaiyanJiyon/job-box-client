@@ -5,7 +5,7 @@ const Register = () => {
     return (
         <div className='max-w-screen-2xl w-11/12 mx-auto'>
             <div className='w-4/5 md:w-[25%] mx-auto py-16'>
-                <div className=''>
+                <div>
                     <WelcomeAuth welcomeMessage="Register" title="Start for free Today" description="Access to all features. No credit card required." />
                 </div>
 
