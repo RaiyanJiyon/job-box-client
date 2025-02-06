@@ -33,11 +33,13 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center sm:gap-6 lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
           <Link to={'/register'} className='hidden md:flex underline font-medium'>Register</Link>
-          <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign In</button>
-          <button 
-            type="button" 
+          <Link to={'/login'}>
+            <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign In</button>
+          </Link>
+          <button
+            type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-sticky" 
+            aria-controls="navbar-sticky"
             aria-expanded={isMenuOpen}
             onClick={toggleMenu}
           >
