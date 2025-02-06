@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
+import SuccessToaster from '../common/Toaster/SuccessToaster';
+import ErrorToaster from '../common/Toaster/ErrorToaster';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { user, signOutUser } = useAuth();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -25,6 +29,16 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleSignOut = () => {
+    signOutUser()
+      .then(result => {
+        SuccessToaster(`${user.displayName} is sign out.`)
+      })
+      .catch(error => {
+        ErrorToaster(error.message);
+      })
+  };
+
   return (
     <nav className={`w-full z-20 top-0 start-0 pt-2 md:px-10 ${isScrolled ? 'border-b border-gray-200' : ''}`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -32,10 +46,17 @@ const Navbar = () => {
           <img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/template/jobhub-logo.svg" className="h-8" alt="Flowbite Logo" />
         </Link>
         <div className="flex items-center sm:gap-6 lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
-          <Link to={'/register'} className='hidden md:flex underline font-medium'>Register</Link>
-          <Link to={'/login'}>
-            <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign In</button>
-          </Link>
+          {
+            user ?
+              <button onClick={handleSignOut} type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign Out</button>
+              :
+              <>
+                <Link to={'/register'} className='hidden md:flex underline font-medium'>Register</Link>
+                <Link to={'/login'}>
+                  <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign In</button>
+                </Link>
+              </>
+          }
           <button
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
