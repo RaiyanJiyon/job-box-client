@@ -1,5 +1,6 @@
 import React from 'react';
 import Location from '../../components/Contact/Location/Location';
+import ContactForm from '../../components/Contact/ContactForm/ContactForm';
 
 const Contact = () => {
     return (
@@ -9,7 +10,7 @@ const Contact = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>
 
                 <div>
-                    
+
                 </div>
                 {/* Content */}
                 <div className="relative z-10 flex flex-col justify-center h-full w-11/12 max-w-screen-2xl mx-auto">
@@ -26,7 +27,11 @@ const Contact = () => {
             </div>
 
             <div className='py-16'>
-            <Location />
+                <Location />
+            </div>
+
+            <div className=''>
+                <ContactForm />
             </div>
         </div>
     );
