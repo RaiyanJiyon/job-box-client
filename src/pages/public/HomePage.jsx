@@ -13,7 +13,7 @@ import TopRecruiters from "../../components/home/TopRecruiters/TopRecruiters";
 const HomePage = () => {
     return (
         <div>
-            <div className="">
+            <div className="pb-20">
                 <Hero />
             </div>
             <div className="my-10">

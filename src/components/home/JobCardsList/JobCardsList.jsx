@@ -48,7 +48,7 @@ const JobCardsList = () => {
             <SectionTitle title="Jobs of the day" description="Search and connect with the right candidates faster." />
 
             {/* Button Container */}
-            <div className='flex flex-wrap justify-evenly gap-4 w-4/5 mx-auto mt-6'>
+            <div className='flex flex-wrap justify-evenly gap-4 max-w-screen-2xl w-4/5 mx-auto mt-6'>
                 {categories.map((category, index) => (
                     <button
                         key={index}

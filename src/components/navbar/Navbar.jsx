@@ -32,7 +32,7 @@ const Navbar = () => {
           <img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/template/jobhub-logo.svg" className="h-8" alt="Flowbite Logo" />
         </Link>
         <div className="flex items-center sm:gap-6 lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
-          <Link className='hidden md:flex underline font-medium'>Register</Link>
+          <Link to={'/register'} className='hidden md:flex underline font-medium'>Register</Link>
           <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign In</button>
           <button 
             type="button" 

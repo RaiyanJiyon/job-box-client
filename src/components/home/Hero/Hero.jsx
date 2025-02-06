@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <section className="bg-white py-12 min-h-screen">
+        <section className="bg-white py-12">
             <div className="max-w-screen-xl px-6 md:px-12 2xl:px-6 mx-auto mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 {/* Left Side: Text Content */}
                 <div className="lg:col-span-7 text-center lg:text-left">
@@ -56,8 +56,8 @@ const Hero = () => {
                     {/* Floating Images (Bottom) */}
                     <div className="flex gap-10 absolute -bottom-12">
                         <motion.img
-                            animate={{ y: [-5, 15, -5] }}
-                            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+                            animate={{ x: [0, -35, 0] }}
+                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             className="w-36 rounded-full"
                             src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner3.png"
                             alt=""
