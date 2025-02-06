@@ -24,6 +24,7 @@ import MyApplications from '../pages/applications/MyApplications';
 import MyJobPosts from '../pages/employers/MyJobPosts';
 import ReviewApplications from '../pages/employers/ReviewApplications';
 import ProtectedRoute from './ProtectedRoute';
+import Contact from '../pages/Contact/Contact';
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <HomePage />
+            },
+            {
+                path: '/contact',
+                element: <Contact />
             },
             // Auth Routes
             {

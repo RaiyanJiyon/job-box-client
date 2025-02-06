@@ -31,17 +31,17 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     signOutUser()
-      .then(result => {
-        SuccessToaster(`${user.displayName} is sign out.`)
-      })
-      .catch(error => {
-        ErrorToaster(error.message);
-      })
+    .then(result => {
+      SuccessToaster(`${user.displayName} is sign out.`)
+    })
+    .catch(error => {
+      ErrorToaster(error.message);
+    })
   };
 
   return (
-    <nav className={`w-full z-20 top-0 start-0 pt-2 md:px-10 ${isScrolled ? 'border-b border-gray-200' : ''}`}>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className={`w-full z-20 top-0 start-0 pt-2 ${isScrolled ? 'border-b border-gray-200' : ''}`}>
+      <div className="max-w-screen-2xl w-11/12 flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to={'/'} className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/template/jobhub-logo.svg" className="h-8" alt="Flowbite Logo" />
         </Link>
