@@ -2,6 +2,8 @@ import React from 'react';
 import WelcomeAuth from '../../components/common/WelcomeAuth/WelcomeAuth';
 import useAuth from '../../hooks/useAuth';
 import { useForm } from "react-hook-form";
+import SuccessToaster from '../../components/common/Toaster/SuccessToaster';
+import ErrorToaster from '../../components/common/Toaster/ErrorToaster';
 
 const Register = () => {
     const { user, signInUserWithGoogle, signUpUserWithEmail } = useAuth();
@@ -17,25 +19,14 @@ const Register = () => {
     const password = watch("password");
 
     const onSubmit = (data) => {
-        console.log(data);
         const { fullName, email, username, password, confirmPassword, terms } = data;
-        /*
-        {
-    "fullName": "Raiyan Jiyon",
-    "email": "raiyanjiyon@gmail.com",
-    "username": "RaiyanJiyon",
-    "password": "123456",
-    "confirmPassword": "123456",
-    "terms": true
-} */
-        // You can call signUpUserWithEmail here if needed
         signUpUserWithEmail(email, password)
             .then(result => {
-                alert('User successfully created');
-                alert('User successfully created');
+                SuccessToaster('Congratulations, your account has been successfully created.')
+                reset();
             })
             .catch(error => {
-                alert('Error', error);
+                ErrorToaster('Email has already been taken.')
             })
     };
 
