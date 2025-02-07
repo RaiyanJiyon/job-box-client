@@ -1,11 +1,12 @@
 import React from 'react';
 import Location from '../../components/Contact/Location/Location';
 import ContactForm from '../../components/Contact/ContactForm/ContactForm';
+import OurTeam from '../../components/Contact/OurTeam/OurTeam';
 
 const Contact = () => {
     return (
         <div>
-            <div className="relative h-36 bg-cover bg-center" style={{ backgroundImage: 'url(https://i.ibb.co/MDNsJCHy/cover.jpg)' }}>
+            <div className="relative h-36 bg-cover bg-center mt-2" style={{ backgroundImage: 'url(https://i.ibb.co/MDNsJCHy/cover.jpg)' }}>
                 {/* Dark overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>
 
@@ -32,6 +33,10 @@ const Contact = () => {
 
             <div className=''>
                 <ContactForm />
+            </div>
+
+            <div className='my-20'>
+                <OurTeam />
             </div>
         </div>
     );

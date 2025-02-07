@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Arlene McCoy",
+        "title": "Frontend Developer",
+        "rating": 65,
+        "location": "New York, US",
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/arlene.mccoy",
+            "twitter": "https://www.twitter.com/arlene_mccoy",
+            "instagram": "https://www.instagram.com/arlene.mccoy",
+            "linkedin": "https://www.linkedin.com/in/arlene-mccoy"
+        },
+        "images": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/team1.png"
+    },
+    {
+        "name": "John Doe",
+        "title": "Backend Developer",
+        "rating": 75,
+        "location": "San Francisco, US",
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/john.doe",
+            "twitter": "https://www.twitter.com/john_doe",
+            "instagram": "https://www.instagram.com/john.doe",
+            "linkedin": "https://www.linkedin.com/in/john-doe"
+        },
+        "images": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/team5.png"
+    },
+    {
+        "name": "Jane Smith",
+        "title": "UI/UX Designer",
+        "rating": 80,
+        "location": "London, UK",
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/jane.smith",
+            "twitter": "https://www.twitter.com/jane_smith",
+            "instagram": "https://www.instagram.com/jane.smith",
+            "linkedin": "https://www.linkedin.com/in/jane-smith"
+        },
+        "images": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/team6.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "title": "Full Stack Developer",
+        "rating": 85,
+        "location": "Berlin, Germany",
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/bob.johnson",
+            "twitter": "https://www.twitter.com/bob_johnson",
+            "instagram": "https://www.instagram.com/bob.johnson",
+            "linkedin": "https://www.linkedin.com/in/bob-johnson"
+        },
+        "images": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/team7.png"
+    },
+    {
+        "name": "Alice Williams",
+        "title": "Mobile Developer",
+        "rating": 70,
+        "location": "Tokyo, Japan",
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/alice.williams",
+            "twitter": "https://www.twitter.com/alice_williams",
+            "instagram": "https://www.instagram.com/alice.williams",
+            "linkedin": "https://www.linkedin.com/in/alice-williams"
+        },
+        "images": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/team8.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "title": "DevOps Engineer",
+        "rating": 78,
+        "location": "Toronto, Canada",
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/charlie.brown",
+            "twitter": "https://www.twitter.com/charlie_brown",
+            "instagram": "https://www.instagram.com/charlie.brown",
+            "linkedin": "https://www.linkedin.com/in/charlie-brown"
+        },
+        "images": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/team2.png"
+    },
+    {
+        "name": "Emily Davis",
+        "title": "Data Scientist",
+        "rating": 90,
+        "location": "Sydney, Australia",
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/emily.davis",
+            "twitter": "https://www.twitter.com/emily_davis",
+            "instagram": "https://www.instagram.com/emily.davis",
+            "linkedin": "https://www.linkedin.com/in/emily-davis"
+        },
+        "images": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/team3.png"
+    },
+    {
+        "name": "Frank Garcia",
+        "title": "Machine Learning Engineer",
+        "rating": 88,
+        "location": "Buenos Aires, Argentina",
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/frank.garcia",
+            "twitter": "https://www.twitter.com/frank_garcia",
+            "instagram": "https://www.instagram.com/frank.garcia",
+            "linkedin": "https://www.linkedin.com/in/frank-garcia"
+        },
+        "images": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/team4.png"
+    }
+]

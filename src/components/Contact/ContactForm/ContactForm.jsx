@@ -114,7 +114,7 @@ const ContactForm = () => {
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="flex justify-center items-center gap-1 w-auto text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-5 py-3 text-center"
+                            className="flex justify-center items-center gap-1 w-auto text-white bg-[#3c65f5] hover:bg-[#05264e] font-bold rounded-lg text-sm px-5 py-3 text-center"
                         >
                             <MdMailOutline className='text-white text-lg' />
                             Send Message
@@ -130,7 +130,7 @@ const ContactForm = () => {
                                 />
                             </div>
                             <label htmlFor="remember" className="ml-2 text-sm font-medium text-gray-900">
-                                By clicking contact us button, you agree to our <a href="#" className="text-blue-600 hover:underline">terms and policy</a>.
+                                By clicking contact us button, you agree to our terms and policy.
                             </label>
                             {errors.terms && <span className='text-red-500 ml-6'>{errors.terms.message}</span>}
                         </div>
