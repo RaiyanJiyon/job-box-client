@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Alice Johnson",
+        "title": "Software Engineer",
+        "image": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/user1.png",
+        "review": "Job Box is a fantastic platform! I found my dream job here within weeks. The user interface is intuitive, and the job recommendations are spot on. Highly recommended for job seekers! I found several job listings that matched."
+    },
+    {
+        "name": "Bob Smith",
+        "title": "Project Manager",
+        "image": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/user2.png",
+        "review": "As a project manager, Job Box helped me find multiple job openings that matched my skills. The process was smooth and efficient. The platform made it easy to apply to jobs and track my applications."
+    },
+    {
+        "name": "Catherine Lee",
+        "title": "Graphic Designer",
+        "image": "https://flowbite.com/docs/images/people/profile-picture-3.jpg",
+        "review": "I love how easy it is to navigate Job Box. The job alerts are super helpful, and I landed a great position at a top company. The website is user-friendly and provides valuable resources for job seekers."
+    },
+    {
+        "name": "David Brown",
+        "title": "Data Analyst",
+        "image": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/about/user3.png",
+        "review": "Job Box has an extensive list of job opportunities. The application process is straightforward and the customer support is excellent. I found several job listings that matched my qualifications perfectly."
+    },
+    {
+        "name": "Eva Martinez",
+        "title": "HR Specialist",
+        "image": "https://flowbite.com/docs/images/people/profile-picture-4.jpg",
+        "review": "Job Box made my job search so much easier. The filter options allowed me to find jobs that suited my preferences perfectly. The platform is comprehensive, providing detailed job descriptions and company insights."
+    },
+    {
+        "name": "Frank Wilson",
+        "title": "Marketing Director",
+        "image": "https://flowbite.com/docs/images/people/profile-picture-2.jpg",
+        "review": "Finding a job through Job Box was a breeze. The platform is user-friendly and provides valuable insights into the companies. I couldn't be happier with the service. It's the go-to site for job seekers!"
+    }
+]

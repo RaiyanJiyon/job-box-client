@@ -2,6 +2,7 @@ import React from 'react';
 import Location from '../../components/Contact/Location/Location';
 import ContactForm from '../../components/Contact/ContactForm/ContactForm';
 import OurTeam from '../../components/Contact/OurTeam/OurTeam';
+import Testimonial from '../../components/Contact/Testimonial/Testimonial';
 
 const Contact = () => {
     return (
@@ -37,6 +38,10 @@ const Contact = () => {
 
             <div className='my-20'>
                 <OurTeam />
+            </div>
+
+            <div className='my-20'>
+                <Testimonial />
             </div>
         </div>
     );
