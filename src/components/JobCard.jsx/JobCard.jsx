@@ -36,21 +36,24 @@ const JobCard = ({ job }) => {
             {/* Divider */}
             <hr className="my-4" />
 
-            {/* Company Info */}
-            <div className="flex items-center">
-                <img className="w-10 h-10 rounded-full" src={job.logo} alt={`${job.company} logo`} />
-                <div className="ml-3">
-                    <p className="text-md font-bold text-gray-900">{job.company}</p>
-                    <p className="text-xs text-gray-500 flex items-center">
-                        <PiMapPinLight className="mr-1" /> {job.location}
-                    </p>
+            <div className="flex justify-between items-center">
+                {/* Company Info */}
+                <div className="flex items-center">
+                    <img className="w-10 h-10 rounded-full" src={job.logo} alt={`${job.company} logo`} />
+                    <div className="ml-1">
+                        <p className="text-md font-bold text-gray-900">{job.company}</p>
+                        <p className="text-xs text-gray-500 flex items-center">
+                            <PiMapPinLight className="mr-1" /> {job.location}
+                        </p>
+                    </div>
+                </div>
+
+                {/* Salary & Apply Button */}
+                <div className="flex justify-between items-center mt-4">
+                    <p className="text-lg font-bold text-blue-700">${job.salary}<sub className='text-gray-500 font-normal'>/Hour</sub></p>
                 </div>
             </div>
 
-            {/* Salary & Apply Button */}
-            <div className="flex justify-between items-center mt-4">
-                <p className="text-lg font-bold text-blue-700">{job.salary}</p>
-            </div>
         </div>
     );
 }
