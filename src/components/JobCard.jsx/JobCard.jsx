@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiOutlineBriefcase } from 'react-icons/hi';
 import { LuClock8 } from 'react-icons/lu';
-import { PiMapPinLight } from 'react-icons/pi';
+import { PiMapPinLight, PiSuitcaseSimple } from 'react-icons/pi';
 
 const JobCard = ({ job }) => {
     return (
@@ -10,12 +10,18 @@ const JobCard = ({ job }) => {
             <h3 className="text-lg font-bold text-gray-900">
                 {job.position}
             </h3>
-            <p className="text-sm text-gray-600">Remote</p>
 
-            {/* Job Info */}
-            <div className="flex items-center text-gray-500 text-sm mt-2">
-                <LuClock8 className="mr-1" />
-                <span>{job.posted_time}</span>
+            <div className="flex items-center gap-8">
+                {/* Job Info */}
+                <div className="flex items-center text-gray-500 text-sm mt-2">
+                    <PiSuitcaseSimple className="mr-1" />
+                    <span>{job.workType}</span>
+                </div>
+                {/* Job Info */}
+                <div className="flex items-center text-gray-500 text-sm mt-2">
+                    <LuClock8 className="mr-1" />
+                    <span>{formatDate(job.postedTime)}</span>
+                </div>
             </div>
 
             {/* Skills Tags */}
@@ -50,3 +56,30 @@ const JobCard = ({ job }) => {
 }
 
 export default JobCard;
+
+// Utility function to format the date
+function formatDate(dateTime) {
+    const date = new Date(dateTime);
+    const now = new Date();
+
+    const timeDifference = now - date;
+    const minute = 60 * 1000; // milliseconds in a minute
+    const hour = 60 * minute; // milliseconds in an hour
+    const day = 24 * hour; // milliseconds in a day
+
+    // Check if the posted time is in the future
+    if (timeDifference < 0) {
+        return "Posted in the future";
+    }
+
+    if (timeDifference < hour) {
+        const minutes = Math.floor(timeDifference / minute);
+        return `${minutes} minute${minutes !== 1 ? 's' : ''} ago`;
+    } else if (timeDifference < day) {
+        const hours = Math.floor(timeDifference / hour);
+        return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
+    } else {
+        const days = Math.floor(timeDifference / day);
+        return `${days} day${days !== 1 ? 's' : ''} ago`;
+    }
+}

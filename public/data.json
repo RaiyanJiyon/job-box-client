@@ -1,0 +1,3130 @@
+[
+    {
+        "category": "Marketing",
+        "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
+        "location": "New York, US",
+        "position": "Digital Marketing Specialist",
+        "type": "Fulltime",
+        "posted_time": "4 mins ago",
+        "description": "We are looking for a talented Digital Marketing Specialist to join our team.",
+        "salary": "$500/Hour",
+        "skills": [
+            "SEO",
+            "Google Analytics",
+            "Content Strategy"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "John Doe",
+                "email": "johndoe@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "position": "Sales Executive",
+        "type": "Fulltime",
+        "posted_time": "1 hour ago",
+        "description": "Responsible for driving sales growth in the assigned territory.",
+        "salary": "$400/Hour",
+        "skills": [
+            "Negotiation",
+            "CRM Tools",
+            "Client Relationship Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jane Smith",
+                "email": "janesmith@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/r28JcMHv/Facebook-Logo.webp",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "position": "Social Media Manager",
+        "type": "Fulltime",
+        "posted_time": "2 hours ago",
+        "description": "Manage social media campaigns and engage with the audience.",
+        "salary": "$450/Hour",
+        "skills": [
+            "Social Media Strategy",
+            "Copywriting",
+            "Analytics"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emily Johnson",
+                "email": "emilyjohnson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://i.ibb.co.com/JY9w576/Microsoft-Logo-512px.png",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "position": "Account Manager",
+        "type": "Fulltime",
+        "posted_time": "3 hours ago",
+        "description": "Build and maintain relationships with key clients.",
+        "salary": "$420/Hour",
+        "skills": [
+            "Account Management",
+            "Salesforce",
+            "Presentation Skills"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Michael Brown",
+                "email": "michaelbrown@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/whS1vc78/Google-Icons-09-1024.webp",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "position": "Content Marketing Specialist",
+        "type": "Fulltime",
+        "posted_time": "5 hours ago",
+        "description": "Create engaging content for various marketing channels.",
+        "salary": "$480/Hour",
+        "skills": [
+            "Content Creation",
+            "SEO",
+            "Email Marketing"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sarah Wilson",
+                "email": "sarahwilson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "position": "Business Development Manager",
+        "type": "Fulltime",
+        "posted_time": "7 hours ago",
+        "description": "Identify new business opportunities and partnerships.",
+        "salary": "$500/Hour",
+        "skills": [
+            "Business Development",
+            "Strategic Planning",
+            "Networking"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "David Lee",
+                "email": "davidlee@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/rRsY0PBp/twitter.png",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "position": "Brand Strategist",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Develop strategies to enhance brand visibility.",
+        "salary": "$470/Hour",
+        "skills": [
+            "Brand Strategy",
+            "Market Research",
+            "Communication"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Laura Martinez",
+                "email": "lauramartinez@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "position": "Sales Operations Analyst",
+        "type": "Fulltime",
+        "posted_time": "12 hours ago",
+        "description": "Analyze sales data and optimize processes.",
+        "salary": "$430/Hour",
+        "skills": [
+            "Sales Analysis",
+            "Data Visualization",
+            "Process Optimization"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Chris Taylor",
+                "email": "christaylor@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/k6mpmNRM/hubspot-logo-273533.png",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "position": "Inbound Marketing Specialist",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Drive inbound marketing efforts and generate leads.",
+        "salary": "$460/Hour",
+        "skills": [
+            "Inbound Marketing",
+            "Lead Generation",
+            "Email Campaigns"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jessica Davis",
+                "email": "jessicadavis@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://i.ibb.co.com/9mdGbm0X/slack-logo-png-seeklogo-273901.png",
+        "company": "Slack",
+        "location": "San Francisco, CA",
+        "position": "Enterprise Sales Representative",
+        "type": "Fulltime",
+        "posted_time": "2 days ago",
+        "description": "Sell Slack solutions to enterprise-level clients.",
+        "salary": "$490/Hour",
+        "skills": [
+            "Enterprise Sales",
+            "Solution Selling",
+            "CRM"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Daniel White",
+                "email": "danielwhite@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/C5BPNmn1/Adobe-Corporate-logo-svg.png",
+        "company": "Adobe",
+        "location": "San Jose, CA",
+        "position": "Marketing Automation Specialist",
+        "type": "Fulltime",
+        "posted_time": "3 days ago",
+        "description": "Automate marketing workflows and improve efficiency.",
+        "salary": "$440/Hour",
+        "skills": [
+            "Marketing Automation",
+            "Campaign Management",
+            "A/B Testing"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Olivia Green",
+                "email": "oliviagreen@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://i.ibb.co.com/zhMtXjG2/zoho-logo-png-seeklogo-550389.png",
+        "company": "Zoho",
+        "location": "Chennai, India",
+        "position": "Inside Sales Representative",
+        "type": "Fulltime",
+        "posted_time": "4 days ago",
+        "description": "Handle inbound sales inquiries and convert leads.",
+        "salary": "$410/Hour",
+        "skills": [
+            "Inside Sales",
+            "Lead Qualification",
+            "Phone Sales"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "James Black",
+                "email": "jamesblack@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/Kpqs1S7b/shopify-logo-png-seeklogo-267188.png",
+        "company": "Shopify",
+        "location": "Ottawa, Canada",
+        "position": "E-commerce Marketing Manager",
+        "type": "Fulltime",
+        "posted_time": "5 days ago",
+        "description": "Oversee e-commerce marketing initiatives and drive revenue.",
+        "salary": "$470/Hour",
+        "skills": [
+            "E-commerce",
+            "PPC Advertising",
+            "Conversion Rate Optimization"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sophia King",
+                "email": "sophiaking@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://i.ibb.co.com/LXRnh7gK/sap-logo-png-seeklogo-180805.png",
+        "company": "SAP",
+        "location": "Walldorf, Germany",
+        "position": "Sales Consultant",
+        "type": "Fulltime",
+        "posted_time": "6 days ago",
+        "description": "Provide sales support and technical expertise.",
+        "salary": "$430/Hour",
+        "skills": [
+            "Sales Consulting",
+            "ERP Systems",
+            "Customer Engagement"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Matthew Clark",
+                "email": "matthewclark@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/TBvKVG8P/hootsuite-logo-png-seeklogo-446074.png",
+        "company": "Hootsuite",
+        "location": "Vancouver, Canada",
+        "position": "Social Media Analyst",
+        "type": "Fulltime",
+        "posted_time": "7 days ago",
+        "description": "Analyze social media performance and provide insights.",
+        "salary": "$450/Hour",
+        "skills": [
+            "Social Media Analytics",
+            "Reporting",
+            "Trend Analysis"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ava Hall",
+                "email": "avahall@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://i.ibb.co.com/whLmdcKG/oracle-logo-png-seeklogo-103838.png",
+        "company": "Oracle",
+        "location": "Austin, TX",
+        "position": "Cloud Sales Specialist",
+        "type": "Fulltime",
+        "posted_time": "8 days ago",
+        "description": "Sell Oracle Cloud solutions to businesses.",
+        "salary": "$480/Hour",
+        "skills": [
+            "Cloud Computing",
+            "Sales Strategy",
+            "Product Knowledge"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ethan Scott",
+                "email": "ethanscott@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/DDv5zHBk/30-Atlassian-logo-logos-1024.webp",
+        "company": "Atlassian",
+        "location": "Sydney, Australia",
+        "position": "Product Marketing Manager",
+        "type": "Fulltime",
+        "posted_time": "9 days ago",
+        "description": "Define product positioning and messaging.",
+        "salary": "$460/Hour",
+        "skills": [
+            "Product Marketing",
+            "Go-to-Market Strategy",
+            "Competitive Analysis"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Mia Young",
+                "email": "miayoung@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1200px-Airbnb_Logo_Bélo.svg.png",
+        "company": "Airbnb",
+        "location": "San Francisco, CA",
+        "position": "Sales Development Representative",
+        "type": "Fulltime",
+        "posted_time": "10 days ago",
+        "description": "Prospect and qualify leads for the sales team.",
+        "salary": "$420/Hour",
+        "skills": [
+            "Lead Generation",
+            "Cold Calling",
+            "Outreach"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Noah Adams",
+                "email": "noahadams@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "logo": "https://i.ibb.co.com/YHKJJV8/Spotify-Full-Logo-RGB-Green-300x82.png",
+        "company": "Spotify",
+        "location": "Stockholm, Sweden",
+        "position": "Growth Marketing Specialist",
+        "type": "Fulltime",
+        "posted_time": "11 days ago",
+        "description": "Drive user acquisition and retention strategies.",
+        "salary": "$450/Hour",
+        "skills": [
+            "Growth Hacking",
+            "User Acquisition",
+            "Retention Strategies"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emma Wright",
+                "email": "emawright@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Sales",
+        "logo": "https://i.ibb.co.com/mCyJn3YF/Uber-Logo-wine.png",
+        "company": "Uber",
+        "location": "San Francisco, CA",
+        "position": "Partnership Manager",
+        "type": "Fulltime",
+        "posted_time": "12 days ago",
+        "description": "Build partnerships with businesses and organizations.",
+        "salary": "$470/Hour",
+        "skills": [
+            "Partnership Development",
+            "Negotiation",
+            "Relationship Building"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Liam Baker",
+                "email": "liambaker@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
+        "location": "New York, US",
+        "position": "Customer Support Specialist",
+        "type": "Fulltime",
+        "posted_time": "4 mins ago",
+        "description": "Provide timely support to resolve customer issues via chat and email.",
+        "salary": "$300/Hour",
+        "skills": [
+            "Problem Solving",
+            "Communication",
+            "Ticketing Systems"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "John Doe",
+                "email": "johndoe@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "position": "Customer Service Representative",
+        "type": "Fulltime",
+        "posted_time": "1 hour ago",
+        "description": "Assist customers with order tracking and return policy inquiries.",
+        "salary": "$280/Hour",
+        "skills": [
+            "Phone Support",
+            "Conflict Resolution",
+            "CRM Tools"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jane Smith",
+                "email": "janesmith@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/r28JcMHv/Facebook-Logo.webp",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "position": "Community Support Agent",
+        "type": "Fulltime",
+        "posted_time": "2 hours ago",
+        "description": "Engage with users to resolve platform-related queries and concerns.",
+        "salary": "$320/Hour",
+        "skills": [
+            "Social Media Support",
+            "Escalation Management",
+            "Empathy"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emily Johnson",
+                "email": "emilyjohnson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/JY9w576/Microsoft-Logo-512px.png",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "position": "Technical Support Engineer",
+        "type": "Fulltime",
+        "posted_time": "3 hours ago",
+        "description": "Troubleshoot software issues and guide customers through solutions.",
+        "salary": "$350/Hour",
+        "skills": [
+            "Technical Troubleshooting",
+            "Remote Assistance",
+            "Documentation"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Michael Brown",
+                "email": "michaelbrown@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/whS1vc78/Google-Icons-09-1024.webp",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "position": "Help Desk Technician",
+        "type": "Fulltime",
+        "posted_time": "5 hours ago",
+        "description": "Provide technical assistance for hardware and software problems.",
+        "salary": "$330/Hour",
+        "skills": [
+            "IT Support",
+            "Hardware Diagnostics",
+            "Customer Interaction"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sarah Wilson",
+                "email": "sarahwilson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "position": "Customer Care Associate",
+        "type": "Fulltime",
+        "posted_time": "7 hours ago",
+        "description": "Support Apple product users with setup and troubleshooting.",
+        "salary": "$310/Hour",
+        "skills": [
+            "Product Knowledge",
+            "Patience",
+            "Multitasking"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "David Lee",
+                "email": "davidlee@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/rRsY0PBp/twitter.png",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "position": "User Support Specialist",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Address user complaints and ensure platform safety guidelines are followed.",
+        "salary": "$290/Hour",
+        "skills": [
+            "Policy Enforcement",
+            "User Engagement",
+            "Incident Reporting"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Laura Martinez",
+                "email": "lauramartinez@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "position": "Customer Success Manager",
+        "type": "Fulltime",
+        "posted_time": "12 hours ago",
+        "description": "Ensure clients achieve their goals using Salesforce products.",
+        "salary": "$340/Hour",
+        "skills": [
+            "Client Onboarding",
+            "Training",
+            "Relationship Building"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Chris Taylor",
+                "email": "christaylor@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/k6mpmNRM/hubspot-logo-273533.png",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "position": "Support Analyst",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Analyze customer feedback and improve service delivery processes.",
+        "salary": "$300/Hour",
+        "skills": [
+            "Feedback Analysis",
+            "Process Improvement",
+            "Team Collaboration"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jessica Davis",
+                "email": "jessicadavis@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/9mdGbm0X/slack-logo-png-seeklogo-273901.png",
+        "company": "Slack",
+        "location": "San Francisco, CA",
+        "position": "Customer Experience Specialist",
+        "type": "Fulltime",
+        "posted_time": "2 days ago",
+        "description": "Enhance customer satisfaction by resolving issues promptly.",
+        "salary": "$310/Hour",
+        "skills": [
+            "Issue Resolution",
+            "Proactive Support",
+            "Team Coordination"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Daniel White",
+                "email": "danielwhite@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/C5BPNmn1/Adobe-Corporate-logo-svg.png",
+        "company": "Adobe",
+        "location": "San Jose, CA",
+        "position": "Customer Support Advisor",
+        "type": "Fulltime",
+        "posted_time": "3 days ago",
+        "description": "Guide customers in using Adobe Creative Cloud applications.",
+        "salary": "$320/Hour",
+        "skills": [
+            "Software Training",
+            "Troubleshooting",
+            "Customer Retention"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Olivia Green",
+                "email": "oliviagreen@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/zhMtXjG2/zoho-logo-png-seeklogo-550389.png",
+        "company": "Zoho",
+        "location": "Chennai, India",
+        "position": "Customer Care Executive",
+        "type": "Fulltime",
+        "posted_time": "4 days ago",
+        "description": "Handle inbound calls and emails to assist Zoho users effectively.",
+        "salary": "$290/Hour",
+        "skills": [
+            "Call Handling",
+            "Email Support",
+            "Time Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "James Black",
+                "email": "jamesblack@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/Kpqs1S7b/shopify-logo-png-seeklogo-267188.png",
+        "company": "Shopify",
+        "location": "Ottawa, Canada",
+        "position": "Merchant Support Specialist",
+        "type": "Fulltime",
+        "posted_time": "5 days ago",
+        "description": "Help merchants set up and manage their online stores efficiently.",
+        "salary": "$330/Hour",
+        "skills": [
+            "E-commerce Support",
+            "Store Setup",
+            "Payment Integration"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sophia King",
+                "email": "sophiaking@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/LXRnh7gK/sap-logo-png-seeklogo-180805.png",
+        "company": "SAP",
+        "location": "Walldorf, Germany",
+        "position": "Customer Support Consultant",
+        "type": "Fulltime",
+        "posted_time": "6 days ago",
+        "description": "Provide expert guidance on SAP software implementation challenges.",
+        "salary": "$340/Hour",
+        "skills": [
+            "ERP Support",
+            "Consulting",
+            "Client Communication"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Matthew Clark",
+                "email": "matthewclark@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/TBvKVG8P/hootsuite-logo-png-seeklogo-446074.png",
+        "company": "Hootsuite",
+        "location": "Vancouver, Canada",
+        "position": "Customer Support Agent",
+        "type": "Fulltime",
+        "posted_time": "7 days ago",
+        "description": "Assist users in managing social media campaigns and analytics.",
+        "salary": "$300/Hour",
+        "skills": [
+            "Campaign Management",
+            "Analytics Support",
+            "Tool Proficiency"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ava Hall",
+                "email": "avahall@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/whLmdcKG/oracle-logo-png-seeklogo-103838.png",
+        "company": "Oracle",
+        "location": "Austin, TX",
+        "position": "Customer Support Engineer",
+        "type": "Fulltime",
+        "posted_time": "8 days ago",
+        "description": "Resolve complex technical issues related to Oracle databases.",
+        "salary": "$350/Hour",
+        "skills": [
+            "Database Support",
+            "SQL Queries",
+            "Performance Tuning"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ethan Scott",
+                "email": "ethanscott@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/DDv5zHBk/30-Atlassian-logo-logos-1024.webp",
+        "company": "Atlassian",
+        "location": "Sydney, Australia",
+        "position": "Support Coordinator",
+        "type": "Fulltime",
+        "posted_time": "9 days ago",
+        "description": "Coordinate responses to customer queries across multiple channels.",
+        "salary": "$310/Hour",
+        "skills": [
+            "Multi-channel Support",
+            "Coordination",
+            "Escalation Handling"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Mia Young",
+                "email": "miayoung@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1200px-Airbnb_Logo_Bélo.svg.png",
+        "company": "Airbnb",
+        "location": "San Francisco, CA",
+        "position": "Guest Support Specialist",
+        "type": "Fulltime",
+        "posted_time": "10 days ago",
+        "description": "Ensure guests have a seamless booking and stay experience.",
+        "salary": "$300/Hour",
+        "skills": [
+            "Booking Assistance",
+            "Issue Resolution",
+            "Guest Satisfaction"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Noah Adams",
+                "email": "noahadams@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/YHKJJV8/Spotify-Full-Logo-RGB-Green-300x82.png",
+        "company": "Spotify",
+        "location": "Stockholm, Sweden",
+        "position": "Music Support Specialist",
+        "type": "Fulltime",
+        "posted_time": "11 days ago",
+        "description": "Help users troubleshoot music streaming and account issues.",
+        "salary": "$320/Hour",
+        "skills": [
+            "Streaming Support",
+            "Account Recovery",
+            "Music Knowledge"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emma Wright",
+                "email": "emawright@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Customer Help",
+        "logo": "https://i.ibb.co.com/mCyJn3YF/Uber-Logo-wine.png",
+        "company": "Uber",
+        "location": "San Francisco, CA",
+        "position": "Rider Support Agent",
+        "type": "Fulltime",
+        "posted_time": "12 days ago",
+        "description": "Address rider concerns regarding trips, payments, and safety.",
+        "salary": "$310/Hour",
+        "skills": [
+            "Rider Support",
+            "Payment Processing",
+            "Safety Protocols"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Liam Baker",
+                "email": "liambaker@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
+        "location": "New York, US",
+        "position": "Financial Analyst",
+        "type": "Fulltime",
+        "posted_time": "4 mins ago",
+        "description": "Analyze financial data to support strategic business decisions.",
+        "salary": "$400/Hour",
+        "skills": [
+            "Financial Modeling",
+            "Data Analysis",
+            "Excel"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "John Doe",
+                "email": "johndoe@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "position": "Treasury Analyst",
+        "type": "Fulltime",
+        "posted_time": "1 hour ago",
+        "description": "Manage cash flow and liquidity for global operations.",
+        "salary": "$420/Hour",
+        "skills": [
+            "Cash Management",
+            "Forecasting",
+            "Risk Assessment"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jane Smith",
+                "email": "janesmith@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/r28JcMHv/Facebook-Logo.webp",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "position": "Tax Specialist",
+        "type": "Fulltime",
+        "posted_time": "2 hours ago",
+        "description": "Prepare tax filings and ensure compliance with regulations.",
+        "salary": "$410/Hour",
+        "skills": [
+            "Tax Compliance",
+            "Regulatory Knowledge",
+            "Accounting"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emily Johnson",
+                "email": "emilyjohnson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/JY9w576/Microsoft-Logo-512px.png",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "position": "Investment Analyst",
+        "type": "Fulltime",
+        "posted_time": "3 hours ago",
+        "description": "Evaluate investment opportunities and manage portfolios.",
+        "salary": "$430/Hour",
+        "skills": [
+            "Portfolio Management",
+            "Market Research",
+            "Valuation"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Michael Brown",
+                "email": "michaelbrown@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/whS1vc78/Google-Icons-09-1024.webp",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "position": "Corporate Finance Manager",
+        "type": "Fulltime",
+        "posted_time": "5 hours ago",
+        "description": "Lead financial planning and analysis for corporate initiatives.",
+        "salary": "$450/Hour",
+        "skills": [
+            "FP&A",
+            "Budgeting",
+            "Strategic Planning"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sarah Wilson",
+                "email": "sarahwilson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "position": "Accounts Payable Specialist",
+        "type": "Fulltime",
+        "posted_time": "7 hours ago",
+        "description": "Process vendor invoices and ensure timely payments.",
+        "salary": "$390/Hour",
+        "skills": [
+            "Invoice Processing",
+            "Reconciliation",
+            "ERP Systems"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "David Lee",
+                "email": "davidlee@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/rRsY0PBp/twitter.png",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "position": "Payroll Specialist",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Administer payroll processes and resolve employee queries.",
+        "salary": "$400/Hour",
+        "skills": [
+            "Payroll Processing",
+            "Compliance",
+            "Employee Support"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Laura Martinez",
+                "email": "lauramartinez@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "position": "Revenue Analyst",
+        "type": "Fulltime",
+        "posted_time": "12 hours ago",
+        "description": "Track revenue performance and identify growth opportunities.",
+        "salary": "$420/Hour",
+        "skills": [
+            "Revenue Recognition",
+            "Reporting",
+            "Data Visualization"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Chris Taylor",
+                "email": "christaylor@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/k6mpmNRM/hubspot-logo-273533.png",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "position": "Cost Accountant",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Monitor costs and recommend cost-saving measures.",
+        "salary": "$410/Hour",
+        "skills": [
+            "Cost Analysis",
+            "Variance Reporting",
+            "Budget Control"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jessica Davis",
+                "email": "jessicadavis@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/9mdGbm0X/slack-logo-png-seeklogo-273901.png",
+        "company": "Slack",
+        "location": "San Francisco, CA",
+        "position": "Financial Controller",
+        "type": "Fulltime",
+        "posted_time": "2 days ago",
+        "description": "Oversee financial reporting and ensure regulatory compliance.",
+        "salary": "$440/Hour",
+        "skills": [
+            "Financial Reporting",
+            "Audit Coordination",
+            "Compliance"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Daniel White",
+                "email": "danielwhite@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/C5BPNmn1/Adobe-Corporate-logo-svg.png",
+        "company": "Adobe",
+        "location": "San Jose, CA",
+        "position": "Credit Risk Analyst",
+        "type": "Fulltime",
+        "posted_time": "3 days ago",
+        "description": "Assess credit risk and recommend lending policies.",
+        "salary": "$400/Hour",
+        "skills": [
+            "Credit Analysis",
+            "Risk Mitigation",
+            "Financial Statements"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Olivia Green",
+                "email": "oliviagreen@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/zhMtXjG2/zoho-logo-png-seeklogo-550389.png",
+        "company": "Zoho",
+        "location": "Chennai, India",
+        "position": "Accounts Receivable Specialist",
+        "type": "Fulltime",
+        "posted_time": "4 days ago",
+        "description": "Manage customer accounts and ensure timely collections.",
+        "salary": "$390/Hour",
+        "skills": [
+            "Collections",
+            "Billing",
+            "Customer Communication"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "James Black",
+                "email": "jamesblack@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/Kpqs1S7b/shopify-logo-png-seeklogo-267188.png",
+        "company": "Shopify",
+        "location": "Ottawa, Canada",
+        "position": "Financial Planner",
+        "type": "Fulltime",
+        "posted_time": "5 days ago",
+        "description": "Develop long-term financial strategies for sustainable growth.",
+        "salary": "$430/Hour",
+        "skills": [
+            "Strategic Planning",
+            "Forecasting",
+            "Scenario Analysis"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sophia King",
+                "email": "sophiaking@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/LXRnh7gK/sap-logo-png-seeklogo-180805.png",
+        "company": "SAP",
+        "location": "Walldorf, Germany",
+        "position": "Financial Systems Analyst",
+        "type": "Fulltime",
+        "posted_time": "6 days ago",
+        "description": "Implement and maintain financial systems for accuracy.",
+        "salary": "$420/Hour",
+        "skills": [
+            "ERP Implementation",
+            "System Integration",
+            "Troubleshooting"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Matthew Clark",
+                "email": "matthewclark@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/TBvKVG8P/hootsuite-logo-png-seeklogo-446074.png",
+        "company": "Hootsuite",
+        "location": "Vancouver, Canada",
+        "position": "Internal Auditor",
+        "type": "Fulltime",
+        "posted_time": "7 days ago",
+        "description": "Conduct audits to ensure adherence to financial policies.",
+        "salary": "$410/Hour",
+        "skills": [
+            "Audit Procedures",
+            "Compliance",
+            "Documentation"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ava Hall",
+                "email": "avahall@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/whLmdcKG/oracle-logo-png-seeklogo-103838.png",
+        "company": "Oracle",
+        "location": "Austin, TX",
+        "position": "Financial Consultant",
+        "type": "Fulltime",
+        "posted_time": "8 days ago",
+        "description": "Advise clients on financial strategies and solutions.",
+        "salary": "$440/Hour",
+        "skills": [
+            "Client Advisory",
+            "Solution Design",
+            "Presentation Skills"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ethan Scott",
+                "email": "ethanscott@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/DDv5zHBk/30-Atlassian-logo-logos-1024.webp",
+        "company": "Atlassian",
+        "location": "Sydney, Australia",
+        "position": "Budget Analyst",
+        "type": "Fulltime",
+        "posted_time": "9 days ago",
+        "description": "Prepare budgets and monitor expenditures across departments.",
+        "salary": "$400/Hour",
+        "skills": [
+            "Budget Preparation",
+            "Expense Tracking",
+            "Variance Analysis"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Mia Young",
+                "email": "miayoung@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1200px-Airbnb_Logo_Bélo.svg.png",
+        "company": "Airbnb",
+        "location": "San Francisco, CA",
+        "position": "Risk Manager",
+        "type": "Fulltime",
+        "posted_time": "10 days ago",
+        "description": "Identify and mitigate financial risks across the organization.",
+        "salary": "$430/Hour",
+        "skills": [
+            "Risk Assessment",
+            "Insurance",
+            "Loss Prevention"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Noah Adams",
+                "email": "noahadams@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/YHKJJV8/Spotify-Full-Logo-RGB-Green-300x82.png",
+        "company": "Spotify",
+        "location": "Stockholm, Sweden",
+        "position": "Financial Data Analyst",
+        "type": "Fulltime",
+        "posted_time": "11 days ago",
+        "description": "Analyze financial data to drive data-driven decision-making.",
+        "salary": "$420/Hour",
+        "skills": [
+            "Data Analysis",
+            "SQL",
+            "Visualization Tools"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emma Wright",
+                "email": "emawright@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Finance",
+        "logo": "https://i.ibb.co.com/mCyJn3YF/Uber-Logo-wine.png",
+        "company": "Uber",
+        "location": "San Francisco, CA",
+        "position": "Treasury Manager",
+        "type": "Fulltime",
+        "posted_time": "12 days ago",
+        "description": "Optimize cash management and oversee banking relationships.",
+        "salary": "$450/Hour",
+        "skills": [
+            "Cash Optimization",
+            "Banking Relations",
+            "Liquidity Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Liam Baker",
+                "email": "liambaker@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
+        "location": "New York, US",
+        "position": "Full Stack Developer",
+        "type": "Fulltime",
+        "posted_time": "4 mins ago",
+        "description": "Build scalable web applications using modern frameworks.",
+        "salary": "$500/Hour",
+        "skills": [
+            "React",
+            "Node.js",
+            "MongoDB"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "John Doe",
+                "email": "johndoe@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "position": "Cloud Engineer",
+        "type": "Fulltime",
+        "posted_time": "1 hour ago",
+        "description": "Design and deploy cloud infrastructure on AWS.",
+        "salary": "$480/Hour",
+        "skills": [
+            "AWS",
+            "Docker",
+            "Kubernetes"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jane Smith",
+                "email": "janesmith@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/r28JcMHv/Facebook-Logo.webp",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "position": "Frontend Developer",
+        "type": "Fulltime",
+        "posted_time": "2 hours ago",
+        "description": "Create responsive user interfaces with HTML, CSS, and JavaScript.",
+        "salary": "$470/Hour",
+        "skills": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emily Johnson",
+                "email": "emilyjohnson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/JY9w576/Microsoft-Logo-512px.png",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "position": "Backend Developer",
+        "type": "Fulltime",
+        "posted_time": "3 hours ago",
+        "description": "Develop server-side logic and APIs for enterprise systems.",
+        "salary": "$490/Hour",
+        "skills": [
+            "Python",
+            "Django",
+            "RESTful APIs"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Michael Brown",
+                "email": "michaelbrown@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/whS1vc78/Google-Icons-09-1024.webp",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "position": "DevOps Engineer",
+        "type": "Fulltime",
+        "posted_time": "5 hours ago",
+        "description": "Automate deployment pipelines and manage CI/CD processes.",
+        "salary": "$510/Hour",
+        "skills": [
+            "Jenkins",
+            "Ansible",
+            "Shell Scripting"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sarah Wilson",
+                "email": "sarahwilson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "position": "iOS Developer",
+        "type": "Fulltime",
+        "posted_time": "7 hours ago",
+        "description": "Build native mobile apps for iOS using Swift and Xcode.",
+        "salary": "$520/Hour",
+        "skills": [
+            "Swift",
+            "Xcode",
+            "UIKit"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "David Lee",
+                "email": "davidlee@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/rRsY0PBp/twitter.png",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "position": "Data Engineer",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Design data pipelines to support analytics and reporting.",
+        "salary": "$500/Hour",
+        "skills": [
+            "Apache Spark",
+            "SQL",
+            "ETL Processes"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Laura Martinez",
+                "email": "lauramartinez@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "position": "CRM Developer",
+        "type": "Fulltime",
+        "posted_time": "12 hours ago",
+        "description": "Customize Salesforce solutions to meet business needs.",
+        "salary": "$480/Hour",
+        "skills": [
+            "Apex",
+            "Lightning Components",
+            "SOQL"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Chris Taylor",
+                "email": "christaylor@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/k6mpmNRM/hubspot-logo-273533.png",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "position": "QA Engineer",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Test software applications to ensure quality and reliability.",
+        "salary": "$460/Hour",
+        "skills": [
+            "Selenium",
+            "Test Automation",
+            "Bug Tracking"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jessica Davis",
+                "email": "jessicadavis@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/9mdGbm0X/slack-logo-png-seeklogo-273901.png",
+        "company": "Slack",
+        "location": "San Francisco, CA",
+        "position": "Mobile App Developer",
+        "type": "Fulltime",
+        "posted_time": "2 days ago",
+        "description": "Develop cross-platform mobile apps using React Native.",
+        "salary": "$490/Hour",
+        "skills": [
+            "React Native",
+            "Redux",
+            "Firebase"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Daniel White",
+                "email": "danielwhite@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/C5BPNmn1/Adobe-Corporate-logo-svg.png",
+        "company": "Adobe",
+        "location": "San Jose, CA",
+        "position": "Machine Learning Engineer",
+        "type": "Fulltime",
+        "posted_time": "3 days ago",
+        "description": "Build AI models for image recognition and natural language processing.",
+        "salary": "$530/Hour",
+        "skills": [
+            "TensorFlow",
+            "Python",
+            "Deep Learning"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Olivia Green",
+                "email": "oliviagreen@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/zhMtXjG2/zoho-logo-png-seeklogo-550389.png",
+        "company": "Zoho",
+        "location": "Chennai, India",
+        "position": "Database Administrator",
+        "type": "Fulltime",
+        "posted_time": "4 days ago",
+        "description": "Manage databases and ensure data integrity and security.",
+        "salary": "$470/Hour",
+        "skills": [
+            "MySQL",
+            "PostgreSQL",
+            "Backup Strategies"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "James Black",
+                "email": "jamesblack@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/Kpqs1S7b/shopify-logo-png-seeklogo-267188.png",
+        "company": "Shopify",
+        "location": "Ottawa, Canada",
+        "position": "E-commerce Developer",
+        "type": "Fulltime",
+        "posted_time": "5 days ago",
+        "description": "Develop custom e-commerce solutions using Shopify APIs.",
+        "salary": "$480/Hour",
+        "skills": [
+            "Shopify",
+            "Liquid",
+            "JavaScript"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sophia King",
+                "email": "sophiaking@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/LXRnh7gK/sap-logo-png-seeklogo-180805.png",
+        "company": "SAP",
+        "location": "Walldorf, Germany",
+        "position": "ERP Developer",
+        "type": "Fulltime",
+        "posted_time": "6 days ago",
+        "description": "Customize SAP modules for enterprise resource planning.",
+        "salary": "$500/Hour",
+        "skills": [
+            "ABAP",
+            "SAP Modules",
+            "Workflow Design"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Matthew Clark",
+                "email": "matthewclark@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/TBvKVG8P/hootsuite-logo-png-seeklogo-446074.png",
+        "company": "Hootsuite",
+        "location": "Vancouver, Canada",
+        "position": "API Developer",
+        "type": "Fulltime",
+        "posted_time": "7 days ago",
+        "description": "Design and implement RESTful APIs for third-party integrations.",
+        "salary": "$490/Hour",
+        "skills": [
+            "REST APIs",
+            "OAuth",
+            "Documentation"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ava Hall",
+                "email": "avahall@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/whLmdcKG/oracle-logo-png-seeklogo-103838.png",
+        "company": "Oracle",
+        "location": "Austin, TX",
+        "position": "Java Developer",
+        "type": "Fulltime",
+        "posted_time": "8 days ago",
+        "description": "Develop enterprise-grade applications using Java and Spring Boot.",
+        "salary": "$510/Hour",
+        "skills": [
+            "Java",
+            "Spring Framework",
+            "Hibernate"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ethan Scott",
+                "email": "ethanscott@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/DDv5zHBk/30-Atlassian-logo-logos-1024.webp",
+        "company": "Atlassian",
+        "location": "Sydney, Australia",
+        "position": "Security Engineer",
+        "type": "Fulltime",
+        "posted_time": "9 days ago",
+        "description": "Implement security measures to protect software systems.",
+        "salary": "$520/Hour",
+        "skills": [
+            "Cybersecurity",
+            "Penetration Testing",
+            "Encryption"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Mia Young",
+                "email": "miayoung@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1200px-Airbnb_Logo_Bélo.svg.png",
+        "company": "Airbnb",
+        "location": "San Francisco, CA",
+        "position": "Full Stack Engineer",
+        "type": "Fulltime",
+        "posted_time": "10 days ago",
+        "description": "Work on both frontend and backend components of Airbnb's platform.",
+        "salary": "$530/Hour",
+        "skills": [
+            "Ruby on Rails",
+            "React",
+            "PostgreSQL"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Noah Adams",
+                "email": "noahadams@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/YHKJJV8/Spotify-Full-Logo-RGB-Green-300x82.png",
+        "company": "Spotify",
+        "location": "Stockholm, Sweden",
+        "position": "Data Scientist",
+        "type": "Fulltime",
+        "posted_time": "11 days ago",
+        "description": "Analyze user data to improve music recommendation algorithms.",
+        "salary": "$540/Hour",
+        "skills": [
+            "Python",
+            "Pandas",
+            "Machine Learning"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emma Wright",
+                "email": "emawright@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "logo": "https://i.ibb.co.com/mCyJn3YF/Uber-Logo-wine.png",
+        "company": "Uber",
+        "location": "San Francisco, CA",
+        "position": "Blockchain Developer",
+        "type": "Fulltime",
+        "posted_time": "12 days ago",
+        "description": "Develop decentralized applications using blockchain technology.",
+        "salary": "$550/Hour",
+        "skills": [
+            "Solidity",
+            "Ethereum",
+            "Smart Contracts"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Liam Baker",
+                "email": "liambaker@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
+        "location": "New York, US",
+        "position": "HR Generalist",
+        "type": "Fulltime",
+        "posted_time": "4 mins ago",
+        "description": "Handle recruitment, employee relations, and HR policies.",
+        "salary": "$350/Hour",
+        "skills": [
+            "Recruitment",
+            "Employee Engagement",
+            "Policy Development"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "John Doe",
+                "email": "johndoe@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "position": "Talent Acquisition Specialist",
+        "type": "Fulltime",
+        "posted_time": "1 hour ago",
+        "description": "Source and hire top talent for various departments.",
+        "salary": "$360/Hour",
+        "skills": [
+            "Sourcing",
+            "Interviewing",
+            "Onboarding"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jane Smith",
+                "email": "janesmith@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/r28JcMHv/Facebook-Logo.webp",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "position": "HR Manager",
+        "type": "Fulltime",
+        "posted_time": "2 hours ago",
+        "description": "Lead HR initiatives to enhance employee satisfaction.",
+        "salary": "$370/Hour",
+        "skills": [
+            "Leadership",
+            "Conflict Resolution",
+            "Performance Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emily Johnson",
+                "email": "emilyjohnson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/JY9w576/Microsoft-Logo-512px.png",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "position": "Learning and Development Specialist",
+        "type": "Fulltime",
+        "posted_time": "3 hours ago",
+        "description": "Design training programs to upskill employees.",
+        "salary": "$340/Hour",
+        "skills": [
+            "Training Design",
+            "Workshops",
+            "E-learning Platforms"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Michael Brown",
+                "email": "michaelbrown@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/whS1vc78/Google-Icons-09-1024.webp",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "position": "Compensation and Benefits Analyst",
+        "type": "Fulltime",
+        "posted_time": "5 hours ago",
+        "description": "Develop competitive compensation and benefits packages.",
+        "salary": "$380/Hour",
+        "skills": [
+            "Payroll",
+            "Benefits Administration",
+            "Data Analysis"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sarah Wilson",
+                "email": "sarahwilson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "position": "Project Manager",
+        "type": "Fulltime",
+        "posted_time": "7 hours ago",
+        "description": "Oversee project timelines and deliverables for product launches.",
+        "salary": "$400/Hour",
+        "skills": [
+            "Project Planning",
+            "Agile Methodology",
+            "Stakeholder Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "David Lee",
+                "email": "davidlee@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://i.ibb.co.com/rRsY0PBp/twitter.png",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "position": "Operations Manager",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Streamline operations to improve efficiency and productivity.",
+        "salary": "$410/Hour",
+        "skills": [
+            "Process Optimization",
+            "Supply Chain",
+            "Team Leadership"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Laura Martinez",
+                "email": "lauramartinez@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "position": "Product Manager",
+        "type": "Fulltime",
+        "posted_time": "12 hours ago",
+        "description": "Define product roadmaps and prioritize features.",
+        "salary": "$420/Hour",
+        "skills": [
+            "Product Roadmapping",
+            "User Stories",
+            "Cross-functional Collaboration"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Chris Taylor",
+                "email": "christaylor@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://i.ibb.co.com/k6mpmNRM/hubspot-logo-273533.png",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "position": "Program Manager",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Manage multiple projects to ensure alignment with goals.",
+        "salary": "$430/Hour",
+        "skills": [
+            "Program Governance",
+            "Risk Management",
+            "Stakeholder Engagement"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jessica Davis",
+                "email": "jessicadavis@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://i.ibb.co.com/9mdGbm0X/slack-logo-png-seeklogo-273901.png",
+        "company": "Slack",
+        "location": "San Francisco, CA",
+        "position": "Team Lead",
+        "type": "Fulltime",
+        "posted_time": "2 days ago",
+        "description": "Guide and mentor team members to achieve objectives.",
+        "salary": "$440/Hour",
+        "skills": [
+            "Leadership",
+            "Mentorship",
+            "Goal Setting"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Daniel White",
+                "email": "danielwhite@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/C5BPNmn1/Adobe-Corporate-logo-svg.png",
+        "company": "Adobe",
+        "location": "San Jose, CA",
+        "position": "Retail Sales Associate",
+        "type": "Fulltime",
+        "posted_time": "3 days ago",
+        "description": "Assist customers in selecting and purchasing products.",
+        "salary": "$300/Hour",
+        "skills": [
+            "Customer Service",
+            "Product Knowledge",
+            "Upselling"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Olivia Green",
+                "email": "oliviagreen@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/zhMtXjG2/zoho-logo-png-seeklogo-550389.png",
+        "company": "Zoho",
+        "location": "Chennai, India",
+        "position": "Inventory Manager",
+        "type": "Fulltime",
+        "posted_time": "4 days ago",
+        "description": "Manage stock levels and optimize inventory processes.",
+        "salary": "$310/Hour",
+        "skills": [
+            "Inventory Control",
+            "Supply Chain",
+            "Logistics"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "James Black",
+                "email": "jamesblack@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/Kpqs1S7b/shopify-logo-png-seeklogo-267188.png",
+        "company": "Shopify",
+        "location": "Ottawa, Canada",
+        "position": "E-commerce Specialist",
+        "type": "Fulltime",
+        "posted_time": "5 days ago",
+        "description": "Optimize online stores for better customer experience.",
+        "salary": "$320/Hour",
+        "skills": [
+            "Shopify",
+            "SEO",
+            "Conversion Rate Optimization"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sophia King",
+                "email": "sophiaking@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/LXRnh7gK/sap-logo-png-seeklogo-180805.png",
+        "company": "SAP",
+        "location": "Walldorf, Germany",
+        "position": "Merchandising Manager",
+        "type": "Fulltime",
+        "posted_time": "6 days ago",
+        "description": "Plan and execute merchandising strategies for retail outlets.",
+        "salary": "$330/Hour",
+        "skills": [
+            "Visual Merchandising",
+            "Retail Analytics",
+            "Vendor Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Matthew Clark",
+                "email": "matthewclark@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/TBvKVG8P/hootsuite-logo-png-seeklogo-446074.png",
+        "company": "Hootsuite",
+        "location": "Vancouver, Canada",
+        "position": "Product Marketing Specialist",
+        "type": "Fulltime",
+        "posted_time": "7 days ago",
+        "description": "Develop marketing campaigns to promote new products.",
+        "salary": "$340/Hour",
+        "skills": [
+            "Go-to-Market Strategy",
+            "Product Launches",
+            "Marketing Automation"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ava Hall",
+                "email": "avahall@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://i.ibb.co.com/whLmdcKG/oracle-logo-png-seeklogo-103838.png",
+        "company": "Oracle",
+        "location": "Austin, TX",
+        "position": "Cybersecurity Analyst",
+        "type": "Fulltime",
+        "posted_time": "8 days ago",
+        "description": "Monitor systems for security breaches and respond to incidents.",
+        "salary": "$450/Hour",
+        "skills": [
+            "Threat Detection",
+            "Incident Response",
+            "Firewall Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ethan Scott",
+                "email": "ethanscott@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://i.ibb.co.com/DDv5zHBk/30-Atlassian-logo-logos-1024.webp",
+        "company": "Atlassian",
+        "location": "Sydney, Australia",
+        "position": "Network Security Engineer",
+        "type": "Fulltime",
+        "posted_time": "9 days ago",
+        "description": "Secure network infrastructure and prevent unauthorized access.",
+        "salary": "$460/Hour",
+        "skills": [
+            "Network Security",
+            "VPN",
+            "Intrusion Detection"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Mia Young",
+                "email": "miayoung@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1200px-Airbnb_Logo_Bélo.svg.png",
+        "company": "Airbnb",
+        "location": "San Francisco, CA",
+        "position": "Security Operations Analyst",
+        "type": "Fulltime",
+        "posted_time": "10 days ago",
+        "description": "Maintain security protocols and conduct risk assessments.",
+        "salary": "$470/Hour",
+        "skills": [
+            "Risk Assessment",
+            "Compliance",
+            "Security Audits"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Noah Adams",
+                "email": "noahadams@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://i.ibb.co.com/YHKJJV8/Spotify-Full-Logo-RGB-Green-300x82.png",
+        "company": "Spotify",
+        "location": "Stockholm, Sweden",
+        "position": "Application Security Engineer",
+        "type": "Fulltime",
+        "posted_time": "11 days ago",
+        "description": "Ensure applications are secure from vulnerabilities.",
+        "salary": "$480/Hour",
+        "skills": [
+            "Penetration Testing",
+            "Code Review",
+            "Encryption"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emma Wright",
+                "email": "emawright@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://i.ibb.co.com/mCyJn3YF/Uber-Logo-wine.png",
+        "company": "Uber",
+        "location": "San Francisco, CA",
+        "position": "Cloud Security Specialist",
+        "type": "Fulltime",
+        "posted_time": "12 days ago",
+        "description": "Protect cloud environments from cyber threats.",
+        "salary": "$490/Hour",
+        "skills": [
+            "Cloud Security",
+            "AWS",
+            "Azure"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Liam Baker",
+                "email": "liambaker@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Content Writer",
+        "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
+        "location": "New York, US",
+        "position": "Content Writer",
+        "type": "Fulltime",
+        "posted_time": "4 mins ago",
+        "description": "Write engaging articles and blog posts for digital platforms.",
+        "salary": "$300/Hour",
+        "skills": [
+            "Copywriting",
+            "SEO",
+            "Editing"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Grace Turner",
+                "email": "graceturner@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Content Writer",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "position": "Technical Writer",
+        "type": "Fulltime",
+        "posted_time": "1 hour ago",
+        "description": "Create user manuals and technical documentation.",
+        "salary": "$310/Hour",
+        "skills": [
+            "Documentation",
+            "Technical Writing",
+            "Research"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Benjamin Reed",
+                "email": "benjaminreed@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Content Writer",
+        "logo": "https://i.ibb.co.com/r28JcMHv/Facebook-Logo.webp",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "position": "Social Media Content Creator",
+        "type": "Fulltime",
+        "posted_time": "2 hours ago",
+        "description": "Craft content for social media campaigns and ads.",
+        "salary": "$320/Hour",
+        "skills": [
+            "Content Creation",
+            "Social Media Strategy",
+            "Analytics"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Natalie Brooks",
+                "email": "nataliebrooks@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Content Writer",
+        "logo": "https://i.ibb.co.com/JY9w576/Microsoft-Logo-512px.png",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "position": "Scriptwriter",
+        "type": "Fulltime",
+        "posted_time": "3 hours ago",
+        "description": "Write scripts for video tutorials and presentations.",
+        "salary": "$330/Hour",
+        "skills": [
+            "Scriptwriting",
+            "Storytelling",
+            "Video Production"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jacob Hill",
+                "email": "jacobhill@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Content Writer",
+        "logo": "https://i.ibb.co.com/whS1vc78/Google-Icons-09-1024.webp",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "position": "Copywriter",
+        "type": "Fulltime",
+        "posted_time": "5 hours ago",
+        "description": "Develop creative copy for advertisements and campaigns.",
+        "salary": "$340/Hour",
+        "skills": [
+            "Creative Writing",
+            "Brand Voice",
+            "Campaign Strategy"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sophie Lane",
+                "email": "sophielane@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Market Research",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "position": "Market Research Analyst",
+        "type": "Fulltime",
+        "posted_time": "7 hours ago",
+        "description": "Analyze market trends and consumer behavior data.",
+        "salary": "$350/Hour",
+        "skills": [
+            "Data Analysis",
+            "Survey Design",
+            "Market Trends"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "William Carter",
+                "email": "williamcarter@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Market Research",
+        "logo": "https://i.ibb.co.com/rRsY0PBp/twitter.png",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "position": "Consumer Insights Specialist",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Gather insights on consumer preferences and behaviors.",
+        "salary": "$360/Hour",
+        "skills": [
+            "Consumer Behavior",
+            "Focus Groups",
+            "Data Visualization"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Amelia Foster",
+                "email": "ameliafoster@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Market Research",
+        "logo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "position": "Competitive Intelligence Analyst",
+        "type": "Fulltime",
+        "posted_time": "12 hours ago",
+        "description": "Track competitors' activities and market positioning.",
+        "salary": "$370/Hour",
+        "skills": [
+            "Competitive Analysis",
+            "SWOT Analysis",
+            "Market Intelligence"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Henry Moore",
+                "email": "henrymoore@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Market Research",
+        "logo": "https://i.ibb.co.com/k6mpmNRM/hubspot-logo-273533.png",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "position": "Survey Researcher",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Design surveys to collect actionable market data.",
+        "salary": "$380/Hour",
+        "skills": [
+            "Survey Design",
+            "Statistical Analysis",
+            "Reporting"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Chloe Bennett",
+                "email": "chloebennett@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Market Research",
+        "logo": "https://i.ibb.co.com/9mdGbm0X/slack-logo-png-seeklogo-273901.png",
+        "company": "Slack",
+        "location": "San Francisco, CA",
+        "position": "Product Research Analyst",
+        "type": "Fulltime",
+        "posted_time": "2 days ago",
+        "description": "Conduct research to inform product development decisions.",
+        "salary": "$390/Hour",
+        "skills": [
+            "User Research",
+            "Prototyping",
+            "Feedback Analysis"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Evelyn Hughes",
+                "email": "evelynhughes@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
+        "location": "New York, US",
+        "position": "HR Generalist",
+        "type": "Fulltime",
+        "posted_time": "4 mins ago",
+        "description": "Handle recruitment, employee relations, and HR policies.",
+        "salary": "$350/Hour",
+        "skills": [
+            "Recruitment",
+            "Employee Engagement",
+            "Policy Development"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "John Doe",
+                "email": "johndoe@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/rKGwDNXy/amazon-logo-squid-ink-smile-orange.png",
+        "company": "Amazon",
+        "location": "Seattle, WA",
+        "position": "Talent Acquisition Specialist",
+        "type": "Fulltime",
+        "posted_time": "1 hour ago",
+        "description": "Source and hire top talent for various departments.",
+        "salary": "$360/Hour",
+        "skills": [
+            "Sourcing",
+            "Interviewing",
+            "Onboarding"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jane Smith",
+                "email": "janesmith@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/r28JcMHv/Facebook-Logo.webp",
+        "company": "Facebook",
+        "location": "Menlo Park, CA",
+        "position": "HR Manager",
+        "type": "Fulltime",
+        "posted_time": "2 hours ago",
+        "description": "Lead HR initiatives to enhance employee satisfaction.",
+        "salary": "$370/Hour",
+        "skills": [
+            "Leadership",
+            "Conflict Resolution",
+            "Performance Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emily Johnson",
+                "email": "emilyjohnson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/JY9w576/Microsoft-Logo-512px.png",
+        "company": "Microsoft",
+        "location": "Redmond, WA",
+        "position": "Learning and Development Specialist",
+        "type": "Fulltime",
+        "posted_time": "3 hours ago",
+        "description": "Design training programs to upskill employees.",
+        "salary": "$340/Hour",
+        "skills": [
+            "Training Design",
+            "Workshops",
+            "E-learning Platforms"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Michael Brown",
+                "email": "michaelbrown@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/whS1vc78/Google-Icons-09-1024.webp",
+        "company": "Google",
+        "location": "Mountain View, CA",
+        "position": "Compensation and Benefits Analyst",
+        "type": "Fulltime",
+        "posted_time": "5 hours ago",
+        "description": "Develop competitive compensation and benefits packages.",
+        "salary": "$380/Hour",
+        "skills": [
+            "Payroll",
+            "Benefits Administration",
+            "Data Analysis"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sarah Wilson",
+                "email": "sarahwilson@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "position": "Employee Relations Specialist",
+        "type": "Fulltime",
+        "posted_time": "7 hours ago",
+        "description": "Resolve workplace conflicts and improve employee satisfaction.",
+        "salary": "$360/Hour",
+        "skills": [
+            "Conflict Resolution",
+            "Employee Advocacy",
+            "Mediation"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "David Lee",
+                "email": "davidlee@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/rRsY0PBp/twitter.png",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "position": "HR Business Partner",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Collaborate with leadership to align HR strategies with business goals.",
+        "salary": "$370/Hour",
+        "skills": [
+            "Strategic Planning",
+            "Talent Management",
+            "Change Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Laura Martinez",
+                "email": "lauramartinez@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "position": "Diversity and Inclusion Specialist",
+        "type": "Fulltime",
+        "posted_time": "12 hours ago",
+        "description": "Promote diversity and inclusion initiatives across the organization.",
+        "salary": "$350/Hour",
+        "skills": [
+            "Diversity Programs",
+            "Inclusion Strategies",
+            "Workplace Equity"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Chris Taylor",
+                "email": "christaylor@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/k6mpmNRM/hubspot-logo-273533.png",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "position": "HR Data Analyst",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Analyze HR data to support decision-making and strategy.",
+        "salary": "$340/Hour",
+        "skills": [
+            "HR Analytics",
+            "Data Visualization",
+            "Reporting Tools"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jessica Davis",
+                "email": "jessicadavis@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Human Resource",
+        "logo": "https://i.ibb.co.com/9mdGbm0X/slack-logo-png-seeklogo-273901.png",
+        "company": "Slack",
+        "location": "San Francisco, CA",
+        "position": "HR Technology Specialist",
+        "type": "Fulltime",
+        "posted_time": "2 days ago",
+        "description": "Implement and manage HR systems and tools for efficiency.",
+        "salary": "$380/Hour",
+        "skills": [
+            "HRIS",
+            "System Integration",
+            "Process Automation"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Daniel White",
+                "email": "danielwhite@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+        "company": "Apple",
+        "location": "Cupertino, CA",
+        "position": "Project Manager",
+        "type": "Fulltime",
+        "posted_time": "7 hours ago",
+        "description": "Oversee project timelines and deliverables for product launches.",
+        "salary": "$400/Hour",
+        "skills": [
+            "Project Planning",
+            "Agile Methodology",
+            "Stakeholder Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "David Lee",
+                "email": "davidlee@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://i.ibb.co.com/rRsY0PBp/twitter.png",
+        "company": "Twitter",
+        "location": "San Francisco, CA",
+        "position": "Operations Manager",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Streamline operations to improve efficiency and productivity.",
+        "salary": "$410/Hour",
+        "skills": [
+            "Process Optimization",
+            "Supply Chain",
+            "Team Leadership"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Laura Martinez",
+                "email": "lauramartinez@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://i.ibb.co.com/152sYKS/kindpng-1320270.png",
+        "company": "Salesforce",
+        "location": "San Francisco, CA",
+        "position": "Product Manager",
+        "type": "Fulltime",
+        "posted_time": "12 hours ago",
+        "description": "Define product roadmaps and prioritize features.",
+        "salary": "$420/Hour",
+        "skills": [
+            "Product Roadmapping",
+            "User Stories",
+            "Cross-functional Collaboration"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Chris Taylor",
+                "email": "christaylor@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://i.ibb.co.com/k6mpmNRM/hubspot-logo-273533.png",
+        "company": "HubSpot",
+        "location": "Cambridge, MA",
+        "position": "Program Manager",
+        "type": "Fulltime",
+        "posted_time": "1 day ago",
+        "description": "Manage multiple projects to ensure alignment with goals.",
+        "salary": "$430/Hour",
+        "skills": [
+            "Program Governance",
+            "Risk Management",
+            "Stakeholder Engagement"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Jessica Davis",
+                "email": "jessicadavis@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Management",
+        "logo": "https://i.ibb.co.com/9mdGbm0X/slack-logo-png-seeklogo-273901.png",
+        "company": "Slack",
+        "location": "San Francisco, CA",
+        "position": "Team Lead",
+        "type": "Fulltime",
+        "posted_time": "2 days ago",
+        "description": "Guide and mentor team members to achieve objectives.",
+        "salary": "$440/Hour",
+        "skills": [
+            "Leadership",
+            "Mentorship",
+            "Goal Setting"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Daniel White",
+                "email": "danielwhite@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/C5BPNmn1/Adobe-Corporate-logo-svg.png",
+        "company": "Adobe",
+        "location": "San Jose, CA",
+        "position": "Retail Sales Associate",
+        "type": "Fulltime",
+        "posted_time": "3 days ago",
+        "description": "Assist customers in selecting and purchasing products.",
+        "salary": "$300/Hour",
+        "skills": [
+            "Customer Service",
+            "Product Knowledge",
+            "Upselling"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Olivia Green",
+                "email": "oliviagreen@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/zhMtXjG2/zoho-logo-png-seeklogo-550389.png",
+        "company": "Zoho",
+        "location": "Chennai, India",
+        "position": "Inventory Manager",
+        "type": "Fulltime",
+        "posted_time": "4 days ago",
+        "description": "Manage stock levels and optimize inventory processes.",
+        "salary": "$310/Hour",
+        "skills": [
+            "Inventory Control",
+            "Supply Chain",
+            "Logistics"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "James Black",
+                "email": "jamesblack@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/Kpqs1S7b/shopify-logo-png-seeklogo-267188.png",
+        "company": "Shopify",
+        "location": "Ottawa, Canada",
+        "position": "E-commerce Specialist",
+        "type": "Fulltime",
+        "posted_time": "5 days ago",
+        "description": "Optimize online stores for better customer experience.",
+        "salary": "$320/Hour",
+        "skills": [
+            "Shopify",
+            "SEO",
+            "Conversion Rate Optimization"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Sophia King",
+                "email": "sophiaking@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/LXRnh7gK/sap-logo-png-seeklogo-180805.png",
+        "company": "SAP",
+        "location": "Walldorf, Germany",
+        "position": "Merchandising Manager",
+        "type": "Fulltime",
+        "posted_time": "6 days ago",
+        "description": "Plan and execute merchandising strategies for retail outlets.",
+        "salary": "$330/Hour",
+        "skills": [
+            "Visual Merchandising",
+            "Retail Analytics",
+            "Vendor Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Matthew Clark",
+                "email": "matthewclark@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Retail & Products",
+        "logo": "https://i.ibb.co.com/TBvKVG8P/hootsuite-logo-png-seeklogo-446074.png",
+        "company": "Hootsuite",
+        "location": "Vancouver, Canada",
+        "position": "Product Marketing Specialist",
+        "type": "Fulltime",
+        "posted_time": "7 days ago",
+        "description": "Develop marketing campaigns to promote new products.",
+        "salary": "$340/Hour",
+        "skills": [
+            "Go-to-Market Strategy",
+            "Product Launches",
+            "Marketing Automation"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ava Hall",
+                "email": "avahall@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://i.ibb.co.com/whLmdcKG/oracle-logo-png-seeklogo-103838.png",
+        "company": "Oracle",
+        "location": "Austin, TX",
+        "position": "Cybersecurity Analyst",
+        "type": "Fulltime",
+        "posted_time": "8 days ago",
+        "description": "Monitor systems for security breaches and respond to incidents.",
+        "salary": "$450/Hour",
+        "skills": [
+            "Threat Detection",
+            "Incident Response",
+            "Firewall Management"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Ethan Scott",
+                "email": "ethanscott@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://i.ibb.co.com/DDv5zHBk/30-Atlassian-logo-logos-1024.webp",
+        "company": "Atlassian",
+        "location": "Sydney, Australia",
+        "position": "Network Security Engineer",
+        "type": "Fulltime",
+        "posted_time": "9 days ago",
+        "description": "Secure network infrastructure and prevent unauthorized access.",
+        "salary": "$460/Hour",
+        "skills": [
+            "Network Security",
+            "VPN",
+            "Intrusion Detection"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Mia Young",
+                "email": "miayoung@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1200px-Airbnb_Logo_Bélo.svg.png",
+        "company": "Airbnb",
+        "location": "San Francisco, CA",
+        "position": "Security Operations Analyst",
+        "type": "Fulltime",
+        "posted_time": "10 days ago",
+        "description": "Maintain security protocols and conduct risk assessments.",
+        "salary": "$470/Hour",
+        "skills": [
+            "Risk Assessment",
+            "Compliance",
+            "Security Audits"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Noah Adams",
+                "email": "noahadams@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://i.ibb.co.com/YHKJJV8/Spotify-Full-Logo-RGB-Green-300x82.png",
+        "company": "Spotify",
+        "location": "Stockholm, Sweden",
+        "position": "Application Security Engineer",
+        "type": "Fulltime",
+        "posted_time": "11 days ago",
+        "description": "Ensure applications are secure from vulnerabilities.",
+        "salary": "$480/Hour",
+        "skills": [
+            "Penetration Testing",
+            "Code Review",
+            "Encryption"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Emma Wright",
+                "email": "emawright@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Security Analyst",
+        "logo": "https://i.ibb.co.com/mCyJn3YF/Uber-Logo-wine.png",
+        "company": "Uber",
+        "location": "San Francisco, CA",
+        "position": "Cloud Security Specialist",
+        "type": "Fulltime",
+        "posted_time": "12 days ago",
+        "description": "Protect cloud environments from cyber threats.",
+        "salary": "$490/Hour",
+        "skills": [
+            "Cloud Security",
+            "AWS",
+            "Azure"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Liam Baker",
+                "email": "liambaker@example.com"
+            }
+        ]
+    },
+    {
+        "category": "Content Writer",
+        "logo": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "company": "LinkedIn",
+        "location": "New York, US",
+        "position": "Content Writer",
+        "type": "Fulltime",
+        "posted_time": "4 mins ago",
+        "description": "Write engaging articles and blog posts for digital platforms.",
+        "salary": "$300/Hour",
+        "skills": [
+            "Copywriting",
+            "SEO",
+            "Editing"
+        ],
+        "apply_link": "Apply Now",
+        "appliedPersonInformation": [
+            {
+                "name": "Grace Turner",
+                "email": "graceturner@example.com"
+            }
+        ]
+    }
+]

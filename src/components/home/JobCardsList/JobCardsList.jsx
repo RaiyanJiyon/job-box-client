@@ -26,7 +26,7 @@ const JobCardsList = () => {
     
     const categories = [
         'Management',
-        'Marketing and Sale',
+        'Marketing & Sale',
         'Finance',
         'Human Resource',
         'Retail & Products',

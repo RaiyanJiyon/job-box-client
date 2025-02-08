@@ -28,7 +28,7 @@ const HomePage = () => {
             <div className="my-20">
                 <JobCardsList />
             </div>
-            <div className="my-40">
+            <div className="my-20">
                 <JobSearchBanner />
             </div>
             <div className="my-20">
