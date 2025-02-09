@@ -11,6 +11,7 @@ import Login from '../pages/auth/Login';
 import Register from '../pages/auth/Register';
 import PasswordRecovery from '../pages/auth/PasswordRecovery';
 import Contact from '../pages/Contact';
+import JobDetails from '../pages/JobDetails';
 
 
 
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
                 path: '/jobs',
                 element: <FindJobs />
             },
+            {
+                path: '/job-details/:id',
+                element: <JobDetails />,
+                loader: ({ params }) => fetch(`http://localhost:5000/jobs/${params.id}`)
+            },            
             // Auth Routes
             {
                 path: 'login',

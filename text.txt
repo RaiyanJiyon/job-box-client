@@ -121,3 +121,51 @@
                 </div>
             </div>
         </section>
+
+
+
+        {
+    "category": "Management",
+    "company": "Deloitte",
+    "logo": "https://cdn-icons-png.flaticon.com/512/3009/3009798.png",
+    "location": "San Francisco, US",
+    "position": "Project Manager",
+    "employmentType": "Full Time",
+    "workType": "Remote",
+    "postedTime": "2025-01-01T09:00:00Z",
+    "description": "We are seeking an experienced Project Manager to lead cross-functional teams.",
+    "salary": 800,
+    "skills": [
+        "Leadership",
+        "Project Planning",
+        "Risk Management"
+    ],
+    "appliedPersonInformation": [
+        {
+            "name": "Jane Smith",
+            "email": "janesmith@example.com"
+        }
+    ],
+    "experience": "3 - 5 years",
+    "jobType": "Permanent",
+    "deadline": "2023-11-15T00:00:00.000Z",
+    "updated": "2023-11-14T00:00:00.000Z",
+    "phoneNumber": "(234) 567-8901",
+    "email": "contact@deloitte.com",
+    "brand": "Deloitte",
+    "industry": "Consulting / Professional Services",
+    "jobLevel": "Manager",
+    "vision": "To empower businesses with innovative solutions that drive growth and efficiency.",
+    "candidateInformation": {
+        "idealCandidateSkills": "The ideal candidate will have strong leadership skills and experience managing large-scale projects."
+    },
+    "essentialKnowledgeSkillsExperience": [
+        "Proven experience in project management",
+        "Strong communication and interpersonal skills",
+        "Ability to manage budgets and timelines effectively"
+    ],
+    "preferredExperience": [
+        "Experience in Agile methodologies",
+        "Certified Project Management Professional (PMP)"
+    ]
+}

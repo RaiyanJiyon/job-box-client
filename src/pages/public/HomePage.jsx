@@ -9,8 +9,10 @@ import NewsletterSubscription from "../../components/home/NewsletterSubscription
 import ProfileCreation from "../../components/home/ProfileCreation/ProfileCreation";
 import StatisticsSection from "../../components/home/StatisticsSection/StatisticsSection";
 import TopRecruiters from "../../components/home/TopRecruiters/TopRecruiters";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 const HomePage = () => {
+    useScrollToTop();
     return (
         <div>
             <div className="pb-20">

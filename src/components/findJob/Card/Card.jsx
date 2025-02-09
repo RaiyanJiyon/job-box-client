@@ -1,7 +1,13 @@
 import { LuClock8 } from "react-icons/lu";
 import { PiMapPinLight, PiSuitcaseSimple } from "react-icons/pi";
+import { Link, useNavigate } from "react-router-dom";
 
 const Card = ({ job }) => {
+    const navigate = useNavigate();
+
+    const handleApplyButton = id => {
+        navigate(`/job-details/${id}`)
+    }
     return (
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg px-6 py-6 pb-4 hover:shadow-xl transition-shadow duration-300">
             {/* Company Info */}
@@ -50,12 +56,14 @@ const Card = ({ job }) => {
                 <p className="text-lg font-bold text-blue-700">
                     ${job.salary}<sub className="text-gray-500 font-normal">/Hour</sub>
                 </p>
-                <button
-                    type="button"
-                    className="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-md text-sm px-5 py-2 transition-all duration-300"
-                >
-                    Apply Now
-                </button>
+                <Link to={`/job-details/${job._id}`}>
+                    <button
+                        type="button"
+                        className="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-md text-sm px-5 py-2 transition-all duration-300"
+                    >
+                        Apply Now
+                    </button>
+                </Link>
             </div>
         </div>
     );
@@ -76,6 +84,6 @@ function formatDate(dateTime) {
     if (timeDifference < 0) return "Just now";
     if (timeDifference < hour) return `${Math.floor(timeDifference / minute)} min ago`;
     if (timeDifference < day) return `${Math.floor(timeDifference / hour)} hrs ago`;
-    
+
     return `${Math.floor(timeDifference / day)} days ago`;
 }

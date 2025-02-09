@@ -3,8 +3,10 @@ import Location from '../components/Contact/Location/Location';
 import ContactForm from '../components/Contact/ContactForm/ContactForm';
 import OurTeam from '../components/Contact/OurTeam/OurTeam';
 import Testimonial from '../components/Contact/Testimonial/Testimonial';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Contact = () => {
+    useScrollToTop();
     return (
         <div>
             <div className="relative h-36 bg-cover bg-center mt-2" style={{ backgroundImage: 'url(https://i.ibb.co/MDNsJCHy/cover.jpg)' }}>
