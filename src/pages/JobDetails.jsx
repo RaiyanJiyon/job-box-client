@@ -5,8 +5,9 @@ import { PiMapPinLight, PiSuitcaseSimple } from 'react-icons/pi';
 import { RiCheckboxCircleLine } from "react-icons/ri";
 import { useLoaderData } from 'react-router-dom';
 import useScrollToTop from '../hooks/useScrollToTop';
+import FeaturedJobs from '../components/JobDetails/FeaturedJobs/FeaturedJobs';
 import useAxiosPublic from '../hooks/useAxiosPublic';
-import Card from '../components/findJob/Card/Card';
+import SimilarJobs from '../components/JobDetails/SimilarJobs/SimilarJobs';
 
 // Utility function to format the date
 const formatDate = (dateTime) => {
@@ -34,25 +35,31 @@ const EmploymentInfoRow = ({ iconSrc, label, value }) => (
 
 const JobDetails = () => {
     useScrollToTop();
-    const job = useLoaderData();
-
-    const [featuredJobs, setFeaturedJobs] = useState([]);
+    const [jobs, setJobs] = useState([]);
+    const [similarJobs, setSimilarJobs] = useState([]);
     const axiosPublic = useAxiosPublic();
+    const job = useLoaderData();
+    const { category } = job;
 
     useEffect(() => {
-        const fetchFeaturedJobs = async () => {
+        const fetchSimilarJobs = async () => {
             try {
-                const response = await axiosPublic.get('/featured-jobs');
-                setFeaturedJobs(response.data);
+                const response = await axiosPublic.get('/jobs');
+                setJobs(response.data);
             } catch (error) {
                 console.error(error.message);
             }
         }
-        fetchFeaturedJobs();
+        fetchSimilarJobs();
     }, []);
 
-    console.log(featuredJobs)
-
+    useEffect(() => {
+        if (jobs.length > 0 && category) {
+            const filteredJobs = jobs.filter(similarJob => similarJob.category === category);
+            setSimilarJobs(filteredJobs);
+        }
+    }, [jobs, category]);
+    
     if (!job) return <div className="p-6 text-red-500">Job not found.</div>;
 
     const updatedDate = new Date(job.updated).toISOString().split('T')[0];
@@ -86,9 +93,9 @@ const JobDetails = () => {
 
             {/* Divider */}
             <div className='border border-b-gray-100 mb-12'></div>
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 <div className='grid col-span-2'>
-
                     {/* Employment Information */}
                     <div className='border border-gray-300 rounded-2xl px-4 md:px-10 pt-6 pb-10'>
                         <h3 className="text-2xl font-bold text-gray-800">Employment Information</h3>
@@ -146,7 +153,7 @@ const JobDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className=''>
+                <div>
                     <div className='border border-gray-300 rounded-lg px-4 md:px-4 pt-6 pb-10'>
                         {/* Company Info */}
                         <div className="flex items-center gap-4">
@@ -171,21 +178,13 @@ const JobDetails = () => {
                             <li>Email: {job.email}</li>
                         </ul>
                     </div>
+                    <div className='mt-10'>
+                        <SimilarJobs jobs={similarJobs} />
+                    </div>
                 </div>
             </div>
-            <div>
-                <div className='space-y-3 mt-16'>
-                    <h2 className='text-4xl font-bold'>Featured Jobs</h2>
-                    <p className='text-gray-500 text-lg font-medium'>Get the latest news, updates and tips</p>
-                </div>
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10'>
-
-                    {
-                        featuredJobs.map((featuredJob, idx) => (
-                            <Card key={idx} job={featuredJob} />
-                        ))
-                    }
-                </div>
+            <div className='mt-16'>
+                <FeaturedJobs />
             </div>
         </div>
     );
