@@ -1,0 +1,22 @@
+[
+    {
+        "question": "I have promotional or discount code?",
+        "answer": "Yes, you can apply your promotional or discount code during checkout. Simply enter the code in the designated field, and the discount will be applied to your total. If you encounter any issues, please contact our support team for assistance."
+    },
+    {
+        "question": "Can I return a product after purchase?",
+        "answer": "Yes, you can return a product within 30 days of purchase. Ensure the item is in its original condition and packaging. Please contact our customer service team to initiate the return process and receive a return shipping label."
+    },
+    {
+        "question": "How do I track my order?",
+        "answer": "You can track your order by logging into your account and navigating to the 'Order History' section. Click on the order you want to track, and you'll find the tracking number and a link to the carrier's website for real-time updates."
+    },
+    {
+        "question": "Do you offer international shipping?",
+        "answer": "Yes, we offer international shipping to several countries. Shipping fees and delivery times vary depending on the destination. Please check our shipping policy page for detailed information and ensure your country is listed before placing an order."
+    },
+    {
+        "question": "What payment methods are accepted?",
+        "answer": "We accept various payment methods, including credit/debit cards, PayPal, and Apple Pay. During checkout, select your preferred payment method and follow the prompts to complete your purchase securely. For any payment-related inquiries, please contact our support team."
+    }
+]
