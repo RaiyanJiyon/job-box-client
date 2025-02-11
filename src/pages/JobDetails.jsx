@@ -136,8 +136,12 @@ const JobDetails = () => {
                         <div className="w-12 h-px bg-gray-600"></div>
                     </div>
 
-                    {/* Footer Actions */}
-                    <div className='flex flex-col sm:flex-row justify-between items-center gap-6 mt-16'>
+                    
+            {/* Divider */}
+            <div className='border border-b-gray-100 mt-12'></div>
+
+                    {/* share social media icons */}
+                    <div className='flex flex-col sm:flex-row justify-between items-center gap-6 mt-10'>
                         <div className="flex gap-4">
                             <button className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg">Apply Now</button>
                             <button className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white">Save Job</button>

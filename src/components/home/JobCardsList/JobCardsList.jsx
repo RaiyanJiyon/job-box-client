@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../common/SectionTitle';
 import JobCard from '../../JobCard.jsx/JobCard';
+import useAxiosPublic from '../../../hooks/useAxiosPublic';
 
 const JobCardsList = () => {
     const [jobs, setJobs] = useState([]);
+    const axiosPublic = useAxiosPublic();
     const [activeCategory, setActiveCategory] = useState('Management');
+
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const response = await fetch('/job.json');
-                const data = await response.json();
-                setJobs(data);
+                const response = await axiosPublic.get('/jobs');
+                setJobs(response.data);
             } catch (error) {
                 console.error(error);
             }
