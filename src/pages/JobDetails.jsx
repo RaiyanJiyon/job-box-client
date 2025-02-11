@@ -59,7 +59,7 @@ const JobDetails = () => {
             setSimilarJobs(filteredJobs);
         }
     }, [jobs, category]);
-    
+
     if (!job) return <div className="p-6 text-red-500">Job not found.</div>;
 
     const updatedDate = new Date(job.updated).toISOString().split('T')[0];
@@ -136,9 +136,9 @@ const JobDetails = () => {
                         <div className="w-12 h-px bg-gray-600"></div>
                     </div>
 
-                    
-            {/* Divider */}
-            <div className='border border-b-gray-100 mt-12'></div>
+
+                    {/* Divider */}
+                    <div className='border border-b-gray-100 mt-12'></div>
 
                     {/* share social media icons */}
                     <div className='flex flex-col sm:flex-row justify-between items-center gap-6 mt-10'>
