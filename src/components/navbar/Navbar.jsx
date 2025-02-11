@@ -47,7 +47,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`w-full z-20 top-0 start-0 pt-2 ${isScrolled ? 'border-b border-gray-200' : ''}`}>
+    <nav className={`w-full z-50 top-0 start-0 pt-2 ${isScrolled ? 'border-b border-gray-200' : ''}`}>
       <div className="max-w-screen-2xl w-11/12 flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to={'/'} className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/template/jobhub-logo.svg" className="h-8" alt="Flowbite Logo" />
@@ -189,6 +189,16 @@ const Navbar = () => {
               }
             >
               Contact
+            </NavLink>
+            <NavLink
+              to="/pricing"
+              className={({ isActive }) =>
+                isActive
+                  ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
+                  : 'text-black'
+              }
+            >
+              Pricing Plan
             </NavLink>
           </ul>
         </div>
