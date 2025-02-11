@@ -3,21 +3,60 @@ import useAuth from '../../../hooks/useAuth';
 import SuccessToaster from '../Toaster/SuccessToaster';
 import ErrorToaster from '../Toaster/ErrorToaster';
 import { useNavigate } from 'react-router-dom';
+import useAxiosPublic from '../../../hooks/useAxiosPublic';
+import { updateProfile } from 'firebase/auth';
 
 const WelcomeAuth = ({ welcomeMessage, title, description }) => {
-    const {signInUserWithGoogle} = useAuth();
+    const { signInUserWithGoogle } = useAuth();
     const navigate = useNavigate();
+    const axiosPublic = useAxiosPublic();
 
-    const handleGoogleSignIn = () => {
-        signInUserWithGoogle()
-        .then(result => {
-            SuccessToaster("Successfully sign in with google.");
-            navigate('/');
-        })
-        .catch(error => {
+    const handleGoogleSignIn = async () => {
+        try {
+            const result = await signInUserWithGoogle();
+            const user = result?.user;
+
+            if (user) {
+                let existingUser = null;
+
+                try {
+                    // Check if the user already exists
+                    const response = await axiosPublic.get(`/users?email=${user.email}`);
+                    existingUser = response.data;
+                } catch (error) {
+                    if (error.response && error.response.status === 404) {
+                        existingUser = null; // ✅ Handle 404 gracefully
+                    } else {
+                        throw error; // Other errors should be thrown
+                    }
+                }
+
+                if (!existingUser) {
+                    // Create a new user with "job seeker" role
+                    const newUser = {
+                        name: user.displayName,
+                        email: user.email,
+                        username: user.displayName,
+                        photoURL: user.photoURL,
+                        role: "job seeker", // Default role = Job Seeker
+                    };
+
+                    await axiosPublic.post('/users', newUser);
+                }
+
+                await updateProfile(user, {
+                    displayName: user.displayName,
+                    photoURL: user.photoURL
+                });
+
+                SuccessToaster("Successfully signed in with Google.");
+                navigate('/');
+            }
+        } catch (error) {
             ErrorToaster(error.message);
-        })
+        }
     };
+
 
     return (
         <div className='text-center'>

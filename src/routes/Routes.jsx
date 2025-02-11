@@ -12,6 +12,9 @@ import Register from '../pages/auth/Register';
 import PasswordRecovery from '../pages/auth/PasswordRecovery';
 import Contact from '../pages/Contact';
 import JobDetails from '../pages/JobDetails';
+import ProtectedRoute from './ProtectedRoute';
+import DashboardLayout from '../layout/DashboardLayout';
+import DashboardPage from '../pages/DashboardPage/DashboardPage';
 
 
 
@@ -55,6 +58,17 @@ const router = createBrowserRouter([
                 path: '*',
                 element: <NotFound />
             }
+        ]
+    },
+    {
+        path: '/dashboard',
+        element: <ProtectedRoute><DashboardLayout /></ProtectedRoute>,
+        errorElement: <NotFound />,
+        children: [
+            {
+                index: true,
+                element: <DashboardPage />
+            },
         ]
     }
 ]);

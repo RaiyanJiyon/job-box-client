@@ -5,9 +5,11 @@ import { useForm } from "react-hook-form";
 import SuccessToaster from '../../components/common/Toaster/SuccessToaster';
 import ErrorToaster from '../../components/common/Toaster/ErrorToaster';
 import { useNavigate } from 'react-router-dom';
+import useAxiosPublic from '../../hooks/useAxiosPublic';
 
 const Register = () => {
-    const { user, signInUserWithGoogle, signUpUserWithEmail } = useAuth();
+    const { signUpUserWithEmail } = useAuth();
+    const axiosPublic = useAxiosPublic();
     const navigate = useNavigate();
 
     const {
@@ -18,21 +20,24 @@ const Register = () => {
         formState: { errors },
     } = useForm();
 
-    // Watch the password field to compare with confirm password
     const password = watch("password");
 
-    const onSubmit = (data) => {
-        const { fullName, email, username, password, confirmPassword, terms } = data;
-        signUpUserWithEmail(email, password)
-            .then(result => {
-                SuccessToaster('Congratulations, your account has been successfully created.')
+    const onSubmit = async (data) => {
+        const { fullName, email, username, password, role } = data;
+        try {
+            const result = await signUpUserWithEmail(email, password);
+
+            if (result?.user) {
+                await axiosPublic.post('/users', { name: fullName, email, username, role });
+                SuccessToaster('Congratulations, your account has been successfully created.');
                 reset();
                 navigate('/');
-            })
-            .catch(error => {
-                ErrorToaster('Email has already been taken.')
-            })
+            }
+        } catch (error) {
+            ErrorToaster('Email has already been taken.');
+        }
     };
+
 
     return (
         <div className='max-w-screen-2xl w-11/12 mx-auto'>
@@ -47,7 +52,7 @@ const Register = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     {/* Full Name Field */}
                     <div className="mb-6">
-                        <label htmlFor="full_name" className="block mb-2 text-sm font-medium text-gray-900">Full Name *</label>
+                        <label htmlFor="fullName" className="block mb-2 text-sm font-medium text-gray-900">Full Name *</label>
                         <input
                             {...register("fullName", { required: "Full name is required" })}
                             type="text"
@@ -111,18 +116,33 @@ const Register = () => {
 
                     {/* Confirm Password Field */}
                     <div className="mb-6">
-                        <label htmlFor="confirm_password" className="block mb-2 text-sm font-medium text-gray-900">Re-Password *</label>
+                        <label htmlFor="confirmPassword" className="block mb-2 text-sm font-medium text-gray-900">Re-Password *</label>
                         <input
                             {...register("confirmPassword", {
                                 required: "Confirm password is required",
                                 validate: value => value === password || "Passwords do not match"
                             })}
                             type="password"
-                            id="confirm_password"
+                            id="confirmPassword"
                             className="bg-gray-50 border border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
                             placeholder="************"
                         />
                         {errors.confirmPassword && <span className='text-red-500'>{errors.confirmPassword.message}</span>}
+                    </div>
+
+                    {/* User Role Selection */}
+                    <div className="mb-6">
+                        <label htmlFor="role" className="block mb-2 text-sm font-medium text-gray-900">Role *</label>
+                        <select
+                            {...register("role", { required: "Role is required" })}
+                            id="role"
+                            className="bg-gray-50 border border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
+                        >
+                            <option value="">Select your role</option>
+                            <option value="job seeker">Job Seeker</option>
+                            <option value="recruiter">Recruiter</option>
+                        </select>
+                        {errors.role && <span className='text-red-500'>{errors.role.message}</span>}
                     </div>
 
                     {/* Terms and Conditions Checkbox */}

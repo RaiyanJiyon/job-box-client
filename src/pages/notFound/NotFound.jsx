@@ -13,10 +13,10 @@ const NotFound = () => {
                     <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl">Whoops! That page doesn’t exist.</p>
                     <p className="mb-4 text-lg font-medium text-gray-500">Here are some helpful links instead:</p>
                     <div className='flex justify-evenly items-center md:w-1/2 mx-auto'>
-                        <Link to={'/'} className='text-gray-500 font-medium underline'>Home</Link>
-                        <Link to={'/about'} className='text-gray-500 font-medium underline'>About</Link>
-                        <Link to={'/help'} className='text-gray-500 font-medium underline'>Help</Link>
-                        <Link to={'/contact'} className='text-gray-500 font-medium underline'>Contact</Link>
+                        <Link to={'/'} className='text-gray-500 hover:text-blue-500 font-medium underline'>Home</Link>
+                        <Link to={'/about'} className='text-gray-500 hover:text-blue-500 font-medium underline'>About</Link>
+                        <Link to={'/help'} className='text-gray-500 hover:text-blue-500 font-medium underline'>Help</Link>
+                        <Link to={'/contact'} className='text-gray-500 hover:text-blue-500 font-medium underline'>Contact</Link>
                     </div>
                 </div>
             </div>

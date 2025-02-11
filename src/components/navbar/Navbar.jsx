@@ -65,7 +65,7 @@ const Navbar = () => {
                 <span className="sr-only">Open user menu</span>
                 <img
                   className="w-10 h-10 rounded-full"
-                  src={user?.photoURL ? user.photoURL : 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'}
+                  src={user?.photoURL ? user.photoURL : 'https://i.ibb.co.com/fztydKNS/default-user.jpg'}
                   alt="user photo"
                 />
               </button>
@@ -73,7 +73,7 @@ const Navbar = () => {
               {/* <!-- Dropdown menu --> */}
               <div
                 id="dropdownAvatar"
-                className={`absolute right-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 border border-blue-200 ${isDropdownOpen ? 'block' : 'hidden'
+                className={`absolute right-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 ${isDropdownOpen ? 'block' : 'hidden'
                   }`}
                 style={{ top: '100%', zIndex: 50 }} // Ensures it stays below the avatar
               >
@@ -84,9 +84,9 @@ const Navbar = () => {
                 </div>
                 <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownUserAvatarButton">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link to={'/dashboard'} className="block px-4 py-2 hover:bg-gray-100">
                       Dashboard
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-2 hover:bg-gray-100">
