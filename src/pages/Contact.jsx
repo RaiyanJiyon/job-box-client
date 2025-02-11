@@ -13,9 +13,6 @@ const Contact = () => {
                 {/* Dark overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>
 
-                <div>
-
-                </div>
                 {/* Content */}
                 <div className="relative z-10 flex flex-col justify-center h-full w-11/12 max-w-screen-2xl mx-auto">
                     <h2 className="text-3xl font-bold text-white mb-2">About Us</h2>

@@ -7,11 +7,16 @@ import ErrorToaster from '../common/Toaster/ErrorToaster';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const { user, signOutUser } = useAuth();
   const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   useEffect(() => {
@@ -32,13 +37,13 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     signOutUser()
-    .then(result => {
-      SuccessToaster(`${user.displayName} is sign out.`)
-      navigate('/login');
-    })
-    .catch(error => {
-      ErrorToaster(error.message);
-    })
+      .then(result => {
+        SuccessToaster(`${user.displayName} is sign out.`);
+        navigate('/login');
+      })
+      .catch(error => {
+        ErrorToaster(error.message);
+      });
   };
 
   return (
@@ -48,17 +53,69 @@ const Navbar = () => {
           <img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/template/jobhub-logo.svg" className="h-8" alt="Flowbite Logo" />
         </Link>
         <div className="flex items-center sm:gap-6 lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
-          {
-            user ?
-              <button onClick={handleSignOut} type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign Out</button>
-              :
-              <>
-                <Link to={'/register'} className='hidden md:flex underline font-medium'>Register</Link>
-                <Link to={'/login'}>
-                  <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Sign In</button>
-                </Link>
-              </>
-          }
+          {user ? (
+            <>
+              <button
+                id="dropdownUserAvatarButton"
+                data-dropdown-toggle="dropdownAvatar"
+                className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300"
+                type="button"
+                onClick={toggleDropdown}
+              >
+                <span className="sr-only">Open user menu</span>
+                <img
+                  className="w-10 h-10 rounded-full"
+                  src={user?.photoURL ? user.photoURL : 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'}
+                  alt="user photo"
+                />
+              </button>
+
+              {/* <!-- Dropdown menu --> */}
+              <div
+                id="dropdownAvatar"
+                className={`absolute right-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 border border-blue-200 ${isDropdownOpen ? 'block' : 'hidden'
+                  }`}
+                style={{ top: '100%', zIndex: 50 }} // Ensures it stays below the avatar
+              >
+
+                <div className="px-4 py-3 text-sm text-gray-900">
+                  <div>{user?.displayName}</div>
+                  <div className="font-medium truncate">{user?.email}</div>
+                </div>
+                <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownUserAvatarButton">
+                  <li>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                      Profile Update
+                    </a>
+                  </li>
+                </ul>
+                <div className="py-2">
+                  <button onClick={handleSignOut} href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Sign out
+                  </button>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <Link to={'/register'} className="hidden md:flex underline font-medium">
+                Register
+              </Link>
+              <Link to={'/login'}>
+                <button
+                  type="button"
+                  className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center"
+                >
+                  Sign In
+                </button>
+              </Link>
+            </>
+          )}
           <button
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -67,19 +124,28 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             <span className="sr-only">Open main menu</span>
-            <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <svg
+              className="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
         </div>
-        <div className={`items-center justify-between ${isMenuOpen ? 'flex' : 'hidden'} w-full lg:flex lg:w-auto lg:order-1`} id="navbar-sticky">
-          <ul className="flex flex-col p-4 lg:p-0 mt-4 font-medium  rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 ">
+        <div
+          className={`items-center justify-between ${isMenuOpen ? 'flex' : 'hidden'} w-full lg:flex lg:w-auto lg:order-1`}
+          id="navbar-sticky"
+        >
+          <ul className="flex flex-col p-4 lg:p-0 mt-4 font-medium rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1"
-                  : "text-black"
+                  ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
+                  : 'text-black'
               }
             >
               Home
@@ -88,8 +154,8 @@ const Navbar = () => {
               to="/jobs"
               className={({ isActive }) =>
                 isActive
-                  ? "block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1"
-                  : "text-black"
+                  ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
+                  : 'text-black'
               }
             >
               Find a Job
@@ -98,8 +164,8 @@ const Navbar = () => {
               to="/recruiters"
               className={({ isActive }) =>
                 isActive
-                  ? "block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1"
-                  : "text-black"
+                  ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
+                  : 'text-black'
               }
             >
               Recruiters
@@ -108,8 +174,8 @@ const Navbar = () => {
               to="/candidates"
               className={({ isActive }) =>
                 isActive
-                  ? "block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1"
-                  : "text-black"
+                  ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
+                  : 'text-black'
               }
             >
               Candidates
@@ -118,8 +184,8 @@ const Navbar = () => {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1"
-                  : "text-black"
+                  ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
+                  : 'text-black'
               }
             >
               Contact

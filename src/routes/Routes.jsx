@@ -36,7 +36,7 @@ const router = createBrowserRouter([
                 path: '/job-details/:id',
                 element: <JobDetails />,
                 loader: ({ params }) => fetch(`http://localhost:5000/jobs/${params.id}`)
-            },            
+            },
             // Auth Routes
             {
                 path: 'login',
