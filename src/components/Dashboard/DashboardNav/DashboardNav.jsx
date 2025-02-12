@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineHome, AiOutlineDashboard, AiOutlineUser, AiOutlineSetting, AiOutlineLogout } from "react-icons/ai";
+import { MdWorkOutline, MdAnalytics, MdOutlineSaveAlt, MdPostAdd } from "react-icons/md";
 import useAuth from "../../../hooks/useAuth";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 
@@ -32,35 +33,35 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
 
         if (userData?.role === "admin") {
             navLinks = [
-                { name: "Home", path: "/" },
-                { name: "Dashboard", path: "/dashboard/admin/dashboard" },
-                { name: "Manage Users", path: "/dashboard/admin/manage-users" },
-                { name: "Manage Jobs", path: "/dashboard/admin/manage-jobs" },
-                { name: "Analytics", path: "/dashboard/admin/analytics" },
-                { name: "Settings", path: "/dashboard/settings" },
-                { name: "Logout", path: "/dashboard/logout" },
+                { name: "Home", path: "/", icon: <AiOutlineHome /> },
+                { name: "Dashboard", path: "/dashboard/admin/dashboard", icon: <AiOutlineDashboard /> },
+                { name: "Manage Users", path: "/dashboard/admin/manage-users", icon: <AiOutlineUser /> },
+                { name: "Manage Jobs", path: "/dashboard/admin/manage-jobs", icon: <MdWorkOutline /> },
+                { name: "Analytics", path: "/dashboard/admin/analytics", icon: <MdAnalytics /> },
+                { name: "Settings", path: "/dashboard/settings", icon: <AiOutlineSetting /> },
+                { name: "Logout", path: "/dashboard/logout", icon: <AiOutlineLogout /> },
             ];
         } else if (userData?.role === "job seeker") {
             navLinks = [
-                { name: "Home", path: "/" },
-                { name: "Dashboard", path: "/dashboard/job-seeker/dashboard" },
-                { name: "Browse Jobs", path: "/dashboard/job-seeker/browse-jobs" },
-                { name: "Saved Jobs", path: "/dashboard/job-seeker/saved-jobs" },
-                { name: "Applied Jobs", path: "/dashboard/job-seeker/applied-jobs" },
-                { name: "Profile", path: "/dashboard/profile" },
-                { name: "Settings", path: "/dashboard/settings" },
-                { name: "Logout", path: "/dashboard/logout" },
+                { name: "Home", path: "/", icon: <AiOutlineHome /> },
+                { name: "Dashboard", path: "/dashboard/job-seeker/dashboard", icon: <AiOutlineDashboard /> },
+                { name: "Browse Jobs", path: "/dashboard/job-seeker/browse-jobs", icon: <MdWorkOutline /> },
+                { name: "Saved Jobs", path: "/dashboard/job-seeker/saved-jobs", icon: <MdOutlineSaveAlt /> },
+                { name: "Applied Jobs", path: "/dashboard/job-seeker/applied-jobs", icon: <MdPostAdd /> },
+                { name: "Profile", path: "/dashboard/profile", icon: <AiOutlineUser /> },
+                { name: "Settings", path: "/dashboard/settings", icon: <AiOutlineSetting /> },
+                { name: "Logout", path: "/dashboard/logout", icon: <AiOutlineLogout /> },
             ];
         } else if (userData?.role === "recruiter") {
             navLinks = [
-                { name: "Home", path: "/" },
-                { name: "Dashboard", path: "/dashboard/recruiter/home" },
-                { name: "Post a Job", path: "/dashboard/recruiter/post-job" },
-                { name: "Manage Candidates", path: "/dashboard/recruiter/manage-candidates" },
-                { name: "Analytics", path: "/dashboard/recruiter/analytics" },
-                { name: "Profile", path: "/dashboard/profile" },
-                { name: "Settings", path: "/dashboard/settings" },
-                { name: "Logout", path: "/dashboard/logout" },
+                { name: "Home", path: "/", icon: <AiOutlineHome /> },
+                { name: "Dashboard", path: "/dashboard/recruiter/home", icon: <AiOutlineDashboard /> },
+                { name: "Post a Job", path: "/dashboard/recruiter/post-job", icon: <MdPostAdd /> },
+                { name: "Manage Candidates", path: "/dashboard/recruiter/manage-candidates", icon: <MdWorkOutline /> },
+                { name: "Analytics", path: "/dashboard/recruiter/analytics", icon: <MdAnalytics /> },
+                { name: "Profile", path: "/dashboard/profile", icon: <AiOutlineUser /> },
+                { name: "Settings", path: "/dashboard/settings", icon: <AiOutlineSetting /> },
+                { name: "Logout", path: "/dashboard/logout", icon: <AiOutlineLogout /> },
             ];
         }
 
@@ -70,9 +71,10 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                     <li key={index}>
                         <Link
                             to={item.path}
-                            className="flex items-center p-3 text-gray-900 rounded-lg hover:bg-gray-200 transition-all"
+                            className="flex items-center p-3 text-gray-900 rounded-lg hover:bg-blue-100 transition-all"
                         >
-                            <span className="ms-3">{item.name}</span>
+                            <span className="text-blue-500 text-xl">{item.icon}</span>
+                            <span className="ms-3 text-gray-700 font-semibold">{item.name}</span>
                         </Link>
                     </li>
                 ))}
@@ -82,12 +84,26 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
 
     return (
         <aside
-            className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transition-transform duration-300 z-50
+            className={`fixed top-0 left-0 h-screen w-64 bg-white shadow-lg transition-transform duration-300 z-50 border border-blue-300
                 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 md:static`}
         >
-            <div className="flex justify-between items-center p-4">
-                <h5 className="text-lg font-semibold">Menu</h5>
-                <button onClick={toggleSidebar} className="md:hidden text-gray-600">
+            <div className="flex justify-between items-center p-4 border-b border-blue-300">
+                <div className="text-lg font-semibold text-blue-600">
+                    <div className="flex items-center">
+                        <div className="shrink-0">
+                            <img className="w-8 h-8 rounded-full" src={`${userData?.photoURL}`} alt="Neil image" />
+                        </div>
+                        <div className="flex-1 min-w-0 ms-4">
+                            <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                {userData?.name}
+                            </p>
+                            <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                {userData?.email}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button onClick={toggleSidebar} className="md:hidden text-blue-600">
                     <IoIosArrowRoundForward size={30} />
                 </button>
             </div>

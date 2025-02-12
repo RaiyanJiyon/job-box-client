@@ -45,7 +45,7 @@ const Login = () => {
                             type="email" 
                             id="email" 
                             className="bg-gray-50 border border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4" 
-                            placeholder="johndoe" 
+                            placeholder="john doe" 
                             required 
                         />
                         {errors.email && <span className='text-red-500'>{errors.email.message}</span>}

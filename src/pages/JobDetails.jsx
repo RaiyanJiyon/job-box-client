@@ -62,7 +62,7 @@ const JobDetails = () => {
 
     if (!job) return <div className="p-6 text-red-500">Job not found.</div>;
 
-    const updatedDate = new Date(job.updated).toISOString().split('T')[0];
+    // const updatedDate = new Date(job.updated).toISOString().split('T')[0];
     const deadlineDate = new Date(job.deadline).toISOString().split('T')[0];
 
     return (
@@ -108,7 +108,7 @@ const JobDetails = () => {
                             <EmploymentInfoRow iconSrc="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/experience.svg" label="Experience" value={job.experience} />
                             <EmploymentInfoRow iconSrc="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/job-type.svg" label="Job Type" value={job.jobType} />
                             <EmploymentInfoRow iconSrc="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/deadline.svg" label="Deadline" value={deadlineDate} />
-                            <EmploymentInfoRow iconSrc="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/updated.svg" label="Updated" value={updatedDate} />
+                            <EmploymentInfoRow iconSrc="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/updated.svg" label="Updated" value={'Not Updated'} />
                             <EmploymentInfoRow iconSrc="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/location.svg" label="Location" value={job.location} />
                         </div>
                     </div>

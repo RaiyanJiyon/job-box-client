@@ -448,5 +448,56 @@
             "Experience in FMCG research",
             "Knowledge of consumer behavior trends"
         ]
+    },
+
+
+
+
+
+    {
+        "category": "Software Development",
+        "company": "Tech Innovations",
+        "logo": "https://cdn-icons-png.flaticon.com/512/882/882747.png",
+        "location": "San Francisco, US",
+        "position": "Full Stack Developer",
+        "employmentType": "Full Time",
+        "workType": "Hybrid",
+        "postedTime": "2025-04-10T18:00:00Z",
+        "description": "We are seeking a Full Stack Developer to join our team and build innovative web applications.",
+        "salary": 700,
+        "skills": [
+            "JavaScript",
+            "React",
+            "Node.js"
+        ],
+        "appliedPersonInformation": [
+            {
+                "name": "John Doe",
+                "email": "johndoe@example.com"
+            }
+        ],
+        "experience": "3 - 5 years",
+        "jobType": "Permanent",
+        "deadline": "2025-12-31T00:00:00.000Z",
+        "updated": "2025-12-30T00:00:00.000Z",
+        "phoneNumber": "(987) 654-3210",
+        "email": "contact@techinnovations.com",
+        "brand": "Tech Innovations",
+        "industry": "Software Development",
+        "jobLevel": "Mid-Senior Level",
+        "vision": "To drive technological advancements through innovative software solutions.",
+        "candidateInformation": {
+            "idealCandidateSkills": "The ideal candidate will have a strong background in full stack development and experience with modern web frameworks."
+        },
+        "essentialKnowledgeSkillsExperience": [
+            "Proficiency in JavaScript and related frameworks",
+            "Experience with RESTful APIs",
+            "Understanding of database management"
+        ],
+        "preferredExperience": [
+            "Experience with cloud platforms",
+            "Knowledge of CI/CD pipelines"
+        ]
     }
+    
 ]

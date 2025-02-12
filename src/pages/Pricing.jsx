@@ -1,4 +1,6 @@
 import SectionTitle from "../components/common/SectionTitle";
+import Testimonial from "../components/Contact/Testimonial/Testimonial";
+import NewsletterSubscription from "../components/home/NewsletterSubscription/NewsletterSubscription";
 import FAQ from "../components/Pricing/FAQ/FAQ";
 import PricingCard from "../components/Pricing/PricingCard/PricingCard";
 import PricingCover from "../components/Pricing/PricingCover/PricingCover";
@@ -18,6 +20,12 @@ const Pricing = () => {
 
             <div className="my-20">
                 <FAQ />
+            </div>
+            <div className="my-20">
+                <Testimonial />
+            </div>
+            <div className="my-20">
+                <NewsletterSubscription />
             </div>
         </div>
     );
