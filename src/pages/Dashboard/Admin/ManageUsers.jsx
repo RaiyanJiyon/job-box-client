@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import SectionTitle from '../../../components/common/SectionTitle';
+import Swal from 'sweetalert2';
 
 const ManageUsers = () => {
     const [users, setUsers] = useState([]);
@@ -17,6 +18,38 @@ const ManageUsers = () => {
         };
         fetchUsers();
     }, []);
+
+    const handleUserDelete = id => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                try {
+                    const response = await axiosSecure.delete(`/users/${id}`);
+                    if (response) {
+                        setUsers(users.filter(user => user._id !== id));
+                        Swal.fire({
+                            title: "Deleted!",
+                            text: "User has been deleted.",
+                            icon: "success"
+                        });
+                    }
+                } catch (error) {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "Failed to delete user.",
+                        icon: "error"
+                    });
+                }
+            }
+        });
+    }
 
     return (
         <div>
@@ -69,7 +102,7 @@ const ManageUsers = () => {
                                     <td className="px-6 py-4 text-center">
                                         <div className="flex justify-center space-x-4">
                                             <button className="text-blue-600 hover:underline">Edit</button>
-                                            <button className="text-red-600 hover:underline">Delete</button>
+                                            <button onClick={() => handleUserDelete(user._id)} className="text-red-600 hover:underline">Delete</button>
                                         </div>
                                     </td>
                                 </tr>
