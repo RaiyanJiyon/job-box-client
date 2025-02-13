@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import RecruiterCard from "../../components/Recruiter/RecruiterCard/RecruiterCard";
+import NewsAndBlog from "../../components/home/NewsAndBlog/NewsAndBlog";
+import NewsletterSubscription from "../../components/home/NewsletterSubscription/NewsletterSubscription";
 
 const Recruiter = () => {
     const [recruiters, setRecruiters] = useState([]);
@@ -18,7 +20,7 @@ const Recruiter = () => {
     }, []);
 
     return (
-        <div className="w-11/12 max-w-screen-2xl mx-auto">
+        <div className="">
             <div className="relative h-36 bg-cover bg-center mt-2" style={{ backgroundImage: 'url(https://i.ibb.co/MDNsJCHy/cover.jpg)' }}>
                 {/* Dark overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>
@@ -26,8 +28,7 @@ const Recruiter = () => {
                 {/* Content */}
                 <div className="relative  flex flex-col justify-center h-full w-11/12 max-w-screen-2xl mx-auto">
                     <h2 className="text-3xl font-bold text-white mb-2">Browse Companies</h2>
-                    <p className="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni,
-                        atque delectus molestias quis?</p>
+                    <p className="text-gray-200">Discover companies that are actively hiring and find your perfect job match.</p>
 
                     {/* Breadcrumb navigation */}
                     <div className="absolute bottom-6 right-6 bg-white/90 px-4 py-2 rounded-lg text-sm">
@@ -37,13 +38,18 @@ const Recruiter = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-11/12 max-w-screen-2xl mx-auto mt-16">
                 {
                     recruiters.map((recruiter, idx) => (
                         <RecruiterCard key={idx} recruiter={recruiter} />
                     ))
                 }
+            </div>
+            <div className="mt-16">
+                <NewsAndBlog />
+            </div>
+            <div className="my-16">
+                <NewsletterSubscription />
             </div>
         </div>
     );

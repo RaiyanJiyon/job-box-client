@@ -21,7 +21,7 @@ const NewsAndBlog = () => {
     return (
         <section>
             <SectionTitle title="News and Blog" description="Get the latest news, updates and tips" />
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-4/5 max-w-screen-2xl mx-auto mt-14'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12 max-w-screen-2xl mx-auto mt-14'>
                 {
                     news.map((news, idx) => (
                         <div key={idx} className="bg-white border border-gray-200 rounded-lg shadow-sm px-3 pt-3">
