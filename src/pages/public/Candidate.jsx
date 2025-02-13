@@ -1,23 +1,25 @@
 import { useEffect, useState } from "react";
-import RecruiterCard from "../../components/Recruiter/RecruiterCard/RecruiterCard";
 import NewsAndBlog from "../../components/home/NewsAndBlog/NewsAndBlog";
 import NewsletterSubscription from "../../components/home/NewsletterSubscription/NewsletterSubscription";
+import CandidateCard from "../../components/Candidate/CandidateCard/CandidateCard";
 
-const Recruiter = () => {
-    const [recruiters, setRecruiters] = useState([]);
+const Candidate = () => {
+    const [candidates, setCandidates] = useState([]);
 
     useEffect(() => {
-        const fetchRecruiters = async () => {
+        const fetchCandidates = async () => {
             try {
-                const response = await fetch('/recruiters.json');
+                const response = await fetch('/candidates.json');
                 const data = await response.json();
-                setRecruiters(data);
+                setCandidates(data);
             } catch (error) {
                 console.error(error.message);
             }
         }
-        fetchRecruiters();
+        fetchCandidates();
     }, []);
+
+    console.log(candidates)
 
     return (
         <div>
@@ -27,12 +29,12 @@ const Recruiter = () => {
 
                 {/* Content */}
                 <div className="relative  flex flex-col justify-center h-full w-11/12 max-w-screen-2xl mx-auto">
-                    <h2 className="text-3xl font-bold text-white mb-2">Browse Companies</h2>
-                    <p className="text-gray-200">Discover companies that are actively hiring and find your perfect job match.</p>
+                    <h2 className="text-3xl font-bold text-white mb-2">Browse Candidates</h2>
+                    <p className="text-gray-200">Find the best candidates for your company. Explore their profiles, see their experience and skills.</p>
 
                     {/* Breadcrumb navigation */}
                     <div className="absolute bottom-6 right-6 bg-white/90 px-4 py-2 rounded-lg text-sm">
-                        <span className="text-gray-600">Recruiters</span>
+                        <span className="text-gray-600">Candidates</span>
                         <span className="mx-2 text-gray-400">›</span>
                         <span className="text-gray-800">Blog</span>
                     </div>
@@ -40,8 +42,8 @@ const Recruiter = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-11/12 max-w-screen-2xl mx-auto mt-16">
                 {
-                    recruiters.map((recruiter, idx) => (
-                        <RecruiterCard key={idx} recruiter={recruiter} />
+                    candidates.map((candidate, idx) => (
+                        <CandidateCard key={idx} candidate={candidate} />
                     ))
                 }
             </div>
@@ -55,4 +57,4 @@ const Recruiter = () => {
     );
 };
 
-export default Recruiter;
+export default Candidate;

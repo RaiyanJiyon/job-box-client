@@ -1,0 +1,178 @@
+[
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/men/1.jpg",
+        "name": "Robert Fox",
+        "title": "UI/UX Designer",
+        "rating": 5,
+        "ratingCount": 65,
+        "description": "Expert in creating user-friendly interfaces with modern design tools.",
+        "tags": ["Figma", "Adobe XD", "PSD", "App", "Digital"],
+        "location": "Chicago, US",
+        "hourlyRate": "$45 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/women/2.jpg",
+        "name": "Jane Doe",
+        "title": "Frontend Developer",
+        "rating": 4.8,
+        "ratingCount": 70,
+        "description": "Passionate about building responsive web applications using React.",
+        "tags": ["React", "JavaScript", "HTML", "CSS", "Web"],
+        "location": "New York, US",
+        "hourlyRate": "$50 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/men/3.jpg",
+        "name": "Michael Johnson",
+        "title": "Backend Developer",
+        "rating": 4.7,
+        "ratingCount": 55,
+        "description": "Experienced backend developer specializing in Node.js and Python.",
+        "tags": ["Node.js", "Python", "API", "Database", "Cloud"],
+        "location": "San Francisco, US",
+        "hourlyRate": "$55 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/women/4.jpg",
+        "name": "Emily Davis",
+        "title": "Graphic Designer",
+        "rating": 4.9,
+        "ratingCount": 80,
+        "description": "Creative graphic designer skilled in branding and visual storytelling.",
+        "tags": ["Illustrator", "Photoshop", "Branding", "Typography", "Print"],
+        "location": "Los Angeles, US",
+        "hourlyRate": "$40 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/men/5.jpg",
+        "name": "David Wilson",
+        "title": "Full Stack Developer",
+        "rating": 4.6,
+        "ratingCount": 60,
+        "description": "Versatile full stack developer with expertise in both frontend and backend.",
+        "tags": ["MERN", "Django", "SQL", "REST", "DevOps"],
+        "location": "Austin, US",
+        "hourlyRate": "$60 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/women/6.jpg",
+        "name": "Sarah Brown",
+        "title": "Product Manager",
+        "rating": 4.8,
+        "ratingCount": 75,
+        "description": "Strategic product manager with experience in agile methodologies.",
+        "tags": ["Agile", "Scrum", "Roadmap", "Strategy", "Leadership"],
+        "location": "Seattle, US",
+        "hourlyRate": "$70 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/men/7.jpg",
+        "name": "James Taylor",
+        "title": "Data Scientist",
+        "rating": 4.7,
+        "ratingCount": 50,
+        "description": "Analytical data scientist with proficiency in machine learning algorithms.",
+        "tags": ["Python", "R", "Machine Learning", "Data Analysis", "AI"],
+        "location": "Boston, US",
+        "hourlyRate": "$65 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/women/8.jpg",
+        "name": "Olivia Martinez",
+        "title": "Content Writer",
+        "rating": 4.9,
+        "ratingCount": 85,
+        "description": "Talented content writer with a focus on SEO and engaging storytelling.",
+        "tags": ["SEO", "Copywriting", "Blogging", "Content Strategy", "Editing"],
+        "location": "Miami, US",
+        "hourlyRate": "$35 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/men/9.jpg",
+        "name": "Daniel Anderson",
+        "title": "Mobile App Developer",
+        "rating": 4.6,
+        "ratingCount": 65,
+        "description": "Skilled mobile app developer proficient in iOS and Android platforms.",
+        "tags": ["Swift", "Kotlin", "Flutter", "React Native", "Mobile"],
+        "location": "Denver, US",
+        "hourlyRate": "$50 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/women/10.jpg",
+        "name": "Sophia Thomas",
+        "title": "Marketing Specialist",
+        "rating": 4.8,
+        "ratingCount": 70,
+        "description": "Results-driven marketing specialist with expertise in digital campaigns.",
+        "tags": ["Digital Marketing", "Social Media", "Analytics", "SEO", "PPC"],
+        "location": "Atlanta, US",
+        "hourlyRate": "$45 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "name": "William Jackson",
+        "title": "DevOps Engineer",
+        "rating": 4.7,
+        "ratingCount": 55,
+        "description": "Efficient DevOps engineer experienced in CI/CD pipeline automation.",
+        "tags": ["CI/CD", "Docker", "Kubernetes", "AWS", "Automation"],
+        "location": "Dallas, US",
+        "hourlyRate": "$60 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/women/12.jpg",
+        "name": "Ava White",
+        "title": "UX Researcher",
+        "rating": 4.9,
+        "ratingCount": 80,
+        "description": "Detail-oriented UX researcher focused on user behavior analysis.",
+        "tags": ["User Research", "Usability Testing", "Surveys", "Prototyping", "Analysis"],
+        "location": "Portland, US",
+        "hourlyRate": "$40 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/men/13.jpg",
+        "name": "Liam Harris",
+        "title": "Cybersecurity Analyst",
+        "rating": 4.6,
+        "ratingCount": 60,
+        "description": "Dedicated cybersecurity analyst with experience in threat detection.",
+        "tags": ["Cybersecurity", "Ethical Hacking", "Network Security", "Risk Management", "Compliance"],
+        "location": "Philadelphia, US",
+        "hourlyRate": "$55 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/women/14.jpg",
+        "name": "Isabella Clark",
+        "title": "Video Editor",
+        "rating": 4.8,
+        "ratingCount": 75,
+        "description": "Creative video editor skilled in post-production and motion graphics.",
+        "tags": ["After Effects", "Premiere Pro", "Motion Graphics", "Editing", "Color Grading"],
+        "location": "San Diego, US",
+        "hourlyRate": "$45 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/men/15.jpg",
+        "name": "Noah Lewis",
+        "title": "Game Developer",
+        "rating": 4.7,
+        "ratingCount": 50,
+        "description": "Innovative game developer with expertise in Unity and Unreal Engine.",
+        "tags": ["Unity", "Unreal Engine", "Game Design", "C#", "3D Modeling"],
+        "location": "Las Vegas, US",
+        "hourlyRate": "$50 / hour"
+    },
+    {
+        "profilePicture": "https://randomuser.me/api/portraits/women/16.jpg",
+        "name": "Mia Walker",
+        "title": "Business Analyst",
+        "rating": 4.9,
+        "ratingCount": 85,
+        "description": "Detail-focused business analyst with strong problem-solving skills.",
+        "tags": ["Business Analysis", "Requirements Gathering", "Process Improvement", "Stakeholder Management", "Documentation"],
+        "location": "Houston, US",
+        "hourlyRate": "$45 / hour"
+    }
+]

@@ -31,6 +31,7 @@ import RecruiterHome from '../pages/Dashboard/Recruiter/RecruiterHome';
 import ProtectedRoute from './ProtectedRoute';
 import DashboardLayout from '../layout/DashboardLayout';
 import Recruiter from '../pages/public/Recruiter';
+import Candidate from '../pages/public/Candidate';
 
 
 const router = createBrowserRouter([
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
             {
                 path: '/recruiters',
                 element: <Recruiter />
+            },
+            {
+                path: '/candidates',
+                element: <Candidate />
             },
             {
                 path: '/job-details/:id',
