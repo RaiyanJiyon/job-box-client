@@ -1,122 +1,122 @@
 [
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009798.png",
-      "companyName": "Deloitte",
-      "rating": 5,
-      "ratingCount": 54,
-      "location": "New York, US",
-      "openJobs": 58
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/2910/2910764.png",
-      "companyName": "PwC",
-      "rating": 4.7,
-      "ratingCount": 45,
-      "location": "San Francisco, US",
-      "openJobs": 42
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/2910/2910763.png",
-      "companyName": "Ernst & Young (EY)",
-      "rating": 4.8,
-      "ratingCount": 60,
-      "location": "Chicago, US",
-      "openJobs": 65
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/2910/2910762.png",
-      "companyName": "KPMG",
-      "rating": 4.6,
-      "ratingCount": 50,
-      "location": "Los Angeles, US",
-      "openJobs": 52
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009797.png",
-      "companyName": "Accenture",
-      "rating": 4.9,
-      "ratingCount": 80,
-      "location": "Dallas, US",
-      "openJobs": 75
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009796.png",
-      "companyName": "IBM",
-      "rating": 4.5,
-      "ratingCount": 70,
-      "location": "Austin, US",
-      "openJobs": 60
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009795.png",
-      "companyName": "Microsoft",
-      "rating": 4.8,
-      "ratingCount": 90,
-      "location": "Seattle, US",
-      "openJobs": 85
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009794.png",
-      "companyName": "Google",
-      "rating": 4.9,
-      "ratingCount": 100,
-      "location": "Mountain View, US",
-      "openJobs": 100
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009793.png",
-      "companyName": "Amazon",
-      "rating": 4.7,
-      "ratingCount": 120,
-      "location": "Seattle, US",
-      "openJobs": 110
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009792.png",
-      "companyName": "Facebook",
-      "rating": 4.6,
-      "ratingCount": 85,
-      "location": "Menlo Park, US",
-      "openJobs": 90
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009791.png",
-      "companyName": "Apple",
-      "rating": 4.8,
-      "ratingCount": 95,
-      "location": "Cupertino, US",
-      "openJobs": 88
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009790.png",
-      "companyName": "Oracle",
-      "rating": 4.4,
-      "ratingCount": 65,
-      "location": "Redwood City, US",
-      "openJobs": 55
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009789.png",
-      "companyName": "Salesforce",
-      "rating": 4.7,
-      "ratingCount": 75,
-      "location": "San Francisco, US",
-      "openJobs": 70
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009788.png",
-      "companyName": "Tesla",
-      "rating": 4.5,
-      "ratingCount": 60,
-      "location": "Palo Alto, US",
-      "openJobs": 62
-  },
-  {
-      "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009787.png",
-      "companyName": "Netflix",
-      "rating": 4.9,
-      "ratingCount": 55,
-      "location": "Los Gatos, US",
-      "openJobs": 48
-  }
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009798.png",
+        "companyName": "Deloitte",
+        "rating": 5,
+        "ratingCount": 54,
+        "location": "New York, US",
+        "openJobs": 58
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/2910/2910764.png",
+        "companyName": "PwC",
+        "rating": 4.7,
+        "ratingCount": 45,
+        "location": "San Francisco, US",
+        "openJobs": 42
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/2910/2910763.png",
+        "companyName": "Ernst & Young (EY)",
+        "rating": 4.8,
+        "ratingCount": 60,
+        "location": "Chicago, US",
+        "openJobs": 65
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/2910/2910762.png",
+        "companyName": "KPMG",
+        "rating": 4.6,
+        "ratingCount": 50,
+        "location": "Los Angeles, US",
+        "openJobs": 52
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009797.png",
+        "companyName": "Accenture",
+        "rating": 4.9,
+        "ratingCount": 80,
+        "location": "Dallas, US",
+        "openJobs": 75
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009796.png",
+        "companyName": "IBM",
+        "rating": 4.5,
+        "ratingCount": 70,
+        "location": "Austin, US",
+        "openJobs": 60
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009795.png",
+        "companyName": "Microsoft",
+        "rating": 4.8,
+        "ratingCount": 90,
+        "location": "Seattle, US",
+        "openJobs": 85
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009794.png",
+        "companyName": "Google",
+        "rating": 4.9,
+        "ratingCount": 100,
+        "location": "Mountain View, US",
+        "openJobs": 100
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009793.png",
+        "companyName": "Amazon",
+        "rating": 4.7,
+        "ratingCount": 120,
+        "location": "Seattle, US",
+        "openJobs": 110
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009792.png",
+        "companyName": "Facebook",
+        "rating": 4.6,
+        "ratingCount": 85,
+        "location": "Menlo Park, US",
+        "openJobs": 90
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009791.png",
+        "companyName": "Apple",
+        "rating": 4.8,
+        "ratingCount": 95,
+        "location": "Cupertino, US",
+        "openJobs": 88
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009790.png",
+        "companyName": "Oracle",
+        "rating": 4.4,
+        "ratingCount": 65,
+        "location": "Redwood City, US",
+        "openJobs": 55
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009789.png",
+        "companyName": "Salesforce",
+        "rating": 4.7,
+        "ratingCount": 75,
+        "location": "San Francisco, US",
+        "openJobs": 70
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009788.png",
+        "companyName": "Tesla",
+        "rating": 4.5,
+        "ratingCount": 60,
+        "location": "Palo Alto, US",
+        "openJobs": 62
+    },
+    {
+        "companyLogo": "https://cdn-icons-png.flaticon.com/512/3009/3009787.png",
+        "companyName": "Netflix",
+        "rating": 4.9,
+        "ratingCount": 55,
+        "location": "Los Gatos, US",
+        "openJobs": 48
+    }
 ]

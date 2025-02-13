@@ -1,0 +1,52 @@
+import { useEffect, useState } from "react";
+import RecruiterCard from "../../components/Recruiter/RecruiterCard/RecruiterCard";
+
+const Recruiter = () => {
+    const [recruiters, setRecruiters] = useState([]);
+
+    useEffect(() => {
+        const fetchRecruiters = async () => {
+            try {
+                const response = await fetch('/recruiters.json');
+                const data = await response.json();
+                setRecruiters(data);
+            } catch (error) {
+                console.error(error.message);
+            }
+        }
+        fetchRecruiters();
+    }, []);
+
+    return (
+        <div className="w-11/12 max-w-screen-2xl mx-auto">
+            <div className="relative h-36 bg-cover bg-center mt-2" style={{ backgroundImage: 'url(https://i.ibb.co/MDNsJCHy/cover.jpg)' }}>
+                {/* Dark overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>
+
+                {/* Content */}
+                <div className="relative  flex flex-col justify-center h-full w-11/12 max-w-screen-2xl mx-auto">
+                    <h2 className="text-3xl font-bold text-white mb-2">Browse Companies</h2>
+                    <p className="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus magni,
+                        atque delectus molestias quis?</p>
+
+                    {/* Breadcrumb navigation */}
+                    <div className="absolute bottom-6 right-6 bg-white/90 px-4 py-2 rounded-lg text-sm">
+                        <span className="text-gray-600">Recruiters</span>
+                        <span className="mx-2 text-gray-400">›</span>
+                        <span className="text-gray-800">Blog</span>
+                    </div>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-20">
+                {
+                    recruiters.map((recruiter, idx) => (
+                        <RecruiterCard key={idx} recruiter={recruiter} />
+                    ))
+                }
+            </div>
+        </div>
+    );
+};
+
+export default Recruiter;
