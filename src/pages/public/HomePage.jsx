@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import BrowseCategory from "../../components/home/BrowseCategory/BrowseCategory";
 import Hero from "../../components/home/Hero/Hero";
 import Hiring from "../../components/home/Hiring/Hiring";
@@ -15,6 +16,10 @@ const HomePage = () => {
     useScrollToTop();
     return (
         <div>
+            <Helmet>
+                <title>Home | Job Box</title>
+            </Helmet>
+            
             <div className="pb-20">
                 <Hero />
             </div>

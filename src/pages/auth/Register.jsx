@@ -6,6 +6,7 @@ import SuccessToaster from '../../components/common/Toaster/SuccessToaster';
 import ErrorToaster from '../../components/common/Toaster/ErrorToaster';
 import { useNavigate } from 'react-router-dom';
 import useAxiosPublic from '../../hooks/useAxiosPublic';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
     const { signUpUserWithEmail } = useAuth();
@@ -41,6 +42,10 @@ const Register = () => {
 
     return (
         <div className='max-w-screen-2xl w-11/12 mx-auto'>
+            <Helmet>
+                <title>Register | Job Box</title>
+            </Helmet>
+            
             <div className='w-4/5 md:w-[25%] mx-auto py-16'>
                 <div>
                     <WelcomeAuth

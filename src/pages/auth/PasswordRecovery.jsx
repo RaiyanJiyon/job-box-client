@@ -1,8 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const PasswordRecovery = () => {
     return (
         <div className='max-w-screen-2xl w-11/12 mx-auto'>
+            <Helmet>
+                <title>Password Recovery | Job Box</title>
+            </Helmet>
+
             <div className='w-4/5 md:w-[40%] mx-auto py-16'>
                 <div className='pb-4 mb-4 text-center'>
                     <h3 className='text-blue-500 font-medium text-sm mb-2'>Forgot Password</h3>

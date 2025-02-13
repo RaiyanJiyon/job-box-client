@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const NotFound = () => {
     return (
         <section className="bg-white">
+            <Helmet>
+                <title>Not Found</title>
+            </Helmet>
+            
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-sm text-center">
                     <div className='w-[60%] mx-auto mb-8'>

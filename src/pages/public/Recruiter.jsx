@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import RecruiterCard from "../../components/Recruiter/RecruiterCard/RecruiterCard";
 import NewsAndBlog from "../../components/home/NewsAndBlog/NewsAndBlog";
 import NewsletterSubscription from "../../components/home/NewsletterSubscription/NewsletterSubscription";
+import useScrollToTop from "../../hooks/useScrollToTop";
+import { Helmet } from "react-helmet-async";
 
 const Recruiter = () => {
+    useScrollToTop();
     const [recruiters, setRecruiters] = useState([]);
 
     useEffect(() => {
@@ -21,6 +24,10 @@ const Recruiter = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Recruiter | Job Box</title>
+            </Helmet>
+
             <div className="relative h-36 bg-cover bg-center mt-2" style={{ backgroundImage: 'url(https://i.ibb.co/MDNsJCHy/cover.jpg)' }}>
                 {/* Dark overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>

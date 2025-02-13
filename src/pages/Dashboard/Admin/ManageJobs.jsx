@@ -5,11 +5,12 @@ import useAxiosPublic from '../../../hooks/useAxiosPublic';
 import Swal from 'sweetalert2';
 import useFetchJobs from '../../../hooks/useFetchJobs';
 import Loader from '../../../components/common/Loader/Loader';
+import { Helmet } from 'react-helmet-async';
 
 const ManageJobs = () => {
     const axiosSecure = useAxiosSecure();
 
-    const {jobs, loading} = useFetchJobs();
+    const { jobs, loading } = useFetchJobs();
 
     if (loading) {
         return <Loader />
@@ -49,6 +50,10 @@ const ManageJobs = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Manage Jobs | Job Box</title>
+            </Helmet>
+
             <SectionTitle title="All Jobs" description="Manage job postings, edit details, or remove job listings." />
             <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
                 <table className="w-full text-sm text-left text-gray-500">

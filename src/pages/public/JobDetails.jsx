@@ -8,6 +8,7 @@ import useScrollToTop from '../../hooks/useScrollToTop';
 import FeaturedJobs from '../../components/JobDetails/FeaturedJobs/FeaturedJobs';
 import useAxiosPublic from '../../hooks/useAxiosPublic';
 import SimilarJobs from '../../components/JobDetails/SimilarJobs/SimilarJobs';
+import { Helmet } from 'react-helmet-async';
 
 // Utility function to format the date
 const formatDate = (dateTime) => {
@@ -67,6 +68,10 @@ const JobDetails = () => {
 
     return (
         <div className='w-11/12 max-w-screen-2xl mx-auto mb-16 p-6'>
+            <Helmet>
+                <title>Job Details | Job Box</title>
+            </Helmet>
+            
             {/* Job Banner */}
             <img className='w-full rounded-2xl' src="https://i.ibb.co.com/TDm1ySpB/thumb.png" alt="Job Banner" />
 

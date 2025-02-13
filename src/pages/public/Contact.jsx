@@ -4,11 +4,16 @@ import ContactForm from '../../components/Contact/ContactForm/ContactForm';
 import OurTeam from '../../components/Contact/OurTeam/OurTeam';
 import Testimonial from '../../components/Contact/Testimonial/Testimonial';
 import useScrollToTop from '../../hooks/useScrollToTop';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     useScrollToTop();
     return (
         <div>
+            <Helmet>
+                <title>Contact | Job Box</title>
+            </Helmet>
+            
             <div className="relative h-36 bg-cover bg-center mt-2" style={{ backgroundImage: 'url(https://i.ibb.co/MDNsJCHy/cover.jpg)' }}>
                 {/* Dark overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>

@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import ErrorToaster from '../../components/common/Toaster/ErrorToaster';
 import SuccessToaster from '../../components/common/Toaster/SuccessToaster';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const { signInUserWithEmail } = useAuth();
@@ -32,6 +33,10 @@ const Login = () => {
 
     return (
         <div className='max-w-screen-2xl w-11/12 mx-auto'>
+            <Helmet>
+                <title>Login | Job Box</title>
+            </Helmet>
+
             <div className='w-4/5 md:w-[25%] mx-auto py-16'>
                 <div className='pb-4'>
                     <WelcomeAuth welcomeMessage="Welcome back!" title="Member Login" description="Access to all features. No credit card required." />
@@ -40,25 +45,25 @@ const Login = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-6">
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">Email address*</label>
-                        <input 
+                        <input
                             {...register("email", { required: "Email is required" })}
-                            type="email" 
-                            id="email" 
-                            className="bg-gray-50 border border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4" 
-                            placeholder="john doe" 
-                            required 
+                            type="email"
+                            id="email"
+                            className="bg-gray-50 border border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
+                            placeholder="john doe"
+                            required
                         />
                         {errors.email && <span className='text-red-500'>{errors.email.message}</span>}
                     </div>
                     <div className="mb-6">
                         <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900">Password *</label>
-                        <input 
+                        <input
                             {...register("password", { required: "Password is required" })}
-                            type="password" 
-                            id="password" 
-                            className="bg-gray-50 border border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4" 
-                            placeholder="************" 
-                            required 
+                            type="password"
+                            id="password"
+                            className="bg-gray-50 border border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
+                            placeholder="************"
+                            required
                         />
                         {errors.password && <span className='text-red-500'>{errors.password.message}</span>}
                     </div>

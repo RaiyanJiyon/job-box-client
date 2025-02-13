@@ -2,9 +2,10 @@ import { useForm } from "react-hook-form";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 import useAuth from "../../../hooks/useAuth";
+import { Helmet } from "react-helmet-async";
 
 const PostJob = () => {
-    const {user} = useAuth();
+    const { user } = useAuth();
     const axiosSecure = useAxiosSecure();
 
     const {
@@ -17,12 +18,12 @@ const PostJob = () => {
     const onSubmit = async (data) => {
         try {
             let logoUrl = null;
-    
+
             if (data.logo && data.logo[0]) {
                 const imgbbApiKey = "4f7db5cb8e27c23cd113273a96ce039c";
                 const formData = new FormData();
                 formData.append("image", data.logo[0]);
-    
+
                 // Upload the image to ImgBB
                 const imgbbResponse = await fetch(
                     `https://api.imgbb.com/1/upload?key=${imgbbApiKey}`,
@@ -31,7 +32,7 @@ const PostJob = () => {
                         body: formData,
                     }
                 );
-    
+
                 const imgbbData = await imgbbResponse.json();
                 if (imgbbData.success) {
                     logoUrl = imgbbData.data.url;
@@ -39,32 +40,32 @@ const PostJob = () => {
                     throw new Error("Failed to upload logo to ImgBB");
                 }
             }
-    
+
             // Validate and convert deadline to ISO string
             const deadlineDate = new Date(data.deadline);
             if (isNaN(deadlineDate.getTime())) {
                 throw new Error("Invalid deadline date");
             }
             const isoDeadline = deadlineDate.toISOString();
-    
+
             // Validate and convert postedTime to ISO string if needed
             const postedTimeDate = new Date(data.postedTime);
             if (isNaN(postedTimeDate.getTime())) {
                 throw new Error("Invalid posted time date");
             }
             const isoPostedTime = postedTimeDate.toISOString();
-    
+
             // Prepare the job data
             const jobData = {
                 ...data,
                 logo: logoUrl, // Store the ImgBB URL
                 salary: Number(data.salary), // Convert salary to a number
                 skills: data.skills ? data.skills.split(",").map(skill => skill.trim()) : [], // Convert to an array
-                essentialKnowledgeSkillsExperience: data.essentialKnowledgeSkillsExperience 
-                    ? data.essentialKnowledgeSkillsExperience.split(",").map(item => item.trim()) 
+                essentialKnowledgeSkillsExperience: data.essentialKnowledgeSkillsExperience
+                    ? data.essentialKnowledgeSkillsExperience.split(",").map(item => item.trim())
                     : [],
-                preferredExperience: data.preferredExperience 
-                    ? data.preferredExperience.split(",").map(item => item.trim()) 
+                preferredExperience: data.preferredExperience
+                    ? data.preferredExperience.split(",").map(item => item.trim())
                     : [],
                 deadline: isoDeadline, // Use the validated ISO string
                 postedTime: isoPostedTime, // Use the validated ISO string
@@ -75,16 +76,16 @@ const PostJob = () => {
                     }
                 ]
             };
-    
+
             // Log the job data for debugging
             console.log("Job Data:", jobData);
-    
+
             // Send the job data to the server
             const response = await axiosSecure.post("/jobs", jobData);
-    
+
             // Log the backend response for debugging
             console.log("Backend Response:", response);
-    
+
             if (response.data && response.status === 201) {
                 Swal.fire({
                     title: "Job Posted Successfully!",
@@ -115,6 +116,10 @@ const PostJob = () => {
 
     return (
         <div className="bg-white shadow-lg p-6 rounded-lg">
+            <Helmet>
+                <title>Post Job | Job Box</title>
+            </Helmet>
+            
             <h1 className="text-2xl font-bold text-blue-500 mb-6 text-center">Post a Job</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -3,6 +3,7 @@ import useAxiosPublic from '../../hooks/useAxiosPublic';
 import Card from '../../components/findJob/Card/Card';
 import JobSearchSection from '../../components/findJob/JobSearchSection/JobSearchSection';
 import useScrollToTop from '../../hooks/useScrollToTop';
+import { Helmet } from 'react-helmet-async';
 
 const findJobs = () => {
     useScrollToTop();
@@ -25,6 +26,9 @@ const findJobs = () => {
 
     return (
         <div className='w-11/12 max-w-screen-2xl mx-auto'>
+            <Helmet>
+                <title>Find Jobs | Job Box</title>
+            </Helmet>
             <div className='mt-4'>
                 <JobSearchSection />
             </div>

@@ -5,6 +5,7 @@ import useFetchUsers from "../../../hooks/useFetchUsers";
 import Loader from "../../../components/common/Loader/Loader";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
     const { users = [], loading: usersLoading } = useFetchUsers();
@@ -31,6 +32,10 @@ const Dashboard = () => {
 
     return (
         <div className="p-6">
+            <Helmet>
+                <title>Admin Dashboard | Job Box</title>
+            </Helmet>
+
             <h1 className="text-2xl font-bold mb-6">Admin Dashboard</h1>
 
             {/* Overview Cards */}

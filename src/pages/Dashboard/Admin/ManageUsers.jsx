@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import SectionTitle from '../../../components/common/SectionTitle';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const ManageUsers = () => {
     const [users, setUsers] = useState([]);
@@ -53,6 +54,10 @@ const ManageUsers = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Manage Users | Job Box</title>
+            </Helmet>
+
             <SectionTitle title="All Users" description="Manage the people, change the role of the user and also you can delete the user" />
             <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
                 <div className='flex justify-between items-center mb-4'>
