@@ -28,7 +28,7 @@ const Register = () => {
             const result = await signUpUserWithEmail(email, password);
 
             if (result?.user) {
-                await axiosPublic.post('/users', { name: fullName, email, username, role });
+                await axiosPublic.post('/users', { name: fullName, email, username, photoURL: "https://i.ibb.co.com/HT00h2mS/illustration-businessman-53876-5856.jpg", role });
                 SuccessToaster('Congratulations, your account has been successfully created.');
                 reset();
                 navigate('/');

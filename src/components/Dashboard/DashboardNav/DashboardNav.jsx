@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { AiOutlineMenu, AiOutlineHome, AiOutlineDashboard, AiOutlineUser, AiOutlineSetting, AiOutlineLogout } from "react-icons/ai";
 import { MdWorkOutline, MdAnalytics, MdOutlineSaveAlt, MdPostAdd } from "react-icons/md";
@@ -38,7 +38,6 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 { name: "Manage Users", path: "/dashboard/admin/manage-users", icon: <AiOutlineUser /> },
                 { name: "Manage Jobs", path: "/dashboard/admin/manage-jobs", icon: <MdWorkOutline /> },
                 { name: "Analytics", path: "/dashboard/admin/analytics", icon: <MdAnalytics /> },
-                { name: "Settings", path: "/dashboard/settings", icon: <AiOutlineSetting /> },
                 { name: "Logout", path: "/dashboard/logout", icon: <AiOutlineLogout /> },
             ];
         } else if (userData?.role === "job seeker") {
@@ -49,7 +48,6 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 { name: "Saved Jobs", path: "/dashboard/job-seeker/saved-jobs", icon: <MdOutlineSaveAlt /> },
                 { name: "Applied Jobs", path: "/dashboard/job-seeker/applied-jobs", icon: <MdPostAdd /> },
                 { name: "Profile", path: "/dashboard/profile", icon: <AiOutlineUser /> },
-                { name: "Settings", path: "/dashboard/settings", icon: <AiOutlineSetting /> },
                 { name: "Logout", path: "/dashboard/logout", icon: <AiOutlineLogout /> },
             ];
         } else if (userData?.role === "recruiter") {
@@ -60,7 +58,6 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 { name: "Manage Candidates", path: "/dashboard/recruiter/manage-candidates", icon: <MdWorkOutline /> },
                 { name: "Analytics", path: "/dashboard/recruiter/analytics", icon: <MdAnalytics /> },
                 { name: "Profile", path: "/dashboard/profile", icon: <AiOutlineUser /> },
-                { name: "Settings", path: "/dashboard/settings", icon: <AiOutlineSetting /> },
                 { name: "Logout", path: "/dashboard/logout", icon: <AiOutlineLogout /> },
             ];
         }
@@ -69,13 +66,17 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
             <ul className="space-y-2 font-medium">
                 {navLinks.map((item, index) => (
                     <li key={index}>
-                        <Link
+                        <NavLink
                             to={item.path}
-                            className="flex items-center p-3 text-gray-900 rounded-lg hover:bg-blue-100 transition-all"
+                            className={({ isActive }) =>
+                                `flex items-center p-3 rounded-lg transition-all ${isActive ? 'bg-blue-100 text-blue-500' : 'text-gray-900 hover:bg-blue-100'
+                                }`
+                            }
                         >
                             <span className="text-blue-500 text-xl">{item.icon}</span>
-                            <span className="ms-3 text-gray-700 font-semibold">{item.name}</span>
-                        </Link>
+                            <span className="ms-3 font-semibold">{item.name}</span>
+                        </NavLink>
+
                     </li>
                 ))}
             </ul>
@@ -94,10 +95,10 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                             <img className="w-8 h-8 rounded-full" src={`${userData?.photoURL}`} alt="Neil image" />
                         </div>
                         <div className="flex-1 min-w-0 ms-4">
-                            <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            <p className="text-sm font-medium text-gray-900 truncate">
                                 {userData?.name}
                             </p>
-                            <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                            <p className="text-sm text-gray-500 truncate">
                                 {userData?.email}
                             </p>
                         </div>

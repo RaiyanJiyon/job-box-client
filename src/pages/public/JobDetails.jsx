@@ -4,10 +4,10 @@ import { LuClock8 } from 'react-icons/lu';
 import { PiMapPinLight, PiSuitcaseSimple } from 'react-icons/pi';
 import { RiCheckboxCircleLine } from "react-icons/ri";
 import { useLoaderData } from 'react-router-dom';
-import useScrollToTop from '../hooks/useScrollToTop';
-import FeaturedJobs from '../components/JobDetails/FeaturedJobs/FeaturedJobs';
-import useAxiosPublic from '../hooks/useAxiosPublic';
-import SimilarJobs from '../components/JobDetails/SimilarJobs/SimilarJobs';
+import useScrollToTop from '../../hooks/useScrollToTop';
+import FeaturedJobs from '../../components/JobDetails/FeaturedJobs/FeaturedJobs';
+import useAxiosPublic from '../../hooks/useAxiosPublic';
+import SimilarJobs from '../../components/JobDetails/SimilarJobs/SimilarJobs';
 
 // Utility function to format the date
 const formatDate = (dateTime) => {

@@ -1,16 +1,21 @@
-import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
+
 // Public Pages
 import HomePage from '../pages/public/HomePage';
-import FindJobs from '../pages/FindJobs';
+import Contact from '../pages/public/Contact';
+import Pricing from '../pages/public/Pricing';
+import FindJobs from '../pages/public/FindJobs';
+import JobDetails from '../pages/public/JobDetails';
+
+// Not Found Pages
 import NotFound from '../pages/notFound/NotFound';
+
 // Auth Pages
 import Login from '../pages/auth/Login';
 import Register from '../pages/auth/Register';
 import PasswordRecovery from '../pages/auth/PasswordRecovery';
-import Contact from '../pages/Contact';
-import JobDetails from '../pages/JobDetails';
-import DashboardPage from '../pages/Dashboard/DashboardPage/DashboardPage';
+
 import Settings from '../pages/Dashboard/Settings';
 import Profile from '../pages/Dashboard/Profile';
 import ManageCandidates from '../pages/Dashboard/Recruiter/ManageCandidates';
@@ -25,7 +30,6 @@ import AppliedJobs from '../pages/Dashboard/JobSeekers/AppliedJobs';
 import RecruiterHome from '../pages/Dashboard/Recruiter/RecruiterHome';
 import ProtectedRoute from './ProtectedRoute';
 import DashboardLayout from '../layout/DashboardLayout';
-import Pricing from '../pages/Pricing';
 
 
 const router = createBrowserRouter([

@@ -3,23 +3,17 @@ import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import SectionTitle from '../../../components/common/SectionTitle';
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
 import Swal from 'sweetalert2';
+import useFetchJobs from '../../../hooks/useFetchJobs';
+import Loader from '../../../components/common/Loader/Loader';
 
 const ManageJobs = () => {
-    const [jobs, setJobs] = useState([]);
-    const axiosPublic = useAxiosPublic();
     const axiosSecure = useAxiosSecure();
 
-    useEffect(() => {
-        const fetchJobs = async () => {
-            try {
-                const response = await axiosPublic.get('/jobs'); // Fetch job data from API
-                setJobs(response.data);
-            } catch (error) {
-                console.error('Error fetching jobs:', error);
-            }
-        };
-        fetchJobs();
-    }, []);
+    const {jobs, loading} = useFetchJobs();
+
+    if (loading) {
+        return <Loader />
+    }
 
     const handleJobDelete = id => {
         Swal.fire({

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import JobSearchSection from '../components/findJob/JobSearchSection/JobSearchSection';
-import Card from '../components/findJob/Card/Card';
-import useAxiosPublic from '../hooks/useAxiosPublic';
-import useScrollToTop from '../hooks/useScrollToTop';
+import useAxiosPublic from '../../hooks/useAxiosPublic';
+import Card from '../../components/findJob/Card/Card';
+import JobSearchSection from '../../components/findJob/JobSearchSection/JobSearchSection';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 const findJobs = () => {
     useScrollToTop();

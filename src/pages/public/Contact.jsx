@@ -1,9 +1,9 @@
 import React from 'react';
-import Location from '../components/Contact/Location/Location';
-import ContactForm from '../components/Contact/ContactForm/ContactForm';
-import OurTeam from '../components/Contact/OurTeam/OurTeam';
-import Testimonial from '../components/Contact/Testimonial/Testimonial';
-import useScrollToTop from '../hooks/useScrollToTop';
+import Location from '../../components/Contact/Location/Location';
+import ContactForm from '../../components/Contact/ContactForm/ContactForm';
+import OurTeam from '../../components/Contact/OurTeam/OurTeam';
+import Testimonial from '../../components/Contact/Testimonial/Testimonial';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 const Contact = () => {
     useScrollToTop();
