@@ -9,7 +9,7 @@ const Card = ({ job }) => {
         navigate(`/job-details/${id}`)
     }
     return (
-        <div className="bg-white border border-gray-200 rounded-lg shadow-lg px-6 py-6 pb-4 hover:shadow-xl transition-shadow duration-300">
+        <div className="flex flex-col bg-white border border-gray-200 rounded-lg shadow-lg px-6 py-6 pb-4 hover:shadow-xl transition-shadow duration-300">
             {/* Company Info */}
             <div className="flex items-center gap-4">
                 <img className="w-12 h-12 rounded-full border" src={job.logo} alt={`${job.company} logo`} />
@@ -40,7 +40,7 @@ const Card = ({ job }) => {
             <p className="text-sm text-gray-600 mt-3 line-clamp-2">{job.description}</p>
 
             {/* Skills Tags */}
-            <div className="flex flex-wrap gap-2 mt-8">
+            <div className="flex flex-wrap gap-2 my-8">
                 {job.skills.map((skill, index) => (
                     <span
                         key={index}
@@ -52,7 +52,7 @@ const Card = ({ job }) => {
             </div>
 
             {/* Salary & Apply Button */}
-            <div className="flex justify-between items-center mt-5">
+            <div className="flex justify-between items-center mt-auto mb-4">
                 <p className="text-lg font-bold text-blue-700">
                     ${job.salary}<sub className="text-gray-500 font-normal">/Hour</sub>
                 </p>

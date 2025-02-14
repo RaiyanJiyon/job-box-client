@@ -9,6 +9,10 @@ import FeaturedJobs from '../../components/JobDetails/FeaturedJobs/FeaturedJobs'
 import useAxiosPublic from '../../hooks/useAxiosPublic';
 import SimilarJobs from '../../components/JobDetails/SimilarJobs/SimilarJobs';
 import { Helmet } from 'react-helmet-async';
+import useCurrentUser from '../../hooks/useCurrentUser';
+import useAuth from '../../hooks/useAuth';
+import ErrorToaster from '../../components/common/Toaster/ErrorToaster';
+import SuccessToaster from '../../components/common/Toaster/SuccessToaster';
 
 // Utility function to format the date
 const formatDate = (dateTime) => {
@@ -41,6 +45,7 @@ const JobDetails = () => {
     const axiosPublic = useAxiosPublic();
     const job = useLoaderData();
     const { category } = job;
+    const currentUser = useCurrentUser();
 
     useEffect(() => {
         const fetchSimilarJobs = async () => {
@@ -66,6 +71,33 @@ const JobDetails = () => {
     // const updatedDate = new Date(job.updated).toISOString().split('T')[0];
     const deadlineDate = new Date(job.deadline).toISOString().split('T')[0];
 
+    const handleSaveJobs = async (job) => {
+        if (!currentUser) {
+            ErrorToaster("User is not logged in. Please log in to save jobs.");
+            return;
+        }
+    
+        try {
+            const userId = currentUser._id; // Get the current user's ID
+            const jobId = job._id; // Extract the jobId from the job object
+    
+            const response = await axiosPublic.post("/saved-jobs", { userId, jobId });
+    
+            if (response.status === 201) {
+                SuccessToaster("Job saved successfully.");
+            } else {
+                throw new Error("Failed to save job.");
+            }
+        } catch (error) {
+            if (error.response && error.response.status === 409) {
+                // Handle duplicate job save attempt
+                ErrorToaster("This job is already saved.");
+            } else {
+                console.error("Failed to save job. Please try again:", error.message);
+                ErrorToaster("Failed to save job. Please try again.");
+            }
+        }
+    };
     return (
         <div className='w-11/12 max-w-screen-2xl mx-auto mb-16 p-6'>
             <Helmet>
@@ -149,7 +181,7 @@ const JobDetails = () => {
                     <div className='flex flex-col sm:flex-row justify-between items-center gap-6 mt-10'>
                         <div className="flex gap-4">
                             <button className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg">Apply Now</button>
-                            <button className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white">Save Job</button>
+                            <button onClick={() => handleSaveJobs(job)} className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white">Save Job</button>
                         </div>
                         <div className='flex items-center gap-3'>
                             <h3 className='text-gray-800 font-medium'>Share this</h3>
