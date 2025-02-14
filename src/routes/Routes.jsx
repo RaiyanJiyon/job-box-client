@@ -32,6 +32,7 @@ import ProtectedRoute from './ProtectedRoute';
 import DashboardLayout from '../layout/DashboardLayout';
 import Recruiter from '../pages/public/Recruiter';
 import Candidate from '../pages/public/Candidate';
+import JobsFind from '../pages/Dashboard/JobSeekers/JobsFind'
 
 
 const router = createBrowserRouter([
@@ -118,7 +119,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'job-seeker/browse-jobs',
-                element: <FindJobs />
+                element: <JobsFind />
             },
             {
                 path: 'job-seeker/saved-jobs',
