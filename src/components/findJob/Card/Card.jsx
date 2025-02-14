@@ -9,7 +9,7 @@ const Card = ({ job }) => {
         navigate(`/job-details/${id}`)
     }
     return (
-        <div className="flex flex-col bg-white border border-gray-200 rounded-lg shadow-lg px-6 py-6 pb-4 hover:shadow-xl transition-shadow duration-300">
+        <div className="flex flex-col bg-white border border-gray-200 rounded-lg shadow-lg px-6 py-6 pb-4 hover:shadow-xl transition-shadow duration-300 hover:bg-gray-100">
             {/* Company Info */}
             <div className="flex items-center gap-4">
                 <img className="w-12 h-12 rounded-full border" src={job.logo} alt={`${job.company} logo`} />

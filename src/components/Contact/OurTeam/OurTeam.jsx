@@ -31,7 +31,7 @@ const OurTeam = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-11/12 max-w-screen-2xl mx-auto my-16'>
                 {
                     teams.map(team => (
-                        <div className="w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <div className="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100">
                             <div className="flex flex-col items-center py-10">
                                 <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src={`${team.images}`} alt={`${team.name} image`} />
                                 <h5 className="mb-1 text-xl font-medium text-gray-900">{team.name}</h5>

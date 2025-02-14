@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const RecruiterCard = ({ recruiter }) => {
     return (
-        <div className="bg-[#f8faff] rounded-xl border border-blue-200 p-6 text-center">
+        <div className="bg-[#f8faff] rounded-xl border border-gray-200 p-6 text-center hover:bg-gray-100">
             <div className="flex justify-center mb-4">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center">
                     <img

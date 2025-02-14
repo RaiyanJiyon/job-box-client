@@ -26,7 +26,7 @@ const NewsAndBlog = () => {
                     news.map((news, idx) => (
                         <div key={idx} className="bg-white border border-gray-200 rounded-lg shadow-sm px-3 pt-3">
                             <Link className=''>
-                                <img className="w-full rounded-lg" src={`${news.image}`} alt={`${news.title} image`} />
+                                <img className="w-full rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-110" src={`${news.image}`} alt={`${news.title} image`} />
                             </Link>
                             <button type="button" class="my-5 px-3 py-1 text-xs font-medium text-center text-blue-400 hover:text-black bg-[#e0e6f7] rounded-md hover:bg-[#e0e6f1]">{news.category}</button>
                             <div className="">

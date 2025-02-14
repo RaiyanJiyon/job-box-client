@@ -71,7 +71,7 @@ const Testimonial = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center ml-3 mt-3">
-                                    <div className="shrink-0">
+                                    <div className="shrink-0 transition-transform duration-500 ease-in-out transform hover:scale-110">
                                         <img className="w-14 h-14 rounded-full" src={`${testimonial.image}`} alt={`${testimonial.name} image`} />
                                     </div>
                                     <div className="flex-1 min-w-0 ms-4">

@@ -5,7 +5,7 @@ import { PiMapPinLight, PiSuitcaseSimple } from 'react-icons/pi';
 
 const JobCard = ({ job }) => {
     return (
-        <div className="p-6 bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition-all w-full">
+        <div className="p-6 bg-white border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 transition-all w-full">
             {/* Job Title */}
             <h3 className="text-lg font-bold text-gray-900">
                 {job.position}

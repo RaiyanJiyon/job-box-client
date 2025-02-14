@@ -2,7 +2,7 @@ import { Star, MapPin } from "lucide-react"; // Ensure these imports are correct
 
 const CandidateCard = ({ candidate }) => {
     return (
-        <div className=" bg-blue-50 rounded-xl border border-blue-200 p-6">
+        <div className=" bg-[#f8faff] rounded-xl border border-gray-200 p-6 hover:bg-gray-100">
             {/* Top Section: Profile Picture and Name */}
             <div className="flex items-center mb-4">
                 {/* Profile Picture */}

@@ -2,7 +2,7 @@ import { IoMdCheckmark } from "react-icons/io";
 
 const PlanCard = ({ title, price, features, description }) => {
     return (
-        <div className="w-full p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8">
+        <div className="w-full p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 hover:bg-gray-100">
             <h5 className="mb-4 text-3xl font-bold">{title}</h5>
             <div className="flex items-baseline text-gray-900">
                 <span className="text-7xl text-blue-700 font-extrabold">$</span>

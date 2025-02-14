@@ -25,7 +25,7 @@ const JobsByLocation = () => {
                 {
                     locations.map((location, idx) => (
                         <div key={idx} className="bg-white border border-blue-100 rounded-lg shadow-sm px-3 pt-3">
-                            <div className='relative'>
+                            <div className='relative transition-transform duration-500 ease-in-out transform hover:scale-110'>
                                 <img className="rounded-lg w-full h-64" src={location.locationImage} alt={`${location.locationName} image`} />
                                 <button type="button" className="absolute top-0 left-4 my-5 px-3 py-1 text-xs font-medium text-blue-400 hover:text-black bg-blue-100 rounded-md hover:bg-blue-200">{location.category}</button>
                             </div>

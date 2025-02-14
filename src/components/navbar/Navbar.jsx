@@ -3,6 +3,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import SuccessToaster from '../common/Toaster/SuccessToaster';
 import ErrorToaster from '../common/Toaster/ErrorToaster';
+import useCurrentUser from '../../hooks/useCurrentUser';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +11,21 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const { user, signOutUser } = useAuth();
   const navigate = useNavigate();
+  const currentUser = useCurrentUser();
+  console.log(currentUser)
+
+  const getDashboardPath = (role) => {
+    switch (role) {
+      case 'admin':
+        return '/dashboard/admin/dashboard';
+      case 'job seeker':
+        return '/dashboard/job-seeker/dashboard';
+      case 'recruiter':
+        return '/dashboard/recruiter/home';
+      default:
+        return '/dashboard'; // Default path if role is not recognized
+    }
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -84,7 +100,7 @@ const Navbar = () => {
                 </div>
                 <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownUserAvatarButton">
                   <li>
-                    <Link to={'/dashboard'} className="block px-4 py-2 hover:bg-gray-100">
+                    <Link to={getDashboardPath(currentUser?.role)} className="block px-4 py-2 hover:bg-gray-100">
                       Dashboard
                     </Link>
                   </li>
