@@ -37,6 +37,7 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 { name: "Dashboard", path: "/dashboard/admin/dashboard", icon: <AiOutlineDashboard /> },
                 { name: "Manage Users", path: "/dashboard/admin/manage-users", icon: <AiOutlineUser /> },
                 { name: "Manage Jobs", path: "/dashboard/admin/manage-jobs", icon: <MdWorkOutline /> },
+                { name: "Saved Jobs", path: "/dashboard/job-seeker/saved-jobs", icon: <MdOutlineSaveAlt /> },
                 { name: "Analytics", path: "/dashboard/admin/analytics", icon: <MdAnalytics /> },
                 { name: "Logout", path: "/dashboard/logout", icon: <AiOutlineLogout /> },
             ];
@@ -55,6 +56,7 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 { name: "Home", path: "/", icon: <AiOutlineHome /> },
                 { name: "Dashboard", path: "/dashboard/recruiter/home", icon: <AiOutlineDashboard /> },
                 { name: "Post a Job", path: "/dashboard/recruiter/post-job", icon: <MdPostAdd /> },
+                { name: "Saved Jobs", path: "/dashboard/job-seeker/saved-jobs", icon: <MdOutlineSaveAlt /> },
                 { name: "Manage Candidates", path: "/dashboard/recruiter/manage-candidates", icon: <MdWorkOutline /> },
                 { name: "Analytics", path: "/dashboard/recruiter/analytics", icon: <MdAnalytics /> },
                 { name: "Profile", path: "/dashboard/profile", icon: <AiOutlineUser /> },

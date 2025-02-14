@@ -80,8 +80,14 @@ const JobDetails = () => {
         try {
             const userId = currentUser._id; // Get the current user's ID
             const jobId = job._id; // Extract the jobId from the job object
+            const jobCategory = job.category;
+            const jobCompany = job.company;
+            const jobLogo = job.logo;
+            const jobLocation = job.location;
+            const jobPosition = job.position;
     
-            const response = await axiosPublic.post("/saved-jobs", { userId, jobId });
+
+            const response = await axiosPublic.post("/saved-jobs", { userId, jobId, jobCategory, jobCompany, jobLogo, jobLocation, jobPosition });
     
             if (response.status === 201) {
                 SuccessToaster("Job saved successfully.");
