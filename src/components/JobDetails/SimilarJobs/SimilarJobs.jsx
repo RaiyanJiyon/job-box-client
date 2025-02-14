@@ -21,42 +21,42 @@ const SimilarJobs = ({ jobs }) => {
     };
 
     return (
-        <div className='border border-gray-300 rounded-xl p-6 bg-white shadow-md'>
+        <div className='border border-gray-300 rounded-xl p-6 bg-white shadow-md hover:bg-gray-100'>
             <h3 className='text-2xl font-semibold text-gray-800 mb-4'>Similar Jobs</h3>
             <div className=''>
                 {jobs.map((job, idx) => (
                     <div key={idx}>
-                        
-            {/* Divider */}
-            <div className='border border-b-gray-100 my-6'></div>
-                        <div className='border-b last:border-none pb-6 flex  gap-6 hover:bg-gray-50 p-4 rounded-lg transition duration-300'>
-                        {/* Company Logo */}
-                        <img className="w-16 h-16 p-2 rounded-lg border shadow-sm" src={job.logo} alt={`${job.company} logo`} />
-                        
-                        {/* Job Info */}
-                        <div className='flex-1'>
-                            <p className="text-lg font-semibold text-gray-900">{job.company}</p>
-                            <div className="flex flex-wrap gap-4 text-gray-600 text-sm mt-2">
-                                <div className="flex items-center gap-1">
-                                    <PiSuitcaseSimple className="text-blue-500" />
-                                    <span>{job.employmentType}</span>
+
+                        {/* Divider */}
+                        <div className='border border-b-gray-100 my-6'></div>
+                        <div className='border-b last:border-none pb-6 flex  gap-6 p-4 rounded-lg transition duration-300'>
+                            {/* Company Logo */}
+                            <img className="w-16 h-16 p-2 rounded-lg border shadow-sm" src={job.logo} alt={`${job.company} logo`} />
+
+                            {/* Job Info */}
+                            <div className='flex-1'>
+                                <p className="text-lg font-semibold text-gray-900">{job.company}</p>
+                                <div className="flex flex-wrap gap-4 text-gray-600 text-sm mt-2">
+                                    <div className="flex items-center gap-1">
+                                        <PiSuitcaseSimple className="text-blue-500" />
+                                        <span>{job.employmentType}</span>
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                        <LuClock8 className="text-blue-500" />
+                                        <span>{formatDate(job.postedTime)}</span>
+                                    </div>
                                 </div>
-                                <div className="flex items-center gap-1">
-                                    <LuClock8 className="text-blue-500" />
-                                    <span>{formatDate(job.postedTime)}</span>
-                                </div>
-                            </div>
-                            <div className="flex flex-wrap gap-4 text-gray-600 text-sm mt-2">
-                                <p className="text-lg font-medium text-blue-700">
-                                    ${job.salary} <sub className="text-gray-500 font-normal">/Hour</sub>
-                                </p>
-                                <div className="flex items-center gap-1">
-                                    <PiMapPinLight className="text-blue-500" />
-                                    <span>{job.location}</span>
+                                <div className="flex flex-wrap gap-4 text-gray-600 text-sm mt-2">
+                                    <p className="text-lg font-medium text-blue-700">
+                                        ${job.salary} <sub className="text-gray-500 font-normal">/Hour</sub>
+                                    </p>
+                                    <div className="flex items-center gap-1">
+                                        <PiMapPinLight className="text-blue-500" />
+                                        <span>{job.location}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 ))}
             </div>

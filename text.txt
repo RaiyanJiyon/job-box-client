@@ -1,131 +1,20 @@
-       Main Content
-            <main className="flex-1 p-4">
-                {/* Header */}
-                <header className="flex justify-between items-center mb-4">
-                    {/* Sidebar Toggle Button */}
-                    <button
-                        onClick={toggleSidebar}
-                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
-                    >
-                        Toggle sidebar
-                    </button>
-
-                    {/* Navbar */}
-                    <nav className="flex items-center gap-4">
-                        {/* Dark Mode Toggle */}
-                        <AiOutlineMoon
-                            className="w-6 h-6 cursor-pointer"
-                            title="Toggle dark mode"
-                        />
-
-                        {/* Notifications Dropdown */}
-                        <div className="relative">
-                            <button
-                                onClick={toggleNotifications}
-                                className="p-2 relative"
-                            >
-                                <GoBell className="w-6 h-6 cursor-pointer" />
-                                <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                                    12
-                                </span>
-                            </button>
-                            {isNotificationsOpen && (
-                                <div className="absolute right-0 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
-                                    <div className="p-4 space-y-2 max-h-64 overflow-y-auto">
-                                        <div className="flex items-start">
-                                            <img
-                                                className="w-10 h-10 rounded-full"
-                                                src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
-                                                alt="Bonnie Green"
-                                            />
-                                            <div className="ml-3">
-                                                <p className="text-sm font-medium text-gray-900">
-                                                    Bonnie Green
-                                                </p>
-                                                <p className="text-sm text-gray-500">
-                                                    Hey, what's up? All set for the presentation?
-                                                </p>
-                                                <p className="text-xs text-gray-400">
-                                                    a few moments ago
-                                                </p>
-                                            </div>
-                                        </div>
-                                        {/* Add more notifications here */}
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-
-                        {/* User Menu Dropdown */}
-                        <div className="relative">
-                            <button
-                                onClick={toggleUserMenu}
-                                className="flex items-center gap-2"
-                            >
-                                <img
-                                    className="w-10 h-10 rounded-full"
-                                    src={userData?.photoURL || 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'}
-                                    alt="user photo"
-                                />
-                                <div>
-                                    <h4 className="text-sm font-medium">{userData?.name}</h4>
-                                    <p className="text-sm text-gray-600">{userData?.role}</p>
-                                </div>
-                            </button>
-                            {isUserMenuOpen && (
-                                <div className="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
-                                    <div className="p-4">
-                                        <p className="text-sm font-medium text-gray-900">
-                                            {userData?.name}
-                                        </p>
-                                        <p className="text-sm text-gray-500">{userData?.email}</p>
-                                        <hr className="my-2" />
-                                        <ul className="space-y-1">
-                                            <li>
-                                                <a
-                                                    href="/profile"
-                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                                >
-                                                    My Profile
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/settings"
-                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                                >
-                                                    Account Settings
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/collections"
-                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                                >
-                                                    Collections
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/pro-version"
-                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                                >
-                                                    Pro Version
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/logout"
-                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                                >
-                                                    Sign Out
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    </nav>
-                </header>
-            </main>
+<form id="job-application-form">
+    <h2>Apply for Project Manager Position at Deloitte</h2>
+    
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" name="full-name" required>
+    
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="resume">Upload Resume Link</label>
+    <input type="url" id="resume" name="resume" required>
+    
+    <label for="cover-letter">Cover Letter:</label>
+    <textarea id="cover-letter" name="cover-letter" rows="5"></textarea>
+    
+    <button type="submit">Submit Application</button>
+</form>
