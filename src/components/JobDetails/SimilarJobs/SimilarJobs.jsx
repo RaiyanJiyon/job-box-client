@@ -21,7 +21,7 @@ const SimilarJobs = ({ jobs }) => {
     };
 
     return (
-        <div className='border border-gray-300 rounded-xl p-6 bg-white shadow-md hover:bg-gray-100'>
+        <div className='border border-gray-300 rounded-xl p-6 bg-white hover:bg-gray-100'>
             <h3 className='text-2xl font-semibold text-gray-800 mb-4'>Similar Jobs</h3>
             <div className=''>
                 {jobs.map((job, idx) => (

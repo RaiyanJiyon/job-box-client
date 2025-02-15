@@ -14,12 +14,14 @@ import JobHeader from '../../components/JobDetails/JobHeader/JobHeader';
 import EmployeeInformation from '../../components/JobDetails/EmployeeInformation/EmployeeInformation';
 import JobDescription from '../../components/JobDetails/JobDescription/JobDescription';
 import JobInformation from '../../components/JobDetails/JobInformation/JobInformation';
+import JobApplicationModal from '../../components/JobDetails/JobApplicationModal/JobApplicationModal';
 
 
 const JobDetails = () => {
     useScrollToTop();
     const [jobs, setJobs] = useState([]);
     const [similarJobs, setSimilarJobs] = useState([]);
+    const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
     const axiosPublic = useAxiosPublic();
     const job = useLoaderData();
     const { category } = job;
@@ -33,7 +35,7 @@ const JobDetails = () => {
             } catch (error) {
                 console.error(error.message);
             }
-        }
+        };
         fetchSimilarJobs();
     }, []);
 
@@ -46,16 +48,12 @@ const JobDetails = () => {
 
     if (!job) return <div className="p-6 text-red-500">Job not found.</div>;
 
-    const handleApplyJobs = async (job) => {
-
-    }
-
     const handleSaveJobs = async (job) => {
         if (!currentUser) {
             ErrorToaster("User is not logged in. Please log in to save jobs.");
             return;
         }
-    
+
         try {
             const userId = currentUser._id; // Get the current user's ID
             const jobId = job._id; // Extract the jobId from the job object
@@ -64,10 +62,9 @@ const JobDetails = () => {
             const jobLogo = job.logo;
             const jobLocation = job.location;
             const jobPosition = job.position;
-    
 
             const response = await axiosPublic.post("/saved-jobs", { userId, jobId, jobCategory, jobCompany, jobLogo, jobLocation, jobPosition });
-    
+
             if (response.status === 201) {
                 SuccessToaster("Job saved successfully.");
             } else {
@@ -89,24 +86,19 @@ const JobDetails = () => {
             <Helmet>
                 <title>Job Details | Job Box</title>
             </Helmet>
-            
+
             {/* Job Banner */}
             <img className='w-full rounded-2xl' src="https://i.ibb.co.com/TDm1ySpB/thumb.png" alt="Job Banner" />
-
             {/* Job Header */}
             <JobHeader job={job} />
-
             {/* Divider */}
             <div className='border border-b-gray-100 mb-12'></div>
-
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 <div className='grid col-span-2'>
                     {/* Employment Information */}
                     <EmployeeInformation job={job} />
-
                     {/* Job Description */}
                     <JobDescription job={job} />
-
                     {/* Company Name Divider */}
                     <div className="flex items-center gap-4 pt-4">
                         <div className="w-12 h-px bg-gray-600"></div>
@@ -114,15 +106,23 @@ const JobDetails = () => {
                         <div className="w-12 h-px bg-gray-600"></div>
                     </div>
 
-
                     {/* Divider */}
                     <div className='border border-b-gray-100 mt-12'></div>
-
                     {/* share social media icons */}
                     <div className='flex flex-col sm:flex-row justify-between items-center gap-6 mt-10'>
                         <div className="flex gap-4">
-                            <button className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg">Apply Now</button>
-                            <button onClick={() => handleSaveJobs(job)} className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white">Save Job</button>
+                            <button
+                                onClick={() => setIsModalOpen(true)} // Open modal
+                                className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg"
+                            >
+                                Apply Now
+                            </button>
+                            <button
+                                onClick={() => handleSaveJobs(job)}
+                                className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white"
+                            >
+                                Save Job
+                            </button>
                         </div>
                         <div className='flex items-center gap-3'>
                             <h3 className='text-gray-800 font-medium'>Share this</h3>
@@ -146,6 +146,16 @@ const JobDetails = () => {
             </div>
             <div className='mt-16'>
                 <FeaturedJobs />
+            </div>
+
+            {/* Render the Modal */}
+            <div className=''>
+            {isModalOpen && (
+                <JobApplicationModal
+                job={job}
+                onClose={() => setIsModalOpen(false)} // Close modal callback
+                />
+            )}
             </div>
         </div>
     );
