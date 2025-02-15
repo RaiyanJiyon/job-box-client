@@ -7,6 +7,7 @@ import { Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import useAxiosPublic from '../../../hooks/useAxiosPublic';
 
 const categoryImages = {
     "Marketing": "https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/marketing.svg",
@@ -23,13 +24,13 @@ const categoryImages = {
 
 const BrowseCategory = () => {
     const [jobs, setJobs] = useState([]);
+    const axiosPublic = useAxiosPublic();
 
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const response = await fetch('/job.json');
-                const data = await response.json();
-                setJobs(data);
+                const response = await axiosPublic.get('/jobs');
+                setJobs(response.data);
             } catch (error) {
                 console.error(error.message);
             }

@@ -22,8 +22,6 @@ const Candidate = () => {
         fetchCandidates();
     }, []);
 
-    console.log(candidates)
-
     return (
         <div>
             <Helmet>

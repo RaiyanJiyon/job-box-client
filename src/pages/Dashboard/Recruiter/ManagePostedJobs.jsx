@@ -5,12 +5,13 @@ import useCurrentUser from "../../../hooks/useCurrentUser";
 import ErrorToaster from "../../../components/common/Toaster/ErrorToaster";
 import Loader from "../../../components/common/Loader/Loader";
 import useAuth from "../../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 
 const ManagePostedJobs = () => {
     const [manageJobs, setManageJobs] = useState([]);
     const axiosPublic = useAxiosPublic();
-    const {user} =  useAuth();
+    const { user } = useAuth();
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -29,20 +30,36 @@ const ManagePostedJobs = () => {
         fetchJobs();
     }, [axiosPublic]);
 
-    const handleJobDelete = async (jobId) => {
-        try {
-            const response = await axiosPublic.delete(`/jobs/${jobId}`);
-            if (response.status === 200) {
-                // Remove the deleted job from the state
-                setManageJobs((prevJobs) => prevJobs.filter((job) => job._id !== jobId));
-                alert("Job deleted successfully!");
+    const handleJobDelete = jobId => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                try {
+                    const response = await axiosPublic.delete(`/jobs/${jobId}`);
+                    if (response.status === 200) {
+                        // Remove the deleted job from the state
+                        setManageJobs((prevJobs) => prevJobs.filter((job) => job._id !== jobId));
+                        Swal.fire({
+                            title: "Deleted!",
+                            text: "Job deleted successfully!",
+                            icon: "success"
+                        });
+                    }
+                } catch (error) {
+                    console.error("Error deleting job:", error);
+                }
             }
-        } catch (error) {
-            console.error("Error deleting job:", error);
-        }
+        });
     };
 
-        
+
     if (loading) {
         return <Loader />
     }
@@ -50,6 +67,7 @@ const ManagePostedJobs = () => {
     return (
         <div>
             <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
+            <h2 className="text-lg font-semibold text-gray-700 mb-4">Manage Jobs</h2>
                 <table className="w-full text-sm text-left text-gray-500">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-100">
                         <tr>

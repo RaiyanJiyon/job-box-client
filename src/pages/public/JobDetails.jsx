@@ -41,7 +41,7 @@ const JobDetails = () => {
 
     useEffect(() => {
         if (jobs.length > 0 && category) {
-            const filteredJobs = jobs.filter(similarJob => similarJob.category === category);
+            const filteredJobs = jobs.filter(similarJob => similarJob.category === category).slice(0, 3);
             setSimilarJobs(filteredJobs);
         }
     }, [jobs, category]);
@@ -94,7 +94,7 @@ const JobDetails = () => {
             {/* Divider */}
             <div className='border border-b-gray-100 mb-12'></div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                <div className='grid col-span-2'>
+                <div className='lg:col-span-2 w-full'>
                     {/* Employment Information */}
                     <EmployeeInformation job={job} />
                     {/* Job Description */}
@@ -150,12 +150,12 @@ const JobDetails = () => {
 
             {/* Render the Modal */}
             <div className=''>
-            {isModalOpen && (
-                <JobApplicationModal
-                job={job}
-                onClose={() => setIsModalOpen(false)} // Close modal callback
-                />
-            )}
+                {isModalOpen && (
+                    <JobApplicationModal
+                        job={job}
+                        onClose={() => setIsModalOpen(false)} // Close modal callback
+                    />
+                )}
             </div>
         </div>
     );
