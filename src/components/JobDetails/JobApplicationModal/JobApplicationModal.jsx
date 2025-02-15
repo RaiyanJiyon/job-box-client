@@ -22,6 +22,8 @@ const JobApplicationModal = ({ job, onClose }) => {
                 ...data,  // Form data
                 userId: currentUser._id,  // Include user ID in request
                 jobId: job._id,  // Include job ID in request
+                jobCompany: job.company,
+                jobPosition: job.position
             });
 
             if (response.status === 200) {
@@ -90,7 +92,7 @@ const JobApplicationModal = ({ job, onClose }) => {
                             })}
                             type="email"
                             id="email"
-                            defaultValue={currentUser?.email} // Changed from value to defaultValue
+                            value={currentUser?.email} // Changed from value to defaultValue
                             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                         {errors.email && <span className="text-red-500">{errors.email.message}</span>}

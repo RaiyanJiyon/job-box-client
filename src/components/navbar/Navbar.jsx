@@ -12,7 +12,6 @@ const Navbar = () => {
   const { user, signOutUser } = useAuth();
   const navigate = useNavigate();
   const currentUser = useCurrentUser();
-  console.log(currentUser)
 
   const getDashboardPath = (role) => {
     switch (role) {
