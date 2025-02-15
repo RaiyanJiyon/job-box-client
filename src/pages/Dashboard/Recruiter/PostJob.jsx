@@ -86,7 +86,7 @@ const PostJob = () => {
             // Log the backend response for debugging
             console.log("Backend Response:", response);
 
-            if (response.data && response.status === 201) {
+            if (response.status === 201) {
                 Swal.fire({
                     title: "Job Posted Successfully!",
                     icon: "success",
@@ -107,20 +107,18 @@ const PostJob = () => {
             Swal.fire({
                 title: "Error!",
                 icon: "error",
-                text: error.message || "Failed to post the job. Please try again.",
+                text: error.response?.data?.message || error.message || "Failed to post the job. Please try again.",
                 confirmButtonText: "OK",
             });
         }
     };
-
 
     return (
         <div className="bg-white shadow-lg p-6 rounded-lg">
             <Helmet>
                 <title>Post Job | Job Box</title>
             </Helmet>
-            
-            <h1 className="text-2xl font-bold text-blue-500 mb-6 text-center">Post a Job</h1>
+            <h1 className="text-2xl font-bold mb-6 text-gray-800">Post a Job</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {/* Category */}

@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineHome, AiOutlineDashboard, AiOutlineUser, AiOutl
 import { MdWorkOutline, MdAnalytics, MdOutlineSaveAlt, MdPostAdd } from "react-icons/md";
 import useAuth from "../../../hooks/useAuth";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { FaUser } from "react-icons/fa";
 
 const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
     const { user } = useAuth();
@@ -57,7 +58,8 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 { name: "Dashboard", path: "/dashboard/recruiter/home", icon: <AiOutlineDashboard /> },
                 { name: "Post a Job", path: "/dashboard/recruiter/post-job", icon: <MdPostAdd /> },
                 { name: "Saved Jobs", path: "/dashboard/job-seeker/saved-jobs", icon: <MdOutlineSaveAlt /> },
-                { name: "Manage Candidates", path: "/dashboard/recruiter/manage-candidates", icon: <MdWorkOutline /> },
+                { name: "Manage Jobs", path: "/dashboard/recruiter/manage-jobs", icon: <MdWorkOutline /> },
+                { name: "Manage Candidates", path: "/dashboard/recruiter/manage-candidates", icon: <FaUser /> },
                 { name: "Analytics", path: "/dashboard/recruiter/analytics", icon: <MdAnalytics /> },
                 { name: "Profile", path: "/dashboard/profile", icon: <AiOutlineUser /> },
                 { name: "Logout", path: "/dashboard/logout", icon: <AiOutlineLogout /> },

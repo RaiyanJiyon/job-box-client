@@ -22,7 +22,7 @@ const JobSeekerDashboard = () => {
                 <title>Job Seeker Dashboard | Job Box</title>
             </Helmet>
 
-            <h1 className="text-3xl font-bold mb-6 text-gray-800">Job Seeker Dashboard</h1>
+            <h1 className="text-2xl font-bold mb-6 text-gray-800">Job Seeker Dashboard</h1>
 
             {/* Overview Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

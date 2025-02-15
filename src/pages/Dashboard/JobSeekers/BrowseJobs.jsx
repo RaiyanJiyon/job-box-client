@@ -26,8 +26,8 @@ const FindJobs = () => {
             <Helmet>
                 <title>Browse Jobs | Job Box</title>
             </Helmet>
-            <h2 className='text-blue-500 text-2xl font-bold'>Browse Jobs</h2>
-            <div className='grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-6 my-8'>
+            <h1 className="text-2xl font-bold mb-6 text-gray-800">Browse Jobs</h1>
+            <div className='grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-6 my-6'>
                 {
                     jobs.map((job, idx) => (
                         <Card key={idx} job={job} />

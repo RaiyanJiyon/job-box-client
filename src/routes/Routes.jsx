@@ -33,6 +33,7 @@ import DashboardLayout from '../layout/DashboardLayout';
 import Recruiter from '../pages/public/Recruiter';
 import Candidate from '../pages/public/Candidate';
 import JobsFind from '../pages/Dashboard/JobSeekers/BrowseJobs'
+import ManagePostedJobs from '../pages/Dashboard/Recruiter/ManagePostedJobs';
 
 
 const router = createBrowserRouter([
@@ -137,6 +138,10 @@ const router = createBrowserRouter([
             {
                 path: 'recruiter/post-job',
                 element: <PostJob />
+            },
+            {
+                path: 'recruiter/manage-jobs',
+                element: <ManagePostedJobs />
             },
             {
                 path: 'recruiter/manage-candidates',
