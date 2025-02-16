@@ -80,7 +80,7 @@ const Navbar = () => {
                 <span className="sr-only">Open user menu</span>
                 <img
                   className="w-10 h-10 rounded-full"
-                  src={user?.photoURL ? user.photoURL : 'https://i.ibb.co.com/fztydKNS/default-user.jpg'}
+                  src={currentUser?.photoURL ? currentUser.photoURL : 'https://i.ibb.co.com/fztydKNS/default-user.jpg'}
                   alt="user photo"
                 />
               </button>

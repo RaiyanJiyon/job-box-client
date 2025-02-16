@@ -24,8 +24,9 @@ const JobsByLocation = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 w-4/5 max-w-screen-2xl mx-auto mt-14">
                 {
                     locations.map((location, idx) => (
-                        <div key={idx} className="bg-white border border-blue-100 rounded-lg shadow-sm px-3 pt-3">
-                            <div className='relative transition-transform duration-500 ease-in-out transform hover:scale-110'>
+                        <div key={idx} className="bg-white border border-gray-200 rounded-lg shadow-sm px-3 pt-3">
+                            <div className='relative transition-transform duration-500 ease-in-out transform hover:scale-110
+                            '>
                                 <img className="rounded-lg w-full h-64" src={location.locationImage} alt={`${location.locationName} image`} />
                                 <button type="button" className="absolute top-0 left-4 my-5 px-3 py-1 text-xs font-medium text-blue-400 hover:text-black bg-blue-100 rounded-md hover:bg-blue-200">{location.category}</button>
                             </div>

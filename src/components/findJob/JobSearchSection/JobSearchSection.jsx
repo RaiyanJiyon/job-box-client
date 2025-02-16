@@ -1,9 +1,9 @@
 import React from 'react';
 
-const JobSearchSection = () => {
+const JobSearchSection = ({jobs}) => {
     return (
         <section className='bg-[#f2f6fd] text-center py-10 rounded-2xl'>
-            <h2 className='text-3xl font-bold mb-4'><span className='text-blue-600'>22 Jobs</span> Available Now</h2>
+            <h2 className='text-3xl font-bold mb-4'><span className='text-blue-600'>{jobs.length} Jobs</span> Available Now</h2>
             <p className='w-1/2 mx-auto text-gray-500 text-sm font-medium'>
                 Explore a wide range of exciting job opportunities available right now. Whether you're looking for your next big career move or a fresh start.
             </p>
