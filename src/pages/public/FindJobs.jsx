@@ -22,39 +22,44 @@ const FindJobs = () => {
                     },
                 });
 
-                setJobs(response.data.data);
-                setTotalPages(response.data.pagination.totalPages);
+                if (response.data?.data) {
+                    setJobs(response.data.data);
+                }
+                
+                if (response.data?.pagination?.totalPages) {
+                    setTotalPages(response.data.pagination.totalPages);
+                }
             } catch (error) {
                 console.error(error.message);
             }
         };
         fetchJobs();
-    }, [currentPage]);
+    }, [currentPage, axiosPublic]);
 
     const handlePageChange = (newPage) => {
         if (newPage >= 1 && newPage <= totalPages) {
             setCurrentPage(newPage);
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth'
-            })
+                behavior: 'smooth',
+            });
         }
     };
 
     return (
-        <div className='w-11/12 max-w-screen-2xl mx-auto'>
+        <div className="w-11/12 max-w-screen-2xl mx-auto">
             <Helmet>
                 <title>Find Jobs | Job Box</title>
             </Helmet>
-            <div className='mt-4'>
+            <div className="mt-4">
                 <JobSearchSection jobs={jobs} />
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-16'>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-16">
                 {jobs.map((job, idx) => (
                     <Card key={idx} job={job} />
                 ))}
             </div>
-            <nav className='flex justify-center mb-10' aria-label="Page navigation example">
+            <nav className="flex justify-center mb-10" aria-label="Page navigation example">
                 <ul className="flex items-center -space-x-px h-10 text-base">
                     <li>
                         <button
