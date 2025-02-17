@@ -23,7 +23,7 @@ const HomePage = () => {
                 <title>Home | Job Box</title>
             </Helmet>
             
-            <div className="pb-20">
+            <div className="">
                 <Hero />
             </div>
             <div className="my-10">
