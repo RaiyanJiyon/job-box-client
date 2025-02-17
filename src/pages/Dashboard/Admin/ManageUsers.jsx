@@ -6,19 +6,25 @@ import { Helmet } from 'react-helmet-async';
 
 const ManageUsers = () => {
     const [users, setUsers] = useState([]);
+    const [searchTerm, setSearchTerm] = useState(''); // State for search term
     const axiosSecure = useAxiosSecure();
 
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axiosSecure.get('/users');
+                const response = await axiosSecure.get('/users', {
+                    params: {
+                        email: searchTerm || undefined, // Pass search term as email
+                        name: searchTerm || undefined   // Pass search term as name
+                    }
+                });
                 setUsers(response.data);
             } catch (error) {
                 console.error(error.message);
             }
         };
         fetchUsers();
-    }, []);
+    }, [searchTerm]); // Trigger fetch when searchTerm changes
 
     const handleUserDelete = id => {
         Swal.fire({
@@ -50,14 +56,13 @@ const ManageUsers = () => {
                 }
             }
         });
-    }
+    };
 
     return (
         <div>
             <Helmet>
                 <title>Manage Users | Job Box</title>
             </Helmet>
-
             <SectionTitle title="All Users" description="Manage the people, change the role of the user and also you can delete the user" />
             <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
                 <div className='flex justify-between items-center mb-4'>
@@ -79,6 +84,8 @@ const ManageUsers = () => {
                             id="table-search-users"
                             className="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
                             placeholder="Search for users"
+                            value={searchTerm} // Bind input value to state
+                            onChange={(e) => setSearchTerm(e.target.value)} // Update state on input change
                         />
                     </div>
                 </div>
@@ -93,25 +100,33 @@ const ManageUsers = () => {
                     </thead>
                     <tbody>
                         {
-                            users.map(user => (
-                                <tr key={user._id} className="bg-white border-b border-gray-200 hover:bg-gray-50">
-                                    <th scope="row" className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap">
-                                        <img className="w-10 h-10 rounded-full" src={`${user.photoURL}`} alt="User" />
-                                        <div className="ps-3">
-                                            <div className="text-base font-semibold">{user.name}</div>
-                                            <div className="font-normal text-gray-500">{user.email}</div>
-                                        </div>
-                                    </th>
-                                    <td className="px-6 py-4">{user.username}</td>
-                                    <td className="px-6 py-4 capitalize">{user.role}</td>
-                                    <td className="px-6 py-4 text-center">
-                                        <div className="flex justify-center space-x-4">
-                                            <button className="text-blue-600 hover:underline">Edit</button>
-                                            <button onClick={() => handleUserDelete(user._id)} className="text-red-600 hover:underline">Delete</button>
-                                        </div>
+                            users.length > 0 ? (
+                                users.map(user => (
+                                    <tr key={user._id} className="bg-white border-b border-gray-200 hover:bg-gray-50">
+                                        <th scope="row" className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap">
+                                            <img className="w-10 h-10 rounded-full" src={`${user.photoURL}`} alt="User" />
+                                            <div className="ps-3">
+                                                <div className="text-base font-semibold">{user.name}</div>
+                                                <div className="font-normal text-gray-500">{user.email}</div>
+                                            </div>
+                                        </th>
+                                        <td className="px-6 py-4">{user.username}</td>
+                                        <td className="px-6 py-4 capitalize">{user.role}</td>
+                                        <td className="px-6 py-4 text-center">
+                                            <div className="flex justify-center space-x-4">
+                                                <button className="text-blue-600 hover:underline">Edit</button>
+                                                <button onClick={() => handleUserDelete(user._id)} className="text-red-600 hover:underline">Delete</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="4" className="px-6 py-4 text-center">
+                                        No users found.
                                     </td>
                                 </tr>
-                            ))
+                            )
                         }
                     </tbody>
                 </table>

@@ -26,7 +26,7 @@ const PlanCard = ({ title, price, features, description }) => {
                     </li>
                 ))}
             </ul>
-            <button type="button" className="text-blue-500 hover:text-white bg-white hover:bg-blue-700 border border-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-bold rounded-lg px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+            <button type="button" className="text-blue-500 hover:text-white bg-white hover:bg-[#05264e] border border-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-bold rounded-lg px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
         </div>
     );
 };
