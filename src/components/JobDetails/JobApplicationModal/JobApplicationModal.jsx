@@ -21,7 +21,8 @@ const JobApplicationModal = ({ job, onClose }) => {
             const response = await axiosPublic.post('/applied-jobs', {
                 ...data,  // Form data
                 userId: currentUser._id,  // Include user ID in request
-                jobId: job._id,  // Include job ID in request
+                jobId: job._id,  // Include job ID in request,
+                postedPersonEmail: job.appliedPersonInformation[0].email,
                 jobCompany: job.company,
                 jobPosition: job.position
             });

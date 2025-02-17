@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 import useSavedJobs from "../../../hooks/useSavedJobs";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import SectionTitle from "../../../components/common/SectionTitle";
 
 const SaveJobs = () => {
     const savedJobs = useSavedJobs(); // Fetch saved jobs using the custom hook
@@ -50,6 +51,11 @@ const SaveJobs = () => {
             <Helmet>
                 <title>Save Jobs | Job Box</title>
             </Helmet>
+
+            <SectionTitle
+                title="Saved Jobs"
+            description="Manage saved jobs, view details, or remove saved jobs."
+            />
 
             <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
                 <h2 className="text-lg font-semibold text-gray-700 mb-4">Saved Jobs</h2>

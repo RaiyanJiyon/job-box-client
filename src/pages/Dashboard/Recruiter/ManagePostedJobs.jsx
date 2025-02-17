@@ -6,6 +6,7 @@ import ErrorToaster from "../../../components/common/Toaster/ErrorToaster";
 import Loader from "../../../components/common/Loader/Loader";
 import useAuth from "../../../hooks/useAuth";
 import Swal from "sweetalert2";
+import SectionTitle from "../../../components/common/SectionTitle";
 
 
 const ManagePostedJobs = () => {
@@ -66,6 +67,10 @@ const ManagePostedJobs = () => {
 
     return (
         <div>
+            <SectionTitle
+                title="Manage Posted Jobs"
+                description="Manage posted jobs, view details, or remove jobs."
+            />
             <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
             <h2 className="text-lg font-semibold text-gray-700 mb-4">Manage Jobs</h2>
                 <table className="w-full text-sm text-left text-gray-500">

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaWhatsapp } from 'react-icons/fa';
-import { PiMapPinLight, PiSuitcaseSimple } from 'react-icons/pi';
 import { useLoaderData } from 'react-router-dom';
 import useScrollToTop from '../../hooks/useScrollToTop';
 import FeaturedJobs from '../../components/JobDetails/FeaturedJobs/FeaturedJobs';
