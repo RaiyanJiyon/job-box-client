@@ -68,7 +68,7 @@ const router = createBrowserRouter([
             {
                 path: '/job-details/:id',
                 element: <JobDetails />,
-                loader: ({ params }) => fetch(`http://localhost:5000/jobs/${params.id}`)
+                loader: ({ params }) => fetch(`https://job-portal-server-virid.vercel.app/jobs/${params.id}`)
             },
             // Auth Routes
             {

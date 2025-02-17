@@ -2,10 +2,11 @@ import React from 'react';
 import { HiOutlineBriefcase } from 'react-icons/hi';
 import { LuClock8 } from 'react-icons/lu';
 import { PiMapPinLight, PiSuitcaseSimple } from 'react-icons/pi';
+import { Link } from 'react-router-dom';
 
 const JobCard = ({ job }) => {
     return (
-        <div className="p-6 bg-white border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 transition-all w-full">
+        <Link className="p-6 bg-white border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 transition-all w-full">
             {/* Job Title */}
             <h3 className="text-lg font-bold text-gray-900">
                 {job.position}
@@ -54,7 +55,7 @@ const JobCard = ({ job }) => {
                 </div>
             </div>
 
-        </div>
+        </Link>
     );
 }
 

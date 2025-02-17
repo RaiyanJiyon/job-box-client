@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://job-portal-server-virid.vercel.app',
 });
 
 const useAxiosSecure = () => {
