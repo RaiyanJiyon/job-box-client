@@ -5,9 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 const Card = ({ job }) => {
     const navigate = useNavigate();
 
-    const handleApplyButton = id => {
-        navigate(`/job-details/${id}`)
-    }
     return (
         <div className="flex flex-col bg-white border border-gray-200 rounded-lg shadow-lg px-6 py-6 pb-4 hover:shadow-xl transition-shadow duration-300 hover:bg-gray-100">
             {/* Company Info */}

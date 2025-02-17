@@ -2,14 +2,13 @@ import { LuClock8 } from "react-icons/lu";
 import { PiSuitcaseSimple } from "react-icons/pi";
 import { RiCheckboxCircleLine } from "react-icons/ri";
 
-const JobHeader = ({ job }) => {
+const JobHeader = ({ job, onApplyClick }) => {
     // Utility function to format the date
     const formatDate = (dateTime) => {
         const date = new Date(dateTime);
         const now = new Date();
         const diff = now - date;
         const minute = 60 * 1000, hour = 60 * minute, day = 24 * hour;
-
         if (diff < 0) return "Just now";
         if (diff < hour) return `${Math.floor(diff / minute)} min ago`;
         if (diff < day) return `${Math.floor(diff / hour)} hrs ago`;
@@ -31,12 +30,14 @@ const JobHeader = ({ job }) => {
                     </div>
                 </div>
             </div>
-            <button onClick={() => handleApplyJobs(job)} className="flex items-center gap-2 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-md text-sm px-5 py-3 transition-all duration-300">
+            <button
+                onClick={onApplyClick} // Trigger the scroll behavior
+                className="flex items-center gap-2 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-md text-sm px-5 py-3 transition-all duration-300"
+            >
                 <RiCheckboxCircleLine />
                 Apply Now
             </button>
         </div>
     );
 };
-
 export default JobHeader;

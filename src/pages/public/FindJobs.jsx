@@ -35,6 +35,7 @@ const FindJobs = () => {
 
     const handlePageChange = (newPage) => {
         if (newPage >= 1 && newPage <= totalPages) {
+            window.scrollTo(0, 0);
             setCurrentPage(newPage);
         }
     };

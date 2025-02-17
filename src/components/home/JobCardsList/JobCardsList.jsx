@@ -6,7 +6,7 @@ import useAxiosPublic from '../../../hooks/useAxiosPublic';
 const JobCardsList = () => {
     const [jobs, setJobs] = useState([]);
     const axiosPublic = useAxiosPublic();
-    const [activeCategory, setActiveCategory] = useState('Management');
+    const [activeCategory, setActiveCategory] = useState('Software');
 
     useEffect(() => {
         const fetchJobs = async () => {
@@ -25,16 +25,16 @@ const JobCardsList = () => {
         activeCategory === 'All'
             ? jobs
             : jobs.filter(job => job.category === activeCategory);
-    
+
     const categories = [
+        'Software',
         'Management',
         'Marketing & Sale',
         'Finance',
         'Human Resource',
         'Retail & Products',
-        'Content Writer',
     ];
-    
+
     const buttonImages = [
         'https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/management.svg',
         'https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage1/marketing.svg',
@@ -55,8 +55,8 @@ const JobCardsList = () => {
                     <button
                         key={index}
                         className={`flex items-center gap-1 border font-bold px-2 py-3 rounded-lg text-sm ${activeCategory === category
-                                ? 'border-blue-600'
-                                : 'border-gray-500 hover:border-blue-600'
+                            ? 'border-blue-600'
+                            : 'border-gray-500 hover:border-blue-600'
                             }`}
                         onClick={() => setActiveCategory(category)}
                     >

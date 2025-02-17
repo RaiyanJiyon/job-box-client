@@ -28,8 +28,7 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
-
-                {/* Right Side: Animated Images */}
+                
                 <div className="hidden lg:flex lg:col-span-5 flex-col items-center relative">
                     {/* Floating Images (Top) */}
                     <div className="flex gap-12 absolute -top-12">
@@ -37,14 +36,14 @@ const Hero = () => {
                             animate={{ x: [0, -35, 0] }}
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             className="w-36 rounded-full"
-                            src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner2.png"
+                            src="https://i.ibb.co.com/0Rs9KH0X/banner2.png"
                             alt=""
                         />
                         <motion.img
                             animate={{ y: [-10, 10, -10] }}
                             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                             className="w-30"
-                            src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner4.png"
+                            src="https://i.ibb.co.com/1GH6Pwvk/banner4.png"
                             alt=""
                         />
                     </div>
@@ -54,7 +53,7 @@ const Hero = () => {
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                         className="w-60 my-10 rounded-full border border-gray-200 shadow-lg"
-                        src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner1.png"
+                        src="https://i.ibb.co.com/gM10G8w5/banner1.png"
                         alt="mockup"
                     />
 
@@ -64,14 +63,14 @@ const Hero = () => {
                             animate={{ x: [0, -35, 0] }}
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             className="w-36 rounded-full"
-                            src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner3.png"
+                            src="https://i.ibb.co.com/8nFvvP2G/banner3.png"
                             alt=""
                         />
                         <motion.img
                             animate={{ y: [-10, 5, -10] }}
                             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                             className=" rounded-full"
-                            src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/homepage5/banner6.png"
+                            src="https://i.ibb.co.com/ymTnjkF7/banner6.png"
                             alt=""
                         />
                     </div>
