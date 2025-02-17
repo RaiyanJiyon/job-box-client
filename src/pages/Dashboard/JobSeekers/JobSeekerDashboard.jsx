@@ -4,7 +4,6 @@ import { User, Briefcase, Bookmark } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 import useCurrentUser from '../../../hooks/useCurrentUser';
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
-import Loader from '../../../components/common/Loader/Loader';
 import useAppliedJobs from '../../../hooks/useAppliedJobs';
 import useSavedJobs from '../../../hooks/useSavedJobs';
 

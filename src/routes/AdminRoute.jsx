@@ -1,10 +1,12 @@
 import React from 'react';
 import useAuth from '../hooks/useAuth';
+import useCurrentUser from '../hooks/useCurrentUser';
 import Loader from '../components/common/Loader/Loader';
 import { Navigate, useLocation } from 'react-router-dom';
 
-const ProtectedRoute = ({ children }) => {
+const AdminRoute = ({ children }) => {
     const { user, loading } = useAuth();
+    const currentUser = useCurrentUser();
     const location = useLocation();
 
     // Show loader while loading
@@ -12,16 +14,18 @@ const ProtectedRoute = ({ children }) => {
         return <Loader />;
     }
 
-    // Redirect unauthenticated users to login
+    // Check if user is authenticated
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
 
-    // Debugging: Log the authenticated user
-    console.log("Authenticated User:", user);
+    // Check if user has admin role
+    if (currentUser?.role !== "admin") {
+        return <Navigate to="/" replace />;
+    }
 
-    // Allow access to authenticated users
+    // Allow access to the protected route
     return children;
 };
 
-export default ProtectedRoute;
+export default AdminRoute;

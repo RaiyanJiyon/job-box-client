@@ -22,7 +22,7 @@ const useCurrentUser = () => {
         fetchCurrentUser();
     }, [user?.email, axiosPublic]); // Re-fetch when the user's email changes
 
-    return currentUser; // Return the current user object
+    return currentUser; // Return the current user object (includes role)
 };
 
 export default useCurrentUser;

@@ -11,8 +11,11 @@ import ProfileCreation from "../../components/home/ProfileCreation/ProfileCreati
 import StatisticsSection from "../../components/home/StatisticsSection/StatisticsSection";
 import TopRecruiters from "../../components/home/TopRecruiters/TopRecruiters";
 import useScrollToTop from "../../hooks/useScrollToTop";
+import useCurrentUser from "../../hooks/useCurrentUser";
 
 const HomePage = () => {
+    const currentUser = useCurrentUser();
+    console.log(currentUser);
     useScrollToTop();
     return (
         <div>

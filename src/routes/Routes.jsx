@@ -27,7 +27,7 @@ import Analytics from '../pages/Dashboard/Admin/Analytics';
 import JobSeekerDashboard from '../pages/Dashboard/JobSeekers/JobSeekerDashboard';
 import SaveJobs from '../pages/Dashboard/JobSeekers/SaveJobs';
 import AppliedJobs from '../pages/Dashboard/JobSeekers/AppliedJobs';
-import RecruiterHome from '../pages/Dashboard/Recruiter/RecruiterHome';
+import RecruiterHome from '../pages/Dashboard/Recruiter/RecruiterDashboard';
 import ProtectedRoute from './ProtectedRoute';
 import DashboardLayout from '../layout/DashboardLayout';
 import Recruiter from '../pages/public/Recruiter';

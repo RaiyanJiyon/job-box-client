@@ -18,7 +18,7 @@ const Hero = () => {
                         <button className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg">
                             Search Jobs
                         </button>
-                        <button className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white">
+                        <button className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-[#05264e] hover:text-white font-medium">
                             Learn More
                         </button>
                     </div>
