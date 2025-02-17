@@ -4,11 +4,12 @@ import { Briefcase, Users, FileText } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 import useCurrentUser from '../../../hooks/useCurrentUser';
 import usePostedJobs from '../../../hooks/usePostedJobs';
+import useReceivedApplications from '../../../hooks/useReceivedApplications';
 
 const RecruiterDashboard = () => {
     const currentUser = useCurrentUser();
     const {manageJobs, loading} = usePostedJobs();
-    // const receivedApplications = useReceivedApplications();
+    const {candidates} = useReceivedApplications();
     const [hiringStats, setHiringStats] = useState([]);
 
     console.log(manageJobs)
@@ -34,7 +35,7 @@ const RecruiterDashboard = () => {
                 <div className="bg-white shadow-lg rounded-xl p-6 flex items-center justify-between border hover:scale-105 transition">
                     <div>
                         <h2 className="text-xl font-semibold">Applications Received</h2>
-                        <p className="text-gray-600 text-lg">55</p>
+                        <p className="text-gray-600 text-lg">{candidates.length}</p>
                     </div>
                     <Users className="w-12 h-12 text-green-500" />
                 </div>
@@ -64,14 +65,14 @@ const RecruiterDashboard = () => {
             {/* Received Applications */}
             <div className="bg-white shadow-lg rounded-xl p-6 mt-8">
                 <h2 className="text-xl font-semibold mb-4">Recent Applications</h2>
-                {/* <ul className="space-y-2">
-                    {receivedApplications.length > 0 ? receivedApplications.slice(0, 5).map((app) => (
-                        <li key={app._id} className="border-b py-2 flex justify-between text-gray-700">
-                            <span>{app.candidateName} for {app.jobTitle}</span>
-                            <span className="text-gray-500">{new Date(app.appliedAt).toLocaleDateString()}</span>
+                <ul className="space-y-2">
+                    {candidates.length > 0 ? candidates.slice(0, 5).map((candidate) => (
+                        <li key={candidate._id} className="border-b py-2 flex justify-between text-gray-700">
+                            <span>{candidate.fullName} for {candidate.jobPosition}</span>
+                            <span className="text-gray-500">{new Date(candidate.appliedAt).toLocaleDateString()}</span>
                         </li>
                     )) : <p className="text-gray-500">No applications yet.</p>}
-                </ul> */}
+                </ul>
             </div>
 
             {/* Hiring Trends Chart */}
