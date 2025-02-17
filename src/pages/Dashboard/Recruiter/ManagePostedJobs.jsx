@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
-import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
-import useCurrentUser from "../../../hooks/useCurrentUser";
-import ErrorToaster from "../../../components/common/Toaster/ErrorToaster";
 import Loader from "../../../components/common/Loader/Loader";
 import useAuth from "../../../hooks/useAuth";
 import Swal from "sweetalert2";
-import SectionTitle from "../../../components/common/SectionTitle";
 
 
 const ManagePostedJobs = () => {
@@ -95,7 +91,7 @@ const ManagePostedJobs = () => {
                                     <td className="px-6 py-4">{job.employmentType}</td>
                                     <td className="px-6 py-4">{job.workType}</td>
                                     <td className="px-6 py-4">${job.salary}</td>
-                                    <td className="px-6 py-4">job.postedTime</td>
+                                    <td className="px-6 py-4">${job.postedTime}</td>
                                     <td className="px-6 py-4 text-center">
                                         <div className="flex justify-center space-x-4">
                                             <button className="text-blue-600 hover:underline">Edit</button>
