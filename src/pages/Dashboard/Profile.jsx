@@ -5,7 +5,7 @@ import Loader from '../../components/common/Loader/Loader';
 
 const Profile = () => {
     // Sample currentUser data
-    const currentUser = useCurrentUser();
+    const {currentUser} = useCurrentUser();
 
     if (!currentUser) {
         return <Loader />

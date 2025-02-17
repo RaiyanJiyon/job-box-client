@@ -7,7 +7,7 @@ import usePostedJobs from '../../../hooks/usePostedJobs';
 import useReceivedApplications from '../../../hooks/useReceivedApplications';
 
 const RecruiterDashboard = () => {
-    const currentUser = useCurrentUser();
+    const {currentUser} = useCurrentUser();
     const {manageJobs, loading} = usePostedJobs();
     const {candidates} = useReceivedApplications();
     const [hiringStats, setHiringStats] = useState([]);

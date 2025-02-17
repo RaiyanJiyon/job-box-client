@@ -1,30 +1,30 @@
-import React from 'react';
-import useAuth from '../hooks/useAuth';
-import useCurrentUser from '../hooks/useCurrentUser';
-import Loader from '../components/common/Loader/Loader';
-import { Navigate, useLocation } from 'react-router-dom';
+import { Navigate, useLocation } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
+import useCurrentUser from "../hooks/useCurrentUser";
+import Loader from "../components/common/Loader/Loader";
 
 const AdminRoute = ({ children }) => {
-    const { user, loading } = useAuth();
-    const currentUser = useCurrentUser();
+    const { user, loading: authLoading } = useAuth();
+    const { currentUser, loading: userLoading } = useCurrentUser();
     const location = useLocation();
 
-    // Show loader while loading
-    if (loading) {
+    if (authLoading || userLoading) {
         return <Loader />;
     }
 
-    // Check if user is authenticated
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
 
-    // Check if user has admin role
-    if (currentUser?.role !== "admin") {
-        return <Navigate to="/" replace />;
+    if (!currentUser) {
+        console.warn("Current user not found!");
+        return <Navigate to="/unauthorized" replace />;
     }
 
-    // Allow access to the protected route
+    if (currentUser.role !== "admin") {
+        return <Navigate to="/unauthorized" replace />;
+    }
+
     return children;
 };
 

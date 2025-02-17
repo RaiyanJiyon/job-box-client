@@ -14,7 +14,7 @@ import useScrollToTop from "../../hooks/useScrollToTop";
 import useCurrentUser from "../../hooks/useCurrentUser";
 
 const HomePage = () => {
-    const currentUser = useCurrentUser();
+    const {currentUser} = useCurrentUser();
     console.log(currentUser);
     useScrollToTop();
     return (

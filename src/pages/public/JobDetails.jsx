@@ -24,7 +24,7 @@ const JobDetails = () => {
     const axiosPublic = useAxiosPublic();
     const job = useLoaderData();
     const { category } = job;
-    const currentUser = useCurrentUser();
+    const { currentUser } = useCurrentUser();
 
     useEffect(() => {
         const fetchSimilarJobs = async () => {

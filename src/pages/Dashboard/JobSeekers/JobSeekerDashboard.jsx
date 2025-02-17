@@ -8,7 +8,7 @@ import useAppliedJobs from '../../../hooks/useAppliedJobs';
 import useSavedJobs from '../../../hooks/useSavedJobs';
 
 const JobSeekerDashboard = () => {
-    const currentUser = useCurrentUser();
+    const {currentUser} = useCurrentUser();
     const appliedJobs = useAppliedJobs();
     const savedJobs = useSavedJobs();
     const axiosPublic = useAxiosPublic();

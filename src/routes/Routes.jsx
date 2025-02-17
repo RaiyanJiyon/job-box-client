@@ -1,21 +1,18 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
-
 // Public Pages
 import HomePage from '../pages/public/HomePage';
 import Contact from '../pages/public/Contact';
 import Pricing from '../pages/public/Pricing';
 import FindJobs from '../pages/public/FindJobs';
 import JobDetails from '../pages/public/JobDetails';
-
 // Not Found Pages
 import NotFound from '../pages/notFound/NotFound';
-
 // Auth Pages
 import Login from '../pages/auth/Login';
 import Register from '../pages/auth/Register';
 import PasswordRecovery from '../pages/auth/PasswordRecovery';
-
+// Dashboard Pages
 import Settings from '../pages/Dashboard/Settings';
 import Profile from '../pages/Dashboard/Profile';
 import ManageCandidates from '../pages/Dashboard/Recruiter/ManageCandidates';
@@ -27,14 +24,17 @@ import Analytics from '../pages/Dashboard/Admin/Analytics';
 import JobSeekerDashboard from '../pages/Dashboard/JobSeekers/JobSeekerDashboard';
 import SaveJobs from '../pages/Dashboard/JobSeekers/SaveJobs';
 import AppliedJobs from '../pages/Dashboard/JobSeekers/AppliedJobs';
-import RecruiterHome from '../pages/Dashboard/Recruiter/RecruiterDashboard';
+import RecruiterDashboard from '../pages/Dashboard/Recruiter/RecruiterDashboard';
 import ProtectedRoute from './ProtectedRoute';
 import DashboardLayout from '../layout/DashboardLayout';
 import Recruiter from '../pages/public/Recruiter';
 import Candidate from '../pages/public/Candidate';
-import JobsFind from '../pages/Dashboard/JobSeekers/BrowseJobs'
+import JobsFind from '../pages/Dashboard/JobSeekers/BrowseJobs';
 import ManagePostedJobs from '../pages/Dashboard/Recruiter/ManagePostedJobs';
-
+import AdminRoute from './AdminRoute';
+import JobSeekerRoute from './JobSeekerRoute'; // Import JobSeekerRoute
+import RecruiterRoute from './RecruiterRoute'
+import Unauthorized from '../pages/Unauthorized/Unauthorized';
 
 const router = createBrowserRouter([
     {
@@ -93,72 +93,71 @@ const router = createBrowserRouter([
     {
         path: '/dashboard',
         element: <ProtectedRoute><DashboardLayout /></ProtectedRoute>,
-        errorElement: <NotFound />,
+        errorElement: <Unauthorized />,
         children: [
-    
             // Admin Routes
             {
                 path: 'admin/dashboard',
-                element: <AdminDashboard />
+                element: <AdminRoute><AdminDashboard /></AdminRoute>
             },
             {
                 path: 'admin/manage-users',
-                element: <ManageUsers />
+                element: <AdminRoute><ManageUsers /></AdminRoute>
             },
             {
                 path: 'admin/manage-jobs',
-                element: <ManageJobs />
+                element: <AdminRoute><ManageJobs /></AdminRoute>
             },
             {
                 path: 'admin/analytics',
-                element: <Analytics />
+                element: <AdminRoute><Analytics /></AdminRoute>
             },
             // Job Seeker Routes
             {
                 path: 'job-seeker/dashboard',
-                element: <JobSeekerDashboard />
+                element: <JobSeekerRoute><JobSeekerDashboard /></JobSeekerRoute>
             },
             {
                 path: 'job-seeker/browse-jobs',
-                element: <JobsFind />
+                element: <JobSeekerRoute><JobsFind /></JobSeekerRoute>
             },
             {
                 path: 'job-seeker/saved-jobs',
-                element: <SaveJobs />
+                element: <JobSeekerRoute><SaveJobs /></JobSeekerRoute>
             },
             {
                 path: 'job-seeker/applied-jobs',
-                element: <AppliedJobs />
+                element: <JobSeekerRoute><AppliedJobs /></JobSeekerRoute>
             },
             // Recruiter Routes
             {
                 path: 'recruiter/home',
-                element: <RecruiterHome />
+                element: <RecruiterRoute><RecruiterDashboard /></RecruiterRoute>
             },
             {
                 path: 'recruiter/post-job',
-                element: <PostJob />
+                element: <RecruiterRoute><PostJob /></RecruiterRoute>
             },
             {
                 path: 'recruiter/manage-jobs',
-                element: <ManagePostedJobs />
+                element: <RecruiterRoute><ManagePostedJobs /></RecruiterRoute>
             },
             {
                 path: 'recruiter/manage-candidates',
-                element: <ManageCandidates />
+                element: <RecruiterRoute><ManageCandidates /></RecruiterRoute>
             },
             {
                 path: 'recruiter/analytics',
-                element: <Analytics />
+                element: <RecruiterRoute><Analytics /></RecruiterRoute>
             },
             // Common Routes for All Roles
             {
                 path: 'profile',
-                element: <Profile />
+                element: <ProtectedRoute><Profile /></ProtectedRoute>
             },
             {
                 path: 'settings',
-                element: <Settings />
+                element: <ProtectedRoute><Settings /></ProtectedRoute>
             }
         ]
     }

@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 const JobApplicationModal = ({ job, onClose }) => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const axiosPublic = useAxiosPublic();
-    const currentUser = useCurrentUser();
+    const {currentUser} = useCurrentUser();
 
     if (!currentUser) {
         return <Loader />;

@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const { user, signOutUser } = useAuth();
   const navigate = useNavigate();
-  const currentUser = useCurrentUser();
+  const {currentUser} = useCurrentUser();
 
   const getDashboardPath = (role) => {
     switch (role) {

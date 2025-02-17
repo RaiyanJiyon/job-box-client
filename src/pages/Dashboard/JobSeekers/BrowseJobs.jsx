@@ -3,10 +3,13 @@ import useAxiosPublic from '../../../hooks/useAxiosPublic';
 import useScrollToTop from '../../../hooks/useScrollToTop';
 import Card from '../../../components/findJob/Card/Card';
 import { Helmet } from 'react-helmet-async';
+import Loader from '../../../components/common/Loader/Loader';
+import SectionTitle from '../../../components/common/SectionTitle';
 
 const FindJobs = () => {
     useScrollToTop();
     const [jobs, setJobs] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const axiosPublic = useAxiosPublic();
@@ -14,6 +17,7 @@ const FindJobs = () => {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
+                setLoading(true);
                 const response = await axiosPublic.get('/jobs-by-pagination', {
                     params: {
                         page: currentPage,
@@ -30,6 +34,8 @@ const FindJobs = () => {
                 }
             } catch (error) {
                 console.error(error.message);
+            } finally {
+                setLoading(false);
             }
         };
         fetchJobs();
@@ -45,13 +51,20 @@ const FindJobs = () => {
         }
     };
 
+    if (loading) {
+        return <Loader />
+    }
+
     return (
         <div className='p-6'>
             <Helmet>
                 <title>Browse Jobs | Job Box</title>
             </Helmet>
-            <h1 className="text-2xl font-bold mb-6 text-gray-800">Browse Jobs</h1>
-            <div className='grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-6 my-6'>
+            <SectionTitle
+                title="Browse Jobs"
+                description="Explore a variety of job opportunities and find the perfect match for your skills and career aspirations."
+            />
+            <div className='grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-6 mt-10 mb-6'>
                 {
                     jobs.map((job, idx) => (
                         <Card key={idx} job={job} />

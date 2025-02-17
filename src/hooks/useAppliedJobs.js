@@ -5,7 +5,7 @@ import useCurrentUser from "../hooks/useCurrentUser";
 const useAppliedJobs = () => {
     const [appliedJobs, setAppliedJobs] = useState([]);
     const axiosPublic = useAxiosPublic();
-    const currentUser = useCurrentUser();
+    const {currentUser} = useCurrentUser();
 
     useEffect(() => {
         const fetchAppliedJobs = async () => {
