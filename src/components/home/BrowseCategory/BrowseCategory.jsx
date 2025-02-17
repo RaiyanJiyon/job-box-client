@@ -41,7 +41,7 @@ const BrowseCategory = () => {
     const categories = [...new Set(jobs.map(job => job.category))];
 
     return (
-        <section className='w-4/5 max-w-screen-2xl mx-auto'>
+        <section className='w-11/12 max-w-screen-2xl mx-auto'>
             <div className='mb-14'>
                 <SectionTitle title="Browse by category" description={`Find the job that’s perfect for you. about ${jobs.length}+ new jobs everyday`} />
             </div>

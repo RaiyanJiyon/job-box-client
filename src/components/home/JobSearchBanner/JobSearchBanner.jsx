@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const JobSearchBanner = () => {
     return (
@@ -13,8 +14,12 @@ const JobSearchBanner = () => {
                         Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide. The right job is out there.
                     </p>
                     <div>
-                        <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Search Jobs</button>
-                        <button type="button" className="text-gray-700 underline font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center hover:text-blue-500">Learn More</button>
+                        <Link to={"/jobs"}>
+                            <button type="button" className="text-white bg-[#3c65f5] hover:bg-[#05264e] font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center">Search Jobs</button>
+                        </Link>
+                        <Link to={"/contact"}>
+                            <button type="button" className="text-gray-700 underline font-medium rounded-lg text-sm px-2 sm:px-5 py-3 text-center hover:text-blue-500">Learn More</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">

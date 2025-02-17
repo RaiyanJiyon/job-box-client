@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from "react-router";
 
 const Hero = () => {
     return (
@@ -15,12 +16,16 @@ const Hero = () => {
                         Read reviews from over 600,000 companies worldwide.
                     </p>
                     <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
-                        <button className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg">
-                            Search Jobs
-                        </button>
-                        <button className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-[#05264e] hover:text-white font-medium">
-                            Learn More
-                        </button>
+                        <Link to="/jobs">
+                            <button className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg">
+                                Search Jobs
+                            </button>
+                        </Link>
+                        <Link to="/contact">
+                            <button className="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-[#05264e] hover:text-white font-medium">
+                                Learn More
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

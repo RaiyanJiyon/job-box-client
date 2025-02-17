@@ -21,7 +21,7 @@ const JobsByLocation = () => {
     return (
         <section>
             <SectionTitle title="Jobs by Location" description="Find your favorite jobs and get the benefits of yourself" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 w-4/5 max-w-screen-2xl mx-auto mt-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 w-11/12 max-w-screen-2xl mx-auto mt-14">
                 {
                     locations.map((location, idx) => (
                         <div key={idx} className="bg-white border border-gray-200 rounded-lg shadow-sm px-3 pt-3">

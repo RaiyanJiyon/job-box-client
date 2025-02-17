@@ -4,14 +4,19 @@ import Swal from "sweetalert2";
 import useSavedJobs from "../../../hooks/useSavedJobs";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import SectionTitle from "../../../components/common/SectionTitle";
+import Loader from "../../../components/common/Loader/Loader";
 
 const SaveJobs = () => {
     const savedJobs = useSavedJobs(); // Fetch saved jobs using the custom hook
-    const [jobs, setJobs] = useState(savedJobs); // Local state to manage jobs
+    const [jobs, setJobs] = useState([]); // Local state to manage jobs
     const axiosSecure = useAxiosSecure();
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setJobs(savedJobs); // Sync local state with fetched data
+        if (savedJobs) {
+            setJobs(savedJobs); // Sync local state with fetched data
+            setLoading(false); // Set loading to false once data is fetched
+        }
     }, [savedJobs]);
 
     const handleDeleteSavedJob = async (savedJobId) => {
@@ -26,6 +31,7 @@ const SaveJobs = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
+                    setLoading(true);
                     const response = await axiosSecure.delete(`/saved-jobs/${savedJobId}`);
                     if (response.status === 200) { // Check for HTTP 200 status
                         setJobs((prevJobs) => prevJobs.filter((job) => job._id !== savedJobId));
@@ -41,10 +47,16 @@ const SaveJobs = () => {
                         text: "Failed to delete saved job.",
                         icon: "error"
                     });
+                }  finally {
+                    setLoading(false);
                 }
             }
         });
     };
+
+    if (loading) {
+        return <Loader />;
+    }
 
     return (
         <div>
@@ -54,7 +66,7 @@ const SaveJobs = () => {
 
             <SectionTitle
                 title="Saved Jobs"
-            description="Manage saved jobs, view details, or remove saved jobs."
+                description="Manage saved jobs, view details, or remove saved jobs."
             />
 
             <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">

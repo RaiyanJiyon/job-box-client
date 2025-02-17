@@ -3,15 +3,18 @@ import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import SectionTitle from '../../../components/common/SectionTitle';
 import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet-async';
+import Loader from '../../../components/common/Loader/Loader';
 
 const ManageUsers = () => {
     const [users, setUsers] = useState([]);
     const [searchTerm, setSearchTerm] = useState(''); // State for search term
     const axiosSecure = useAxiosSecure();
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchUsers = async () => {
             try {
+                setLoading(true)
                 const response = await axiosSecure.get('/users', {
                     params: {
                         email: searchTerm || undefined, // Pass search term as email
@@ -21,6 +24,8 @@ const ManageUsers = () => {
                 setUsers(response.data);
             } catch (error) {
                 console.error(error.message);
+            } finally {
+                setLoading(false);
             }
         };
         fetchUsers();
@@ -57,6 +62,10 @@ const ManageUsers = () => {
             }
         });
     };
+
+    if (loading) {
+        return <Loader />
+    }
 
     return (
         <div>

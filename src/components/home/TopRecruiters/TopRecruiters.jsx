@@ -21,7 +21,7 @@ const TopRecruiters = () => {
         <section>
             <SectionTitle title="Top Recruiters" description="Discover your next career move, freelance gig, or internship" />
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-11/12 md:w-4/5 max-w-screen-2xl mx-auto mt-14'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 w-11/12 max-w-screen-2xl mx-auto mt-14'>
                 {
                     recruiters.map((recruiter, idx) => (
                         <div key={idx} className="block p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-gray-100">

@@ -30,7 +30,7 @@ const statisticsData = [
 
 const StatisticsSection = () => {
     return (
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-4/5 max-w-screen-2xl mx-auto">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-11/12 max-w-screen-2xl mx-auto">
             {statisticsData.map((item, index) => (
                 <div key={index} className="text-center space-y-2">
                     <h2 className="text-6xl font-bold text-blue-600">

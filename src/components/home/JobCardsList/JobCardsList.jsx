@@ -50,7 +50,7 @@ const JobCardsList = () => {
             <SectionTitle title="Jobs of the day" description="Search and connect with the right candidates faster." />
 
             {/* Button Container */}
-            <div className='flex flex-wrap justify-evenly gap-4 max-w-screen-2xl w-4/5 mx-auto mt-6'>
+            <div className='flex flex-wrap justify-evenly gap-4 max-w-screen-2xl w-11/12 mx-auto mt-6'>
                 {categories.map((category, index) => (
                     <button
                         key={index}
@@ -71,7 +71,7 @@ const JobCardsList = () => {
             </div>
 
             {/* Job Cards */}
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12 md:w-4/5 max-w-screen-2xl mx-auto mt-14'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12 max-w-screen-2xl mx-auto mt-14'>
                 {filteredJobs.length > 0 ? (
                     filteredJobs.map((job, idx) => <JobCard key={idx} job={job} />)
                 ) : (
