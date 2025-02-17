@@ -25,9 +25,9 @@ const Contact = () => {
 
                     {/* Breadcrumb navigation */}
                     <div className="absolute bottom-6 right-6 bg-white/90 px-4 py-2 rounded-lg text-sm">
-                        <span className="text-gray-600">Home</span>
+                        <span className="text-gray-600">Contact</span>
                         <span className="mx-2 text-gray-400">›</span>
-                        <span className="text-gray-800">Blog</span>
+                        <span className="text-gray-800">Pricing Plan</span>
                     </div>
                 </div>
             </div>

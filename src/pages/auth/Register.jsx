@@ -7,8 +7,10 @@ import ErrorToaster from '../../components/common/Toaster/ErrorToaster';
 import { useNavigate } from 'react-router-dom';
 import useAxiosPublic from '../../hooks/useAxiosPublic';
 import { Helmet } from 'react-helmet-async';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 const Register = () => {
+    useScrollToTop();
     const { signUpUserWithEmail } = useAuth();
     const axiosPublic = useAxiosPublic();
     const navigate = useNavigate();

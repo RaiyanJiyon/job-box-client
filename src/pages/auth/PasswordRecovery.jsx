@@ -1,7 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 const PasswordRecovery = () => {
+    useScrollToTop();
     return (
         <div className='max-w-screen-2xl w-11/12 mx-auto'>
             <Helmet>

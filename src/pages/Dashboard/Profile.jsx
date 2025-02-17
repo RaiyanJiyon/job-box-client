@@ -12,14 +12,14 @@ const Profile = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gray-100 py-10">
+        <div className="min-h-screen">
             {/* Helmet for SEO */}
             <Helmet>
                 <title>Profile | Job Box</title>
             </Helmet>
 
             {/* Profile Section */}
-            <div className="mx-4 lg:mx-10 bg-white shadow-lg rounded-lg overflow-hidden p-6">
+            <div className="bg-white shadow-lg rounded-lg overflow-hidden p-6">
                 {/* Header */}
                 <h1 className="text-2xl font-bold text-gray-800 mb-6">My Profile</h1>
 

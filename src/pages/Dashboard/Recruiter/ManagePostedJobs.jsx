@@ -67,12 +67,8 @@ const ManagePostedJobs = () => {
 
     return (
         <div>
-            <SectionTitle
-                title="Manage Posted Jobs"
-                description="Manage posted jobs, view details, or remove jobs."
-            />
-            <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
-            <h2 className="text-lg font-semibold text-gray-700 mb-4">Manage Jobs</h2>
+            <div className="relative overflow-x-auto shadow-lg sm:rounded-lg p-4 bg-white">
+                <h1 className="text-2xl font-bold mb-6 text-gray-800">Manage Jobs</h1>
                 <table className="w-full text-sm text-left text-gray-500">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-100">
                         <tr>

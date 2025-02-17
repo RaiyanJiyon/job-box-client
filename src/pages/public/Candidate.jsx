@@ -41,7 +41,7 @@ const Candidate = () => {
                     <div className="absolute bottom-6 right-6 bg-white/90 px-4 py-2 rounded-lg text-sm">
                         <span className="text-gray-600">Candidates</span>
                         <span className="mx-2 text-gray-400">›</span>
-                        <span className="text-gray-800">Blog</span>
+                        <span className="text-gray-800">Contact</span>
                     </div>
                 </div>
             </div>

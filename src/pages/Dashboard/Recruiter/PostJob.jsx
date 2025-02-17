@@ -119,11 +119,6 @@ const PostJob = () => {
             <Helmet>
                 <title>Post Job | Job Box</title>
             </Helmet>
-            <SectionTitle
-                title="Post Jobs"
-                description="Reach top talent by posting your job openings. Connect with qualified candidates and grow your team."
-            />
-
             <div className="bg-white shadow-lg p-6 rounded-lg">
                 <h1 className="text-2xl font-bold mb-6 text-gray-800">Post a Job</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">

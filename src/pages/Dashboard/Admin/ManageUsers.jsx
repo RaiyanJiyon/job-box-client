@@ -72,10 +72,9 @@ const ManageUsers = () => {
             <Helmet>
                 <title>Manage Users | Job Box</title>
             </Helmet>
-            <SectionTitle title="All Users" description="Manage the people, change the role of the user and also you can delete the user" />
-            <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
+            <div className="relative overflow-x-auto shadow-lg sm:rounded-lg p-4 bg-white">
                 <div className='flex justify-between items-center mb-4'>
-                    <h2 className="text-lg font-semibold text-gray-700">User Management</h2>
+                <h1 className="text-2xl font-bold mb-6 text-gray-800">User Management</h1>
                     <div className="relative">
                         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                             <svg className="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">

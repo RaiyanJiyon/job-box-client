@@ -20,7 +20,7 @@ const Navbar = () => {
       case 'job seeker':
         return '/dashboard/job-seeker/dashboard';
       case 'recruiter':
-        return '/dashboard/recruiter/home';
+        return '/dashboard/recruiter/dashboard';
       default:
         return '/dashboard'; // Default path if role is not recognized
     }

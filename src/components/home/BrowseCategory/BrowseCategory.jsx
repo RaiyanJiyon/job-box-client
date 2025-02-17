@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../common/SectionTitle';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
 
 const categoryImages = {
@@ -52,7 +53,11 @@ const BrowseCategory = () => {
                     prevEl: ".swiper-button-prev",
                     nextEl: ".swiper-button-next",
                 }}
-                modules={[Navigation]}
+                autoplay={{
+                    delay: 3000, // Time delay for autoplay in milliseconds
+                    disableOnInteraction: false, // Autoplay won't be disabled after user interactions
+                }}
+                modules={[Navigation, Autoplay]}
                 className="mySwiper"
                 breakpoints={{
                     0: {

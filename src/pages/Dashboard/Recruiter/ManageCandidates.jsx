@@ -73,12 +73,8 @@ const ManageCandidates = () => {
             <Helmet>
                 <title>Manage Candidates | Job Box</title>
             </Helmet>
-            <SectionTitle
-                title="All Candidates"
-                description="Manage candidate applications, view details, or remove applications."
-            />
-            <div className="relative overflow-x-auto shadow-lg sm:rounded-lg mt-10 p-4 bg-white">
-                <h2 className="text-lg font-semibold text-gray-700 mb-4">Manage Candidates</h2>
+            <div className="relative overflow-x-auto shadow-lg sm:rounded-lg p-4 bg-white">
+                <h1 className="text-2xl font-bold mb-6 text-gray-800">Manage Candidates</h1>
                 <table className="w-full text-sm text-left text-gray-500">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-100">
                         <tr>

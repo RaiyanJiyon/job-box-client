@@ -38,7 +38,6 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 { name: "Dashboard", path: "/dashboard/admin/dashboard", icon: <AiOutlineDashboard /> },
                 { name: "Manage Users", path: "/dashboard/admin/manage-users", icon: <AiOutlineUser /> },
                 { name: "Manage Jobs", path: "/dashboard/admin/manage-jobs", icon: <MdWorkOutline /> },
-                { name: "Saved Jobs", path: "/dashboard/job-seeker/saved-jobs", icon: <MdOutlineSaveAlt /> },
             ];
         } else if (userData?.role === "job seeker") {
             navLinks = [
@@ -52,9 +51,8 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
         } else if (userData?.role === "recruiter") {
             navLinks = [
                 { name: "Home", path: "/", icon: <AiOutlineHome /> },
-                { name: "Dashboard", path: "/dashboard/recruiter/home", icon: <AiOutlineDashboard /> },
+                { name: "Dashboard", path: "/dashboard/recruiter/dashboard", icon: <AiOutlineDashboard /> },
                 { name: "Post a Job", path: "/dashboard/recruiter/post-job", icon: <MdPostAdd /> },
-                { name: "Saved Jobs", path: "/dashboard/job-seeker/saved-jobs", icon: <MdOutlineSaveAlt /> },
                 { name: "Manage Jobs", path: "/dashboard/recruiter/manage-jobs", icon: <MdWorkOutline /> },
                 { name: "Manage Candidates", path: "/dashboard/recruiter/manage-candidates", icon: <FaRegUserCircle /> },
                 { name: "Profile", path: "/dashboard/profile", icon: <AiOutlineUser /> },

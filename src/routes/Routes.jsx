@@ -131,7 +131,7 @@ const router = createBrowserRouter([
             },
             // Recruiter Routes
             {
-                path: 'recruiter/home',
+                path: 'recruiter/dashboard',
                 element: <RecruiterRoute><RecruiterDashboard /></RecruiterRoute>
             },
             {

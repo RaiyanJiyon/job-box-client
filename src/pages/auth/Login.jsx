@@ -6,8 +6,10 @@ import useAuth from '../../hooks/useAuth';
 import ErrorToaster from '../../components/common/Toaster/ErrorToaster';
 import SuccessToaster from '../../components/common/Toaster/SuccessToaster';
 import { Helmet } from 'react-helmet-async';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 const Login = () => {
+    useScrollToTop();
     const { signInUserWithEmail } = useAuth();
     const navigate = useNavigate();
 
