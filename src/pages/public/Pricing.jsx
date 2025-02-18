@@ -4,8 +4,8 @@ import Testimonial from "../../components/Contact/Testimonial/Testimonial";
 import NewsletterSubscription from "../../components/home/NewsletterSubscription/NewsletterSubscription";
 import FAQ from "../../components/Pricing/FAQ/FAQ";
 import PricingCard from "../../components/Pricing/PricingCard/PricingCard";
-import PricingCover from "../../components/Pricing/PricingCover/PricingCover";
 import useScrollToTop from "../../hooks/useScrollToTop";
+import PageCover from "../../components/PageCover/PageCover";
 
 const Pricing = () => {
     useScrollToTop();
@@ -16,7 +16,7 @@ const Pricing = () => {
                 <title>Pricing | Job Box</title>
             </Helmet>
 
-            <PricingCover />
+            <PageCover backgroundImage="https://i.ibb.co/MDNsJCHy/cover.jpg" title="Pricing" description="Pricing built to suits teams of all sizes." pageName="Pricing" nextPageName="Home" />
 
             <div className="my-20">
                 <SectionTitle title="Pricing Table" description="Choose The Best Plan That’s For You" />

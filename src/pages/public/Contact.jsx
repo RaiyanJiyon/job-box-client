@@ -5,6 +5,7 @@ import OurTeam from '../../components/Contact/OurTeam/OurTeam';
 import Testimonial from '../../components/Contact/Testimonial/Testimonial';
 import useScrollToTop from '../../hooks/useScrollToTop';
 import { Helmet } from 'react-helmet-async';
+import PageCover from '../../components/PageCover/PageCover';
 
 const Contact = () => {
     useScrollToTop();
@@ -13,24 +14,8 @@ const Contact = () => {
             <Helmet>
                 <title>Contact | Job Box</title>
             </Helmet>
-            
-            <div className="relative h-36 bg-cover bg-center mt-2" style={{ backgroundImage: 'url(https://i.ibb.co/MDNsJCHy/cover.jpg)' }}>
-                {/* Dark overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>
 
-                {/* Content */}
-                <div className="relative  flex flex-col justify-center h-full w-11/12 max-w-screen-2xl mx-auto">
-                    <h2 className="text-3xl font-bold text-white mb-2">About Us</h2>
-                    <p className="text-gray-200">Get the latest news, updates and tips</p>
-
-                    {/* Breadcrumb navigation */}
-                    <div className="absolute bottom-6 right-6 bg-white/90 px-4 py-2 rounded-lg text-sm">
-                        <span className="text-gray-600">Contact</span>
-                        <span className="mx-2 text-gray-400">›</span>
-                        <span className="text-gray-800">Pricing Plan</span>
-                    </div>
-                </div>
-            </div>
+            <PageCover backgroundImage="https://i.ibb.co/MDNsJCHy/cover.jpg" title="Contact Us" description="Get the latest news, updates and tips" pageName="Contact" nextPageName="Pricing Plan" />
 
             <div className='py-16'>
                 <Location />
