@@ -16,7 +16,7 @@ const JobSearchSection = ({ jobs, onSearch }) => {
             <p className='w-1/2 mx-auto text-gray-500 text-sm font-medium'>
                 Explore a wide range of exciting job opportunities available right now. Whether you're looking for your next big career move or a fresh start.
             </p>
-            <form onSubmit={handleSubmit} className="w-4/5 mx-auto mt-10">
+            <form onSubmit={handleSubmit} className="md:w-4/5 mx-auto mt-10">
                 <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only">
                     Search
                 </label>

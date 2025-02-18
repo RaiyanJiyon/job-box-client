@@ -60,6 +60,7 @@ const FindJobs = () => {
             </div>
             <nav className='flex justify-center mb-10' aria-label="Page navigation example">
                 <ul className="flex items-center -space-x-px h-10 text-base">
+                    {/* Previous Button */}
                     <li>
                         <button
                             onClick={() => handlePageChange(currentPage - 1)}
@@ -72,20 +73,89 @@ const FindJobs = () => {
                             </svg>
                         </button>
                     </li>
-                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNumber) => (
-                        <li key={pageNumber}>
-                            <button
-                                onClick={() => handlePageChange(pageNumber)}
-                                className={`flex items-center justify-center px-4 h-10 leading-tight ${
-                                    pageNumber === currentPage
-                                        ? 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'
-                                        : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700'
-                                }`}
-                            >
-                                {pageNumber}
-                            </button>
-                        </li>
-                    ))}
+
+                    {/* Truncated Pagination */}
+                    {totalPages <= 7 ? (
+                        // Show all pages if total pages are small
+                        Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNumber) => (
+                            <li key={pageNumber}>
+                                <button
+                                    onClick={() => handlePageChange(pageNumber)}
+                                    className={`flex items-center justify-center px-4 h-10 leading-tight ${pageNumber === currentPage
+                                            ? 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'
+                                            : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700'
+                                        }`}
+                                >
+                                    {pageNumber}
+                                </button>
+                            </li>
+                        ))
+                    ) : (
+                        <>
+                            {/* Always show the first page */}
+                            <li>
+                                <button
+                                    onClick={() => handlePageChange(1)}
+                                    className={`flex items-center justify-center px-4 h-10 leading-tight ${currentPage === 1
+                                            ? 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'
+                                            : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700'
+                                        }`}
+                                >
+                                    1
+                                </button>
+                            </li>
+
+                            {/* Ellipsis if current page is greater than 3 */}
+                            {currentPage > 3 && (
+                                <li>
+                                    <span className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300">
+                                        ...
+                                    </span>
+                                </li>
+                            )}
+
+                            {/* Show pages around the current page */}
+                            {Array.from({ length: 3 }, (_, i) => currentPage - 1 + i)
+                                .filter((pageNumber) => pageNumber > 1 && pageNumber < totalPages)
+                                .map((pageNumber) => (
+                                    <li key={pageNumber}>
+                                        <button
+                                            onClick={() => handlePageChange(pageNumber)}
+                                            className={`flex items-center justify-center px-4 h-10 leading-tight ${pageNumber === currentPage
+                                                    ? 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'
+                                                    : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700'
+                                                }`}
+                                        >
+                                            {pageNumber}
+                                        </button>
+                                    </li>
+                                ))}
+
+                            {/* Ellipsis if current page is far from the last page */}
+                            {currentPage < totalPages - 2 && (
+                                <li>
+                                    <span className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300">
+                                        ...
+                                    </span>
+                                </li>
+                            )}
+
+                            {/* Always show the last page */}
+                            <li>
+                                <button
+                                    onClick={() => handlePageChange(totalPages)}
+                                    className={`flex items-center justify-center px-4 h-10 leading-tight ${currentPage === totalPages
+                                            ? 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'
+                                            : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700'
+                                        }`}
+                                >
+                                    {totalPages}
+                                </button>
+                            </li>
+                        </>
+                    )}
+
+                    {/* Next Button */}
                     <li>
                         <button
                             onClick={() => handlePageChange(currentPage + 1)}
