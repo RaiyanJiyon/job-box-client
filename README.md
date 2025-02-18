@@ -1,5 +1,5 @@
 # **Job Box**  
-![JobBox Banner](https://i.ibb.co.com/PvydShRF/project-banner.png)
+![JobBox Banner](https://i.ibb.co.com/Y43Jtxj1/project-banner.png)
 
 **JobBox** is a modern job portal platform that connects **job seekers, recruiters, and administrators**. It provides a seamless experience for job seekers to browse and apply for jobs, recruiters to post and manage job listings, and administrators to oversee platform operations.
 
