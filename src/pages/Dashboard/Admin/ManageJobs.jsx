@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from 'react';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
-import SectionTitle from '../../../components/common/SectionTitle';
-import useAxiosPublic from '../../../hooks/useAxiosPublic';
 import Swal from 'sweetalert2';
 import useFetchJobs from '../../../hooks/useFetchJobs';
 import Loader from '../../../components/common/Loader/Loader';

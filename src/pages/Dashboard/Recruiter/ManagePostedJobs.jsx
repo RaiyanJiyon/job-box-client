@@ -91,7 +91,7 @@ const ManagePostedJobs = () => {
                                     <td className="px-6 py-4">{job.employmentType}</td>
                                     <td className="px-6 py-4">{job.workType}</td>
                                     <td className="px-6 py-4">${job.salary}</td>
-                                    <td className="px-6 py-4">${job.postedTime}</td>
+                                    <td className="px-6 py-4">{new Date(job.postedTime).toLocaleDateString()}</td>
                                     <td className="px-6 py-4 text-center">
                                         <div className="flex justify-center space-x-4">
                                             <button className="text-blue-600 hover:underline">Edit</button>
