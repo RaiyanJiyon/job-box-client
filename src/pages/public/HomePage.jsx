@@ -14,8 +14,6 @@ import useScrollToTop from "../../hooks/useScrollToTop";
 import useCurrentUser from "../../hooks/useCurrentUser";
 
 const HomePage = () => {
-    const {currentUser} = useCurrentUser();
-    console.log(currentUser);
     useScrollToTop();
     return (
         <div>
@@ -23,7 +21,7 @@ const HomePage = () => {
                 <title>Home | Job Box</title>
             </Helmet>
             
-            <div className="">
+            <div className="mb-20 md:mb-44">
                 <Hero />
             </div>
             <div className="my-10">

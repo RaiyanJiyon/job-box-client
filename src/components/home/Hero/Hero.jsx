@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Hero = () => {
     return (
-        <section className="bg-white mt-20 h-screen 2xl:h-auto 2xl:mb-56">
+        <section className="bg-white mt-20">
             <div className="max-w-screen-xl px-6 md:px-12 2xl:px-6 mx-auto mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 {/* Left Side: Text Content */}
                 <div className="lg:col-span-7 text-center lg:text-left">
