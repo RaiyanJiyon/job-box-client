@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const { user, signOutUser } = useAuth();
   const navigate = useNavigate();
-  const {currentUser} = useCurrentUser();
+  const { currentUser } = useCurrentUser();
 
   const getDashboardPath = (role) => {
     switch (role) {
@@ -30,6 +30,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close the menu
+  };
+
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
@@ -42,9 +46,7 @@ const Navbar = () => {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -53,7 +55,7 @@ const Navbar = () => {
   const handleSignOut = () => {
     signOutUser()
       .then(result => {
-        SuccessToaster(`${user.displayName} is sign out.`);
+        SuccessToaster(`${user.displayName} is signed out.`);
         navigate('/login');
       })
       .catch(error => {
@@ -84,7 +86,6 @@ const Navbar = () => {
                   alt="user photo"
                 />
               </button>
-
               {/* <!-- Dropdown menu --> */}
               <div
                 id="dropdownAvatar"
@@ -92,14 +93,13 @@ const Navbar = () => {
                   }`}
                 style={{ top: '100%', zIndex: 50 }} // Ensures it stays below the avatar
               >
-
                 <div className="px-4 py-3 text-sm text-gray-900">
                   <div>{user?.displayName}</div>
                   <div className="font-medium truncate">{user?.email}</div>
                 </div>
                 <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownUserAvatarButton">
                   <li>
-                    <Link to={getDashboardPath(currentUser?.role)} className="block px-4 py-2 hover:bg-gray-100">
+                    <Link to={getDashboardPath(currentUser?.role)} className="block px-4 py-2 hover:bg-gray-100" onClick={closeMenu}>
                       Dashboard
                     </Link>
                   </li>
@@ -162,6 +162,7 @@ const Navbar = () => {
                   ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
                   : 'text-black'
               }
+              onClick={closeMenu} // Close the menu on click
             >
               Home
             </NavLink>
@@ -172,6 +173,7 @@ const Navbar = () => {
                   ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
                   : 'text-black'
               }
+              onClick={closeMenu} // Close the menu on click
             >
               Find a Job
             </NavLink>
@@ -182,6 +184,7 @@ const Navbar = () => {
                   ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
                   : 'text-black'
               }
+              onClick={closeMenu} // Close the menu on click
             >
               Recruiters
             </NavLink>
@@ -192,6 +195,7 @@ const Navbar = () => {
                   ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
                   : 'text-black'
               }
+              onClick={closeMenu} // Close the menu on click
             >
               Candidates
             </NavLink>
@@ -202,6 +206,7 @@ const Navbar = () => {
                   ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
                   : 'text-black'
               }
+              onClick={closeMenu} // Close the menu on click
             >
               Contact
             </NavLink>
@@ -212,6 +217,7 @@ const Navbar = () => {
                   ? 'block py-2 px-3 text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-500 lg:p-0 lg:border-blue-700 lg:border-b-2 lg:pb-1'
                   : 'text-black'
               }
+              onClick={closeMenu} // Close the menu on click
             >
               Pricing Plan
             </NavLink>
