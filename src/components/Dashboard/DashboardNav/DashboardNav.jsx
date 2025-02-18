@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { AiOutlineMenu, AiOutlineHome, AiOutlineDashboard, AiOutlineUser, AiOutlineSetting, AiOutlineLogout } from "react-icons/ai";
-import { MdWorkOutline, MdAnalytics, MdOutlineSaveAlt, MdPostAdd } from "react-icons/md";
+import { AiOutlineHome, AiOutlineDashboard, AiOutlineUser } from "react-icons/ai";
+import { MdWorkOutline, MdOutlineSaveAlt, MdPostAdd } from "react-icons/md";
 import useAuth from "../../../hooks/useAuth";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
-import { FaRegUserCircle, FaUser } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
     const { user } = useAuth();
@@ -89,14 +89,14 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 <div className="text-lg font-semibold text-blue-600">
                     <div className="flex items-center">
                         <div className="shrink-0">
-                            <img className="w-8 h-8 rounded-full" src={`${userData?.photoURL}`} alt="Neil image" />
+                            <img className="w-8 h-8 rounded-full" src={`${user?.photoURL}`} alt="Neil image" />
                         </div>
                         <div className="flex-1 min-w-0 ms-4">
                             <p className="text-sm font-medium text-gray-900 truncate">
-                                {userData?.name}
+                                {user?.displayName}
                             </p>
                             <p className="text-sm text-gray-500 truncate">
-                                {userData?.email}
+                                {user?.email}
                             </p>
                         </div>
                     </div>

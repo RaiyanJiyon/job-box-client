@@ -38,6 +38,10 @@ const Navbar = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const closeDropdown = () => {
+    setIsDropdownOpen(false); // Close the dropdown
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -82,7 +86,7 @@ const Navbar = () => {
                 <span className="sr-only">Open user menu</span>
                 <img
                   className="w-10 h-10 rounded-full"
-                  src={currentUser?.photoURL ? currentUser.photoURL : 'https://i.ibb.co.com/fztydKNS/default-user.jpg'}
+                  src={user?.photoURL ? user.photoURL : 'https://i.ibb.co.com/fztydKNS/default-user.jpg'}
                   alt="user photo"
                 />
               </button>
@@ -99,18 +103,33 @@ const Navbar = () => {
                 </div>
                 <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownUserAvatarButton">
                   <li>
-                    <Link to={getDashboardPath(currentUser?.role)} className="block px-4 py-2 hover:bg-gray-100" onClick={closeMenu}>
+                    <Link
+                      to={getDashboardPath(currentUser?.role)}
+                      className="block px-4 py-2 hover:bg-gray-100"
+                      onClick={closeDropdown} // Close the dropdown on click
+                    >
                       Dashboard
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/profile-update"} className="block px-4 py-2 hover:bg-gray-100">
+                    <Link
+                      to="/profile-update"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                      onClick={closeDropdown} // Close the dropdown on click
+                    >
                       Profile Update
                     </Link>
                   </li>
                 </ul>
                 <div className="py-2">
-                  <button onClick={handleSignOut} href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  <button
+                    onClick={() => {
+                      handleSignOut();
+                      closeDropdown(); // Close the dropdown on sign-out
+                    }}
+                    href="#"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
                     Sign out
                   </button>
                 </div>
@@ -146,7 +165,7 @@ const Navbar = () => {
               fill="none"
               viewBox="0 0 17 14"
             >
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
         </div>
