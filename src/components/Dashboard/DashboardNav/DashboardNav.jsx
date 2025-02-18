@@ -6,9 +6,11 @@ import { MdWorkOutline, MdOutlineSaveAlt, MdPostAdd } from "react-icons/md";
 import useAuth from "../../../hooks/useAuth";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { FaRegUserCircle } from "react-icons/fa";
+import useCurrentUser from "../../../hooks/useCurrentUser";
 
 const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
     const { user } = useAuth();
+    const {currentUser} = useCurrentUser();
     const axiosSecure = useAxiosSecure();
     const [userData, setUserData] = useState(null);
 
@@ -89,7 +91,7 @@ const DashboardNav = ({ isSidebarOpen, toggleSidebar }) => {
                 <div className="text-lg font-semibold text-blue-600">
                     <div className="flex items-center">
                         <div className="shrink-0">
-                            <img className="w-8 h-8 rounded-full" src={`${user?.photoURL}`} alt="Neil image" />
+                            <img className="w-8 h-8 rounded-full" src={`${currentUser?.photoURL}`} alt="Neil image" />
                         </div>
                         <div className="flex-1 min-w-0 ms-4">
                             <p className="text-sm font-medium text-gray-900 truncate">
