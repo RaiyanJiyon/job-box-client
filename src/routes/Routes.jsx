@@ -35,6 +35,7 @@ import AdminRoute from './AdminRoute';
 import JobSeekerRoute from './JobSeekerRoute'; // Import JobSeekerRoute
 import RecruiterRoute from './RecruiterRoute'
 import Unauthorized from '../pages/Unauthorized/Unauthorized';
+import ProfileUpdate from '../pages/auth/ProfileUpdate';
 
 const router = createBrowserRouter([
     {
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
             {
                 path: 'register',
                 element: <Register />
+            },
+            {
+                path: 'profile-update',
+                element: <ProfileUpdate />
             },
             {
                 path: 'recover-password',

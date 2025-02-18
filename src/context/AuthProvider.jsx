@@ -1,6 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile, sendPasswordResetEmail, onAuthStateChanged, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import app from '../utils/firebaseConfig';
+import ErrorToaster from '../components/common/Toaster/ErrorToaster';
+import SuccessToaster from '../components/common/Toaster/SuccessToaster';
 
 const auth = getAuth(app);
 const AuthContext = createContext();
@@ -30,9 +32,20 @@ const AuthProvider = ({ children }) => {
         return signOut(auth);
     };
 
-    const updateUserProfile = (profile) => {
+    const updateUserProfile = async (profile) => {
         setLoading(true);
-        return updateProfile(auth.currentUser, profile);
+        try {
+            if (auth.currentUser) {
+                await updateProfile(auth.currentUser, profile);
+                SuccessToaster('Profile updated successfully!');
+            } else {
+                throw new Error('No current user found.');
+            }
+        } catch (error) {
+            ErrorToaster('Failed to update profile: ' + error.message);
+        } finally {
+            setLoading(false);
+        }
     };
 
     const passwordResetEmail = (email) => {

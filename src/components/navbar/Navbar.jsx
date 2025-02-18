@@ -104,9 +104,9 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link to={"/profile-update"} className="block px-4 py-2 hover:bg-gray-100">
                       Profile Update
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className="py-2">
