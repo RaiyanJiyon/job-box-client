@@ -120,7 +120,13 @@ const JobDetails = () => {
                             {/* Apply Now Button with ref */}
                             <button
                                 ref={applyButtonRef} // Attach the ref here
-                                onClick={() => setIsModalOpen(true)} // Open modal
+                                onClick={() => {
+                                    if (!currentUser) {
+                                        ErrorToaster("User is not logged in. Please log in to apply jobs.");
+                                    } else {
+                                        setIsModalOpen(true); // Open modal if user is logged in
+                                    }
+                                }} // Check login status before opening modal
                                 disabled={currentUser?.role === "admin" || currentUser?.role === "recruiter"} // Disable for admin or recruiter
                                 className={`px-6 py-3 font-medium rounded-lg ${currentUser?.role === "admin" || currentUser?.role === "recruiter"
                                     ? "bg-gray-400 cursor-not-allowed" // Disabled style
@@ -132,11 +138,10 @@ const JobDetails = () => {
                             <button
                                 onClick={() => handleSaveJobs(job)}
                                 disabled={currentUser?.role === "admin" || currentUser?.role === "recruiter"} // Disable for admin or recruiter
-                                className={`px-6 py-3 border rounded-lg ${
-                                    currentUser?.role === "admin" || currentUser?.role === "recruiter"
-                                        ? "bg-gray-400 text-gray-500 border-gray-400 cursor-not-allowed" // Disabled style
-                                        : "text-blue-600 border-blue-600 hover:bg-[#05264e] hover:text-white" // Enabled style
-                                }`}
+                                className={`px-6 py-3 border rounded-lg ${currentUser?.role === "admin" || currentUser?.role === "recruiter"
+                                    ? "bg-gray-400 text-gray-500 border-gray-400 cursor-not-allowed" // Disabled style
+                                    : "text-blue-600 border-blue-600 hover:bg-[#05264e] hover:text-white" // Enabled style
+                                    }`}
                             >
                                 Save Job
                             </button>

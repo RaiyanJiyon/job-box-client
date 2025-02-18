@@ -1,4 +1,5 @@
 import { CiCircleCheck } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Hiring = () => {
     return (
@@ -24,12 +25,13 @@ const Hiring = () => {
                 </div>
 
                 {/* Apply Button */}
-                <button
+                <Link
+                    to={"/jobs"}
                     type="button"
                     className="flex items-center md:mt-10 bg-[#3c65f5] hover:bg-[#05264e] text-white font-medium rounded-lg text-sm sm:text-base px-4 sm:px-6 py-2 transition duration-300">
                     <CiCircleCheck className="mr-2 text-lg" />
                     Apply Now
-                </button>
+                </Link>
 
                 {/* Right Illustration */}
                 <img
